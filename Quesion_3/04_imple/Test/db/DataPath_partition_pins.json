@@ -1,0 +1,121 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_rd_en",
+					"strict" : false
+				},
+				{
+					"name" : "o_done_rd",
+					"strict" : false
+				},
+				{
+					"name" : "o_wr_en",
+					"strict" : false
+				},
+				{
+					"name" : "o_done_wr",
+					"strict" : false
+				},
+				{
+					"name" : "o_addr_ram[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_addr_ram[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_addr_ram[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_addr_ram[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_addr_ram[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_addr_ram[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_addr_ram[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_addr_ram[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data_ram[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_done_j",
+					"strict" : false
+				},
+				{
+					"name" : "i_rd_en",
+					"strict" : false
+				},
+				{
+					"name" : "i_clk",
+					"strict" : false
+				},
+				{
+					"name" : "i_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "i_data_ram[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_en_i",
+					"strict" : false
+				},
+				{
+					"name" : "i_start_j",
+					"strict" : false
+				},
+				{
+					"name" : "i_num_elems[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_num_elems[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_num_elems[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_num_elems[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_num_elems[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_num_elems[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_num_elems[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_num_elems[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

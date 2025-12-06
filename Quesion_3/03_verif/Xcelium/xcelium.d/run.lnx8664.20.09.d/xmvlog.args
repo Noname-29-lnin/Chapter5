@@ -1,0 +1,24 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.20.09.d
+-RUNMODE
+-sv
+-INCDIR
+./../Sim_Nonideal/lib/
+./../Sim_Nonideal/tb_FPU_unit.sv
+./../Sim_Nonideal/FPU_unit_netlist.v
+./../../05_synth/PDK45nm/gpdk045_verilog/fast_vdd1v0_basicCells_hvt.v
+-ALLOWREDEFINITION
+-CDSLIB
+./xcelium.d/run.lnx8664.20.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.20.09.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.20.09.d/xllibs
+-ALLOWUNBOUND
+-hastop
