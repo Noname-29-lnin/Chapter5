@@ -1,0 +1,1 @@
+s1(07Dec2025:10:19:54):  xrun +xm64bit -sv -f ./../Submodule/UPDATE_J/flist.f -top tb_Update_J -access +rwc -clean -log ./../Submodule/UPDATE_J/Xcelium/compile.log +nctimescale+1ns/1ps +ntb_random_seed=automatic -allowredefinition -v93 

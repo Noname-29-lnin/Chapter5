@@ -4,13 +4,12 @@
 //
 +ntb_random_seed=automatic
 +xm64bit
-+incdir+./../Sim_Nonideal/lib/
 +nctimescale+1ns/1ps
 -MESSAGES
 +EMGRLOG
-./../Sim_Nonideal/Xcelium/compile.log
+./../Submodule/UPDATE_J/Xcelium/compile.log
 -XLSTIME
-1764468687
+1765120794
 -XLKEEP
 -XLMODE
 ./xcelium.d/run.lnx8664.20.09.d
