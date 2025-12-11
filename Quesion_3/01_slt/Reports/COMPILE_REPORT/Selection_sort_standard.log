@@ -1,0 +1,7 @@
+Finished reading file: ./tools/unsorted.txt
+Check Selection_Sort Standard: PASS
+Finish write file './Reports/COMPILE_REPORT/sorted_standard.txt'.
+Check Selection_Sort Cus: PASS
+Finish write file './Reports/COMPILE_REPORT/sorted_cus.txt'.
+Check Selection_Sort Hardware: PASS
+Finish write file './Reports/COMPILE_REPORT/sorted_hardware.txt'.
