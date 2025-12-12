@@ -1,0 +1,3 @@
+BEGIN 1:SinglePort_RAM:fast:./../Topmodule/QuestaSim/work
+    mem_unit :  1:tb_Selection_Sort:fast:./../Topmodule/QuestaSim/work
+END 

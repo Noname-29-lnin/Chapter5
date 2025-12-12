@@ -15,6 +15,7 @@ module Control_unit (
     output logic [1:0]              o_sel_data_rd,
     output logic                    o_sel_data_wr,
     output logic                    o_update_i  ,
+    output logic                    o_start_j,
     output logic                    o_update_j  ,
     output logic                    o_update_min
 );
@@ -283,11 +284,13 @@ always_comb begin : proc_output
     o_sel_data_rd   = '0;
     o_sel_data_wr   = '0;
     o_update_i      = '0;
+    o_start_j       = '0;
     o_update_j      = '0;
     o_update_min    = '0;
 
     case (state)
         READ_DATA_KEY: begin
+            o_start_j     = 1'b1;
             o_rd_en       = 1'b1;
             o_sel_addr    = 2'b11;
             o_sel_data_rd = 2'b01;
@@ -364,6 +367,7 @@ always_comb begin : proc_output
             o_sel_data_rd   = '0;
             o_sel_data_wr   = '0;
             o_update_i      = '0;
+            o_start_j       = '0;
             o_update_j      = '0;
             o_update_min    = '0;
         end

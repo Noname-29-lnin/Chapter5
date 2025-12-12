@@ -44,6 +44,7 @@ Data_path #(
     .i_sel_data_rd      (w_sel_data_rd),
     .i_sel_data_wr      (w_sel_data_wr),
     .i_start_i          (i_start), //i_state=>topmodule
+    .i_start_j          (),
     .i_update_i         (w_update_i),
     .i_update_j         (w_update_j),
     .i_update_min       (w_update_min),
@@ -74,6 +75,7 @@ Control_unit CONTROL_UNIT (
     .o_sel_data_rd      (w_sel_data_rd),
     .o_sel_data_wr      (w_sel_data_wr),
     .o_update_i         (w_update_i),
+    .o_start_j          (),
     .o_update_j         (w_update_j),
     .o_update_min       (w_update_min)
 );

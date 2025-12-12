@@ -49,7 +49,7 @@ module tb_Selection_Sort;
         clk       = 0;
         rst_n     = 0;
         start     = 0;
-        num_elems = 4'd15;            // ví dụ sort 10 phần tử: 0..9
+        num_elems = 2**SIZE_ADDR - 1;            // ví dụ sort 10 phần tử: 0..9
 
         #20;
         rst_n = 1;
@@ -61,8 +61,8 @@ module tb_Selection_Sort;
         start = 0;
 
         // Chờ DONE
-        // @(posedge done);
-        #10000;
+        @(posedge done);
+        // #500000000;
         $display(">>> DONE received at time %0t", $time);
 
         dump_ram_contents();

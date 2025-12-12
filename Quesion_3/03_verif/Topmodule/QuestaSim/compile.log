@@ -1,0 +1,23 @@
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 20:28:49 on Dec 12,2025
+vlog -f ./../Topmodule/flist.f 
+-- Compiling module tb_Selection_Sort
+-- Compiling module Control_unit
+-- Compiling module Data_path
+-- Compiling module RAM_addr
+-- Compiling module SS_detect_edge
+-- Compiling module RAM_read_data
+-- Compiling module RAM_write_data
+-- Compiling module Selection_Sort
+-- Compiling module SinglePort_RAM
+-- Compiling module Update_I
+-- Compiling module Update_J
+-- Compiling module Update_MIN
+-- Compiling module Block_Read_data
+-- Compiling module Block_Write_data
+-- Compiling module Block_Addr
+
+Top level modules:
+	tb_Selection_Sort
+End time: 20:28:49 on Dec 12,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

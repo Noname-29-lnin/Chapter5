@@ -173,6 +173,7 @@ module Data_path #(
     input logic [1:0]               i_sel_data_rd   ,
     input logic                     i_sel_data_wr   ,
     input logic                     i_start_i       , //i_state=>topmodule
+    input logic                     i_start_j       , 
     input logic                     i_update_i      ,
     input logic                     i_update_j      ,
     input logic                     i_update_min    ,

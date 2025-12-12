@@ -1,0 +1,417 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/noname/Documents/project_tiny/Chapter5/Quesion_3/03_verif/Questasim
+T_opt
+!s110 1765546130
+VA<z[Q3g8>]A4Om]eC;DoR3
+04 17 4 work tb_Selection_Sort fast 0
+=1-000ae431a4f1-693c1892-3bd6-80a53
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U16 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work ./../Topmodule/QuestaSim/work -debugdb +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.3;79
+vBlock_Addr
+Z3 2./../../03_verif/Topmodule/tb_Selection_Sort.sv|./../../02_rtl/Control_unit.sv|./../../02_rtl/Data_path.sv|./../../02_rtl/RAM_addr.sv|./../../02_rtl/SS_detect_edge.sv|./../../02_rtl/RAM_read_data.sv|./../../02_rtl/RAM_write_data.sv|./../../02_rtl/Selection_Sort.sv|./../../02_rtl/SinglePort_RAM.sv|./../../02_rtl/Update_I.sv|./../../02_rtl/Update_J.sv|./../../02_rtl/Update_MIN.sv|./../../02_rtl/Block_Read_data.sv|./../../02_rtl/Block_Write_data.sv|./../../02_rtl/Block_Addr.sv
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1765546129
+!i10b 1
+!s100 i1S8_zWd7nkDBD2S1VFgW3
+IJZn07T12=B`907PB5?PS[1
+S1
+R1
+w1765537437
+8./../../02_rtl/Block_Addr.sv
+F./../../02_rtl/Block_Addr.sv
+!i122 0
+L0 1 30
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z8 !s108 1765546129.000000
+Z9 !s107 ./../../02_rtl/Block_Addr.sv|./../../02_rtl/Block_Write_data.sv|./../../02_rtl/Block_Read_data.sv|./../../02_rtl/Update_MIN.sv|./../../02_rtl/Update_J.sv|./../../02_rtl/Update_I.sv|./../../02_rtl/SinglePort_RAM.sv|./../../02_rtl/Selection_Sort.sv|./../../02_rtl/RAM_write_data.sv|./../../02_rtl/RAM_read_data.sv|./../../02_rtl/SS_detect_edge.sv|./../../02_rtl/RAM_addr.sv|./../../02_rtl/Data_path.sv|./../../02_rtl/Control_unit.sv|./../../03_verif/Topmodule/tb_Selection_Sort.sv|
+Z10 !s90 -f|./../Topmodule/flist.f|
+!i113 0
+Z11 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@block_@addr
+vBlock_Read_data
+R3
+R4
+R5
+!i10b 1
+!s100 `dTc3K22dfPX9NfVEP]5A3
+I]<mJ[^O;hH9n8eV6zkN^H2
+S1
+R1
+w1765536161
+8./../../02_rtl/Block_Read_data.sv
+F./../../02_rtl/Block_Read_data.sv
+!i122 0
+L0 1 91
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@block_@read_data
+vBlock_Write_data
+R3
+R4
+R5
+!i10b 1
+!s100 M0d;b83oRH@h_7>CJgmld2
+I8=[YUc6J6:2L:z9Qe5JYR1
+S1
+R1
+w1765538691
+8./../../02_rtl/Block_Write_data.sv
+F./../../02_rtl/Block_Write_data.sv
+!i122 0
+L0 1 42
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@block_@write_data
+vControl_unit
+R3
+R4
+R5
+!i10b 1
+!s100 MbT[[Sei7>EEblkk2`o112
+ID5@FTS@[6ShA:OCJz0?4m1
+S1
+R1
+w1765544180
+8./../../02_rtl/Control_unit.sv
+F./../../02_rtl/Control_unit.sv
+!i122 0
+L0 1 379
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@control_unit
+vData_path
+R3
+R4
+R5
+!i10b 1
+!s100 YH<k>PPjW2<eU1O^08z>M0
+I]@2^f8bSldZN5;J5]Q^FJ0
+S1
+R1
+w1765540894
+8./../../02_rtl/Data_path.sv
+F./../../02_rtl/Data_path.sv
+!i122 0
+L0 162 139
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@data_path
+vRAM_addr
+R3
+R4
+R5
+!i10b 1
+!s100 QhDgXMATQ>mjK5lbkKzaZ0
+ISJ7I6;heEMh]_EmczUdL=3
+S1
+R1
+w1765536690
+8./../../02_rtl/RAM_addr.sv
+F./../../02_rtl/RAM_addr.sv
+!i122 0
+Z12 L0 1 25
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@r@a@m_addr
+vRAM_read_data
+R3
+R4
+R5
+!i10b 1
+!s100 W0`_;CoM:jAEli]PGUZN]2
+IUk9J0[kfIC:lCmPdU:@dY2
+S1
+R1
+w1765537009
+8./../../02_rtl/RAM_read_data.sv
+F./../../02_rtl/RAM_read_data.sv
+!i122 0
+L0 1 52
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@r@a@m_read_data
+vRAM_write_data
+R3
+R4
+R5
+!i10b 1
+!s100 ^YJ0M7nR?gF;z[2gNol993
+IcII_N]ik>C7oX[nF0=@=m2
+S1
+R1
+w1765537103
+8./../../02_rtl/RAM_write_data.sv
+F./../../02_rtl/RAM_write_data.sv
+!i122 0
+L0 1 47
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@r@a@m_write_data
+vSelection_Sort
+R3
+R4
+R5
+!i10b 1
+!s100 F]:mcFZ:c6]X^W]THMh6F0
+IhOTQLL2oMY8gC4K5CaE>S1
+S1
+R1
+w1765540426
+8./../../02_rtl/Selection_Sort.sv
+F./../../02_rtl/Selection_Sort.sv
+!i122 0
+L0 1 104
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@selection_@sort
+vSinglePort_RAM
+R3
+R4
+R5
+!i10b 1
+!s100 ZKD_7PgE=SXRCBlhQ9Tmi0
+IS[TVQJeDETNL8[O3OHdVk2
+S1
+R1
+w1765526891
+8./../../02_rtl/SinglePort_RAM.sv
+F./../../02_rtl/SinglePort_RAM.sv
+!i122 0
+L0 1 34
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@single@port_@r@a@m
+vSS_detect_edge
+R3
+R4
+R5
+!i10b 1
+!s100 RUPB:4HA5<B8e9N<1N=P?0
+IT8RRBbC[0@5zS<ozOnCzL0
+S1
+R1
+w1765533814
+8./../../02_rtl/SS_detect_edge.sv
+F./../../02_rtl/SS_detect_edge.sv
+!i122 0
+L0 3 34
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@s@s_detect_edge
+vtb_Selection_Sort
+R3
+R4
+R5
+!i10b 1
+!s100 Z5BI^9@;P1PX?l4EPK>d13
+IbE@e^SQBCC<bVbDWXj?cA1
+S1
+R1
+w1765545977
+8./../../03_verif/Topmodule/tb_Selection_Sort.sv
+F./../../03_verif/Topmodule/tb_Selection_Sort.sv
+!i122 0
+L0 3 72
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+ntb_@selection_@sort
+vUpdate_I
+R3
+R4
+R5
+!i10b 1
+!s100 zXAR[`OeQjH<S?AAN_hTi2
+IHeLDTF>[A6nOaU1HaDdVm1
+S1
+R1
+w1765545871
+8./../../02_rtl/Update_I.sv
+F./../../02_rtl/Update_I.sv
+!i122 0
+L0 1 48
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@update_@i
+vUpdate_J
+R3
+R4
+R5
+!i10b 1
+!s100 W[nIReneB:k1=F8O=CLRf2
+I@?8j@TS_bDNebZJmh]MKO3
+S1
+R1
+w1765545703
+8./../../02_rtl/Update_J.sv
+F./../../02_rtl/Update_J.sv
+!i122 0
+L0 1 58
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@update_@j
+vUpdate_MIN
+R3
+R4
+R5
+!i10b 1
+!s100 2[D:fEBV`3jGG`IojSCPR2
+I8mMO8kmXLYj?;16KCSc=Z1
+S1
+R1
+w1765509252
+8./../../02_rtl/Update_MIN.sv
+F./../../02_rtl/Update_MIN.sv
+!i122 0
+R12
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R2
+n@update_@m@i@n

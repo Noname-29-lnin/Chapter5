@@ -1,5 +1,5 @@
 xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s001: Started on Dec 12, 2025 at 06:40:19 EST
+TOOL:	xrun(64)	20.09-s001: Started on Dec 12, 2025 at 08:31:01 EST
 xrun
 	+xm64bit
 	-sv
@@ -85,8 +85,8 @@ file: ./../../02_rtl/Block_Addr.sv
 xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.Control_unit:sv <0x63b15bf8>
-			streams:   4, words:  8637
+		worklib.Control_unit:sv <0x4d721278>
+			streams:   4, words:  8892
 		worklib.RAM_write_data:sv <0x310942be>
 			streams:   5, words:  1415
 		worklib.Block_Write_data:sv <0x5dd7c8ff>
@@ -103,16 +103,16 @@ xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-
 			streams:   3, words:  1260
 		worklib.Update_MIN:sv <0x07bf8b44>
 			streams:   3, words:   718
-		worklib.Update_J:sv <0x3b59cc59>
-			streams:   9, words:  2186
-		worklib.Update_I:sv <0x445ad7c0>
-			streams:   9, words:  2282
-		worklib.Data_path:sv <0x32a66bc8>
+		worklib.Update_J:sv <0x229f6b75>
+			streams:  10, words:  2351
+		worklib.Update_I:sv <0x7bb303b5>
+			streams:  10, words:  2426
+		worklib.Data_path:sv <0x492195c6>
 			streams:  24, words:  7584
 		worklib.Selection_Sort:sv <0x36b10cec>
 			streams:  38, words:  8473
 		worklib.tb_Selection_Sort:sv <0x1cafea06>
-			streams:   9, words:  8025
+			streams:   9, words:  8352
 		worklib.SinglePort_RAM:sv <0x39dde8bd>
 			streams:   5, words:  1960
 	Building instance specific data structures.
@@ -120,12 +120,12 @@ xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-
 	Design hierarchy summary:
 		                 Instances  Unique
 		Modules:                16      15
-		Registers:             115     112
-		Scalar wires:           93       -
+		Registers:             116     113
+		Scalar wires:           92       -
 		Vectored wires:         55       -
-		Always blocks:          27      25
+		Always blocks:          29      27
 		Initial blocks:          3       3
-		Cont. assignments:      26      26
+		Cont. assignments:      24      24
 		Pseudo assignments:     75      75
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: worklib.tb_Selection_Sort:sv
@@ -134,27 +134,27 @@ xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
 xcelium> run
 >>> Sending START...
->>> DONE received at time 10050000
+>>> DONE received at time 23305000
 
 ===== RAM AFTER SORT =====
-RAM[0] = 04
-RAM[1] = ca
-RAM[2] = 14
+RAM[0] = 0b
+RAM[1] = 14
+RAM[2] = 28
 RAM[3] = 3d
-RAM[4] = 38
-RAM[5] = fa
-RAM[6] = e5
-RAM[7] = fc
-RAM[8] = 71
-RAM[9] = 86
-RAM[10] = 77
-RAM[11] = c9
-RAM[12] = 04
-RAM[13] = 63
-RAM[14] = a7
-RAM[15] = 92
+RAM[4] = 65
+RAM[5] = 6e
+RAM[6] = 80
+RAM[7] = 90
+RAM[8] = 95
+RAM[9] = 98
+RAM[10] = bd
+RAM[11] = bf
+RAM[12] = c4
+RAM[13] = c5
+RAM[14] = e2
+RAM[15] = f2
 >>> Saved sorted RAM to sorted_output.txt
-Simulation complete via $finish(1) at time 10070 NS + 0
+Simulation complete via $finish(1) at time 23325 NS + 0
 ../Topmodule/tb_Selection_Sort.sv:71         $finish;
 xcelium> exit
-TOOL:	xrun(64)	20.09-s001: Exiting on Dec 12, 2025 at 06:40:20 EST  (total: 00:00:01)
+TOOL:	xrun(64)	20.09-s001: Exiting on Dec 12, 2025 at 08:31:02 EST  (total: 00:00:01)

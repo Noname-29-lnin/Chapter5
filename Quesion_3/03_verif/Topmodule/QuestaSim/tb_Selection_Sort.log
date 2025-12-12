@@ -1,0 +1,59 @@
+# vsim -lib ./../Topmodule/QuestaSim/work -debugDB -l ./../Topmodule/QuestaSim/tb_Selection_Sort.log -voptargs="+acc" -assertdebug -c tb_Selection_Sort -wlf ./../Topmodule/QuestaSim/tb_Selection_Sort.wlf -do "cd ./../Topmodule/QuestaSim; log -r /*; run -all;" 
+# Start time: 20:28:49 on Dec 12,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-143) Recognized 1 FSM in module "Control_unit(fast)".
+# ** Note: (vopt-4301) Memory core inferred for signal 'mem_unit' width=8, depth=256, type=RAM at location ./../../02_rtl/SinglePort_RAM.sv:16
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.tb_Selection_Sort(fast)
+# Loading work.Selection_Sort(fast)
+# Loading work.Data_path(fast)
+# Loading work.Update_I(fast)
+# Loading work.Update_J(fast)
+# Loading work.Update_MIN(fast)
+# Loading work.Block_Addr(fast)
+# Loading work.RAM_addr(fast)
+# Loading work.Block_Read_data(fast)
+# Loading work.SS_detect_edge(fast)
+# Loading work.RAM_read_data(fast)
+# Loading work.Block_Write_data(fast)
+# Loading work.RAM_write_data(fast)
+# Loading work.Control_unit(fast)
+# Loading work.SinglePort_RAM(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$shm_open' is not defined.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_Selection_Sort File: ./../../03_verif/Topmodule/tb_Selection_Sort.sv Line: 44
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$shm_probe' is not defined.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_Selection_Sort File: ./../../03_verif/Topmodule/tb_Selection_Sort.sv Line: 45
+# ** Note: (vsim-8900) Creating design debug database ./../Topmodule/QuestaSim/tb_Selection_Sort.dbg.
+# cd ./../Topmodule/QuestaSim
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+#  log -r /*
+#  run -all
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$shm_open'
+#    Time: 0 ps  Iteration: 0  Process: /tb_Selection_Sort/#INITIAL#43 File: ./../../03_verif/Topmodule/tb_Selection_Sort.sv Line: 44
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$shm_probe'
+#    Time: 0 ps  Iteration: 0  Process: /tb_Selection_Sort/#INITIAL#43 File: ./../../03_verif/Topmodule/tb_Selection_Sort.sv Line: 45
+# >>> Sending START...
+# Break key hit
+# Break at ./../../03_verif/Topmodule/tb_Selection_Sort.sv line 20
+# Stopped at ./../../03_verif/Topmodule/tb_Selection_Sort.sv line 20
+# 
+# End time: 20:29:06 on Dec 12,2025, Elapsed time: 0:00:17
+# Errors: 2, Warnings: 3

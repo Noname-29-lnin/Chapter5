@@ -17,7 +17,7 @@ INC_WORK         = $(INC_DIR)/QuestaSim
 -include config.mk
 
 # Load Targets
-.PHONY: load view
+.PHONY: load
 load:
 	@echo "Saving configuration..."
 	@echo "TOPMODULE=$(TOPMODULE)" > config.mk
@@ -25,9 +25,6 @@ load:
 	@echo "LIB_DIR=$(LIB_DIR)" >> config.mk
 	@echo "RADIX=$(RADIX)" >> config.mk
 	@echo "-> Saved to config.mk"
-	@cat config.mk
-view:
-	@echo "View file Config.mk"
 	@cat config.mk
 
 # Targets
