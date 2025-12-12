@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+
+tb_RAM_read_data
+-ACCESS
++rwc
+-timescale
+1ns/1ps

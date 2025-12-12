@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sun Dec  7 00:11:57 2025
+Fitter Status : Successful - Fri Dec 12 15:05:13 2025
 Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 Revision Name : Selection_Sort
 Top-level Entity Name : Selection_Sort
 Family : Cyclone V
 Device : 5CEFA7F27C7
 Timing Models : Final
-Logic utilization (in ALMs) : 439 / 56,480 ( < 1 % )
-Total registers : 84
+Logic utilization (in ALMs) : 70 / 56,480 ( < 1 % )
+Total registers : 154
 Total pins : 12 / 336 ( 4 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 7,024,640 ( 0 % )
-Total RAM Blocks : 0 / 686 ( 0 % )
+Total block memory bits : 2,048 / 7,024,640 ( < 1 % )
+Total RAM Blocks : 1 / 686 ( < 1 % )
 Total DSP Blocks : 0 / 156 ( 0 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

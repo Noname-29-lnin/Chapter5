@@ -1,0 +1,1 @@
+s1(11Dec2025:23:15:41):  xrun +xm64bit -sv -f ./../Submodule/RAM_read_data/flist.f -top tb_RAM_read_data -access +rwc -clean -log ./../Submodule/RAM_read_data/Xcelium/compile.log +nctimescale+1ns/1ps +ntb_random_seed=automatic -allowredefinition -v93 

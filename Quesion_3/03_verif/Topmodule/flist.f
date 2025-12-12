@@ -1,6 +1,11 @@
 ./../../03_verif/Topmodule/tb_Selection_Sort.sv
+./../../02_rtl/Control_unit.sv
+./../../02_rtl/Data_path.sv
+./../../02_rtl/RAM_addr.sv
+./../../02_rtl/RAM_read_data.sv
+./../../02_rtl/RAM_write_data.sv
 ./../../02_rtl/Selection_Sort.sv
-// ./../../02_rtl/ControlUnit.sv
-// ./../../02_rtl/DataPath.sv
 ./../../02_rtl/SinglePort_RAM.sv
-// ./../../02_rtl/Swap_unit.sv
+./../../02_rtl/Update_I.sv
+./../../02_rtl/Update_J.sv
+./../../02_rtl/Update_MIN.sv

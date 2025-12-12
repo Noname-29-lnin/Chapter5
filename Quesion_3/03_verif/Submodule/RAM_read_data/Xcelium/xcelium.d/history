@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(11Dec2025:22:46:07):( xrun +xm64bit -sv -f ./../Submodule/RAM_read_data/flist.f -top tb_RAM_read_data -access +rwc -clean -log ./../Submodule/RAM_read_data/Xcelium/compile.log +nctimescale+1ns/1ps +ntb_random_seed=automatic -allowredefinition -v93 )

@@ -1,0 +1,84 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Dec 11, 2025 at 23:15:40 EST
+xrun
+	+xm64bit
+	-sv
+	-f ./../Submodule/RAM_read_data/flist.f
+		./../../03_verif/Submodule/RAM_read_data/tb_RAM_read_data.sv
+		./../../02_rtl/RAM_addr.sv
+		./../../02_rtl/RAM_read_data.sv
+		./../../02_rtl/SinglePort_RAM.sv
+	-top tb_RAM_read_data
+	-access +rwc
+	-clean
+	-log ./../Submodule/RAM_read_data/Xcelium/compile.log
+	+nctimescale+1ns/1ps
+	+ntb_random_seed=automatic
+	-allowredefinition
+	-v93
+
+   User defined plus("+") options:
+	+ntb_random_seed=automatic
+
+xrun: *W,OPDEPRREN: Command Line Option (+nctimescale+1ns/1ps) is deprecated. Use (+xmtimescale+1ns/1ps) instead.
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+file: ./../../03_verif/Submodule/RAM_read_data/tb_RAM_read_data.sv
+	module worklib.tb_RAM_read_data:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/RAM_addr.sv
+	module worklib.RAM_addr:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/RAM_read_data.sv
+	module worklib.RAM_read_data:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/SinglePort_RAM.sv
+	module worklib.SinglePort_RAM:sv
+		errors: 0, warnings: 0
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		tb_RAM_read_data
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.SinglePort_RAM:sv <0x613a1176>
+			streams:   5, words:  1976
+		worklib.RAM_addr:sv <0x2557240d>
+			streams:   3, words:   745
+		worklib.RAM_read_data:sv <0x4f95d0cf>
+			streams:   7, words:  1846
+		worklib.tb_RAM_read_data:sv <0x117a709c>
+			streams:  16, words: 10014
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 4       4
+		Registers:              18      18
+		Scalar wires:           16       -
+		Vectored wires:         11       -
+		Always blocks:           6       6
+		Initial blocks:          4       4
+		Cont. assignments:       2       2
+		Pseudo assignments:     13      13
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_RAM_read_data:sv
+Loading snapshot worklib.tb_RAM_read_data:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+[ADDR = 00] DATA = 51
+[ADDR = 01] DATA = 79
+[ADDR = 02] DATA = 88
+[ADDR = 03] DATA = 32
+[ADDR = 04] DATA = a6
+[ADDR = 05] DATA = 48
+[ADDR = 06] DATA = d5
+[ADDR = 07] DATA = 36
+[ADDR = 08] DATA = 62
+[ADDR = 09] DATA = 71
+Finish Testbench
+Simulation complete via $finish(1) at time 795 NS + 0
+../Submodule/RAM_read_data/tb_RAM_read_data.sv:83         $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Dec 11, 2025 at 23:15:41 EST  (total: 00:00:01)
