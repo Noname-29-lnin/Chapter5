@@ -3,51 +3,83 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'i_clk'
-Slack : -2.995
-TNS   : -231.451
+Slack : -3.131
+TNS   : -209.010
 
 Type  : Slow 1100mV 85C Model Hold 'i_clk'
-Slack : 0.350
+Slack : 0.256
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'i_clk'
+Slack : -0.553
+TNS   : -1.104
+
+Type  : Slow 1100mV 85C Model Removal 'i_clk'
+Slack : 0.931
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'i_clk'
-Slack : -3.166
-TNS   : -241.752
+Slack : -2.636
+TNS   : -201.155
 
 Type  : Slow 1100mV 0C Model Setup 'i_clk'
-Slack : -3.113
-TNS   : -227.544
+Slack : -3.358
+TNS   : -209.722
 
 Type  : Slow 1100mV 0C Model Hold 'i_clk'
-Slack : 0.330
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'i_clk'
+Slack : -0.470
+TNS   : -0.939
+
+Type  : Slow 1100mV 0C Model Removal 'i_clk'
+Slack : 0.880
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'i_clk'
-Slack : -3.166
-TNS   : -241.847
+Slack : -2.636
+TNS   : -201.662
 
 Type  : Fast 1100mV 85C Model Setup 'i_clk'
-Slack : -1.002
-TNS   : -37.784
+Slack : -1.147
+TNS   : -48.159
 
 Type  : Fast 1100mV 85C Model Hold 'i_clk'
-Slack : 0.172
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'i_clk'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'i_clk'
+Slack : 0.445
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'i_clk'
-Slack : -2.636
-TNS   : -112.848
+Slack : -2.174
+TNS   : -99.386
 
 Type  : Fast 1100mV 0C Model Setup 'i_clk'
-Slack : -0.955
-TNS   : -27.308
+Slack : -1.068
+TNS   : -41.840
 
 Type  : Fast 1100mV 0C Model Hold 'i_clk'
-Slack : 0.159
+Slack : 0.135
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'i_clk'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'i_clk'
+Slack : 0.401
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'i_clk'
-Slack : -2.636
-TNS   : -112.949
+Slack : -2.174
+TNS   : -99.465
 
 ------------------------------------------------------------

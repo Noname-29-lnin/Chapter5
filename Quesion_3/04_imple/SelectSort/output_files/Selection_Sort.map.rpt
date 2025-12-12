@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Selection_Sort
-Fri Dec 12 15:04:35 2025
+Fri Dec 12 20:39:22 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -17,24 +17,31 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   9. State Machine - |Selection_Sort|Control_unit:CONTROL_UNIT|state
  10. Registers Removed During Synthesis
  11. General Register Statistics
- 12. Registers Added for RAM Pass-Through Logic
+ 12. Registers Packed Into Inferred Megafunctions
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0|altsyncram_1jo1:auto_generated
+ 14. Source assignments for SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0|altsyncram_j4q1:auto_generated
  15. Parameter Settings for User Entity Instance: Top-level Entity: |Selection_Sort
  16. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT
  17. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Update_I:UPDATE_I_UNIT
  18. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Update_J:UPDATE_J_UNIT
  19. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Update_MIN:UPDATE_MIN_UNIT
- 20. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|RAM_addr:RAM_ADDR_UNIT
- 21. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|RAM_read_data:RAM_READ_DATA_UNIT
- 22. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|RAM_write_data:RAM_WRITE_DATA_UNIT
- 23. Parameter Settings for User Entity Instance: SinglePort_RAM:RAM_UNIT
- 24. Parameter Settings for Inferred Entity Instance: SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0
- 25. altsyncram Parameter Settings by Entity Instance
- 26. Port Connectivity Checks: "Data_path:DATA_PATH_UNIT|Update_J:UPDATE_J_UNIT"
- 27. Post-Synthesis Netlist Statistics for Top Partition
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
+ 20. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Addr:ADDR_RAM
+ 21. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Addr:ADDR_RAM|RAM_addr:RAM_ADDR_UNIT
+ 22. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM
+ 23. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM|SS_detect_edge:DETECT_EDGE
+ 24. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM|RAM_read_data:RAM_READ_DATAA
+ 25. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Write_data:WRITE_DATA
+ 26. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Write_data:WRITE_DATA|SS_detect_edge:DETECT_EDGE
+ 27. Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Write_data:WRITE_DATA|RAM_write_data:RAM_WRITE_DATA
+ 28. Parameter Settings for User Entity Instance: SinglePort_RAM:RAM_UNIT
+ 29. Parameter Settings for Inferred Entity Instance: SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0
+ 30. altsyncram Parameter Settings by Entity Instance
+ 31. Port Connectivity Checks: "Control_unit:CONTROL_UNIT"
+ 32. Port Connectivity Checks: "Data_path:DATA_PATH_UNIT|Update_J:UPDATE_J_UNIT"
+ 33. Port Connectivity Checks: "Data_path:DATA_PATH_UNIT"
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
 
 
 
@@ -61,13 +68,13 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Dec 12 15:04:35 2025           ;
+; Analysis & Synthesis Status     ; Successful - Fri Dec 12 20:39:22 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; Selection_Sort                                  ;
 ; Top-level Entity Name           ; Selection_Sort                                  ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 149                                             ;
+; Total registers                 ; 105                                             ;
 ; Total pins                      ; 12                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 2,048                                           ;
@@ -186,32 +193,37 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                      ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
-; ../../02_rtl/Update_MIN.sv       ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Update_MIN.sv                       ;         ;
-; ../../02_rtl/Update_J.sv         ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Update_J.sv                         ;         ;
-; ../../02_rtl/Update_I.sv         ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Update_I.sv                         ;         ;
-; ../../02_rtl/SinglePort_RAM.sv   ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/SinglePort_RAM.sv                   ;         ;
-; ../../02_rtl/Selection_Sort.sv   ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Selection_Sort.sv                   ;         ;
-; ../../02_rtl/RAM_write_data.sv   ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/RAM_write_data.sv                   ;         ;
-; ../../02_rtl/RAM_read_data.sv    ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/RAM_read_data.sv                    ;         ;
-; ../../02_rtl/RAM_addr.sv         ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/RAM_addr.sv                         ;         ;
-; ../../02_rtl/Data_path.sv        ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv                        ;         ;
-; ../../02_rtl/Control_unit.sv     ; yes             ; User SystemVerilog HDL File  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Control_unit.sv                     ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf                ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc         ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc                   ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.inc                ;         ;
-; aglobal241.inc                   ; yes             ; Megafunction                 ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/a_rdenreg.inc                 ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/altrom.inc                    ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/altram.inc                    ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc                  ;         ;
-; db/altsyncram_1jo1.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/04_imple/SelectSort/db/altsyncram_1jo1.tdf ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                         ;
++--------------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                       ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                      ; Library ;
++--------------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../../02_rtl/Update_MIN.sv                             ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Update_MIN.sv                                                       ;         ;
+; ../../02_rtl/Update_J.sv                               ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Update_J.sv                                                         ;         ;
+; ../../02_rtl/Update_I.sv                               ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Update_I.sv                                                         ;         ;
+; ../../02_rtl/SS_detect_edge.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/SS_detect_edge.sv                                                   ;         ;
+; ../../02_rtl/SinglePort_RAM.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/SinglePort_RAM.sv                                                   ;         ;
+; ../../02_rtl/Selection_Sort.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Selection_Sort.sv                                                   ;         ;
+; ../../02_rtl/RAM_write_data.sv                         ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/RAM_write_data.sv                                                   ;         ;
+; ../../02_rtl/RAM_read_data.sv                          ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/RAM_read_data.sv                                                    ;         ;
+; ../../02_rtl/RAM_addr.sv                               ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/RAM_addr.sv                                                         ;         ;
+; ../../02_rtl/Data_path.sv                              ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv                                                        ;         ;
+; ../../02_rtl/Control_unit.sv                           ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Control_unit.sv                                                     ;         ;
+; ../../02_rtl/Block_Write_data.sv                       ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Write_data.sv                                                 ;         ;
+; ../../02_rtl/Block_Read_data.sv                        ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Read_data.sv                                                  ;         ;
+; ../../02_rtl/Block_Addr.sv                             ; yes             ; User SystemVerilog HDL File                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Addr.sv                                                       ;         ;
+; altsyncram.tdf                                         ; yes             ; Megafunction                                          ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf                                                ;         ;
+; stratix_ram_block.inc                                  ; yes             ; Megafunction                                          ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                                         ;         ;
+; lpm_mux.inc                                            ; yes             ; Megafunction                                          ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc                                                   ;         ;
+; lpm_decode.inc                                         ; yes             ; Megafunction                                          ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.inc                                                ;         ;
+; aglobal241.inc                                         ; yes             ; Megafunction                                          ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                                                ;         ;
+; a_rdenreg.inc                                          ; yes             ; Megafunction                                          ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/a_rdenreg.inc                                                 ;         ;
+; altrom.inc                                             ; yes             ; Megafunction                                          ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/altrom.inc                                                    ;         ;
+; altram.inc                                             ; yes             ; Megafunction                                          ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/altram.inc                                                    ;         ;
+; altdpram.inc                                           ; yes             ; Megafunction                                          ; /home/noname/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc                                                  ;         ;
+; db/altsyncram_j4q1.tdf                                 ; yes             ; Auto-Generated Megafunction                           ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/04_imple/SelectSort/db/altsyncram_j4q1.tdf                                 ;         ;
+; db/Selection_Sort.ram0_SinglePort_RAM_f7294dc8.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; /home/noname/Documents/project_tiny/Chapter5/Quesion_3/04_imple/SelectSort/db/Selection_Sort.ram0_SinglePort_RAM_f7294dc8.hdl.mif ;         ;
++--------------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -219,16 +231,16 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 89          ;
+; Estimate of Logic utilization (ALMs needed) ; 59          ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 89          ;
-;     -- 7 input functions                    ; 8           ;
-;     -- 6 input functions                    ; 7           ;
-;     -- 5 input functions                    ; 21          ;
-;     -- 4 input functions                    ; 7           ;
-;     -- <=3 input functions                  ; 46          ;
+; Combinational ALUT usage for logic          ; 76          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 5           ;
+;     -- 5 input functions                    ; 14          ;
+;     -- 4 input functions                    ; 18          ;
+;     -- <=3 input functions                  ; 39          ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 149         ;
+; Dedicated logic registers                   ; 105         ;
 ;                                             ;             ;
 ; I/O pins                                    ; 12          ;
 ; Total MLAB memory bits                      ; 0           ;
@@ -237,64 +249,70 @@ on the Quartus Prime software download page.
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; i_clk~input ;
-; Maximum fan-out                             ; 157         ;
-; Total fan-out                               ; 1085        ;
-; Average fan-out                             ; 4.02        ;
+; Maximum fan-out                             ; 113         ;
+; Total fan-out                               ; 803         ;
+; Average fan-out                             ; 3.77        ;
 +---------------------------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                     ;
-+--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                              ; Entity Name     ; Library Name ;
-+--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |Selection_Sort                            ; 89 (1)              ; 149 (1)                   ; 2048              ; 0          ; 12   ; 0            ; |Selection_Sort                                                                                  ; Selection_Sort  ; work         ;
-;    |Control_unit:CONTROL_UNIT|             ; 20 (20)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Control_unit:CONTROL_UNIT                                                        ; Control_unit    ; work         ;
-;    |Data_path:DATA_PATH_UNIT|              ; 55 (17)             ; 81 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT                                                         ; Data_path       ; work         ;
-;       |RAM_addr:RAM_ADDR_UNIT|             ; 1 (1)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|RAM_addr:RAM_ADDR_UNIT                                  ; RAM_addr        ; work         ;
-;       |RAM_read_data:RAM_READ_DATA_UNIT|   ; 8 (8)               ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|RAM_read_data:RAM_READ_DATA_UNIT                        ; RAM_read_data   ; work         ;
-;       |RAM_write_data:RAM_WRITE_DATA_UNIT| ; 0 (0)               ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|RAM_write_data:RAM_WRITE_DATA_UNIT                      ; RAM_write_data  ; work         ;
-;       |Update_I:UPDATE_I_UNIT|             ; 15 (15)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Update_I:UPDATE_I_UNIT                                  ; Update_I        ; work         ;
-;       |Update_J:UPDATE_J_UNIT|             ; 13 (13)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Update_J:UPDATE_J_UNIT                                  ; Update_J        ; work         ;
-;       |Update_MIN:UPDATE_MIN_UNIT|         ; 1 (1)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Update_MIN:UPDATE_MIN_UNIT                              ; Update_MIN      ; work         ;
-;    |SinglePort_RAM:RAM_UNIT|               ; 13 (13)             ; 42 (42)                   ; 2048              ; 0          ; 0    ; 0            ; |Selection_Sort|SinglePort_RAM:RAM_UNIT                                                          ; SinglePort_RAM  ; work         ;
-;       |altsyncram:mem_unit_rtl_0|          ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |Selection_Sort|SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0                                ; altsyncram      ; work         ;
-;          |altsyncram_1jo1:auto_generated|  ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |Selection_Sort|SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0|altsyncram_1jo1:auto_generated ; altsyncram_1jo1 ; work         ;
-+--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------+-----------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                       ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                ; Entity Name      ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------+------------------+--------------+
+; |Selection_Sort                           ; 76 (0)              ; 105 (1)                   ; 2048              ; 0          ; 12   ; 0            ; |Selection_Sort                                                                                    ; Selection_Sort   ; work         ;
+;    |Control_unit:CONTROL_UNIT|            ; 20 (20)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Control_unit:CONTROL_UNIT                                                          ; Control_unit     ; work         ;
+;    |Data_path:DATA_PATH_UNIT|             ; 55 (6)              ; 87 (1)                    ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT                                                           ; Data_path        ; work         ;
+;       |Block_Addr:ADDR_RAM|               ; 9 (8)               ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Block_Addr:ADDR_RAM                                       ; Block_Addr       ; work         ;
+;          |RAM_addr:RAM_ADDR_UNIT|         ; 1 (1)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Block_Addr:ADDR_RAM|RAM_addr:RAM_ADDR_UNIT                ; RAM_addr         ; work         ;
+;       |Block_Read_data:READ_RAM|          ; 14 (5)              ; 40 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM                                  ; Block_Read_data  ; work         ;
+;          |RAM_read_data:RAM_READ_DATAA|   ; 8 (8)               ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM|RAM_read_data:RAM_READ_DATAA     ; RAM_read_data    ; work         ;
+;          |SS_detect_edge:DETECT_EDGE|     ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM|SS_detect_edge:DETECT_EDGE       ; SS_detect_edge   ; work         ;
+;       |Block_Write_data:WRITE_DATA|       ; 1 (0)               ; 12 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Block_Write_data:WRITE_DATA                               ; Block_Write_data ; work         ;
+;          |RAM_write_data:RAM_WRITE_DATA|  ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Block_Write_data:WRITE_DATA|RAM_write_data:RAM_WRITE_DATA ; RAM_write_data   ; work         ;
+;          |SS_detect_edge:DETECT_EDGE|     ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Block_Write_data:WRITE_DATA|SS_detect_edge:DETECT_EDGE    ; SS_detect_edge   ; work         ;
+;       |Update_I:UPDATE_I_UNIT|            ; 13 (13)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Update_I:UPDATE_I_UNIT                                    ; Update_I         ; work         ;
+;       |Update_J:UPDATE_J_UNIT|            ; 11 (11)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Update_J:UPDATE_J_UNIT                                    ; Update_J         ; work         ;
+;       |Update_MIN:UPDATE_MIN_UNIT|        ; 1 (1)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Update_MIN:UPDATE_MIN_UNIT                                ; Update_MIN       ; work         ;
+;    |SinglePort_RAM:RAM_UNIT|              ; 1 (1)               ; 1 (1)                     ; 2048              ; 0          ; 0    ; 0            ; |Selection_Sort|SinglePort_RAM:RAM_UNIT                                                            ; SinglePort_RAM   ; work         ;
+;       |altsyncram:mem_unit_rtl_0|         ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |Selection_Sort|SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0                                  ; altsyncram       ; work         ;
+;          |altsyncram_j4q1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |Selection_Sort|SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0|altsyncram_j4q1:auto_generated   ; altsyncram_j4q1  ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                ;
-+---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; Name                                                                                        ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
-+---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0|altsyncram_1jo1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048 ; None ;
-+---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                  ;
++---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+--------------------------------------------------------+
+; Name                                                                                        ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                                    ;
++---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+--------------------------------------------------------+
+; SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0|altsyncram_j4q1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048 ; db/Selection_Sort.ram0_SinglePort_RAM_f7294dc8.hdl.mif ;
++---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+--------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |Selection_Sort|Control_unit:CONTROL_UNIT|state                                                                                                                                                                                                                                                       ;
-+------------------------+------------+----------------------+----------------+----------------------+--------------+----------------+------------------------+-----------------------+----------------------+-----------------+---------------------+-----------------+---------------------+-------------+------------+
-; Name                   ; state.DONE ; state.WRITE_DATA_KEY ; state.UPDATE_I ; state.WRITE_TEMP_MIN ; state.WAIT_J ; state.UPDATE_J ; state.UPDATE_MIN_VALUE ; state.COMP_TEMP_VALUE ; state.READ_TEMP_DATA ; state.COMPARE_J ; state.READ_TEMP_MIN ; state.COMPARE_I ; state.READ_DATA_KEY ; state.START ; state.IDLE ;
-+------------------------+------------+----------------------+----------------+----------------------+--------------+----------------+------------------------+-----------------------+----------------------+-----------------+---------------------+-----------------+---------------------+-------------+------------+
-; state.IDLE             ; 0          ; 0                    ; 0              ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 0          ;
-; state.START            ; 0          ; 0                    ; 0              ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 1           ; 1          ;
-; state.READ_DATA_KEY    ; 0          ; 0                    ; 0              ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 1                   ; 0           ; 1          ;
-; state.COMPARE_I        ; 0          ; 0                    ; 0              ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 1               ; 0                   ; 0           ; 1          ;
-; state.READ_TEMP_MIN    ; 0          ; 0                    ; 0              ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 1                   ; 0               ; 0                   ; 0           ; 1          ;
-; state.COMPARE_J        ; 0          ; 0                    ; 0              ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 1               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
-; state.READ_TEMP_DATA   ; 0          ; 0                    ; 0              ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 1                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
-; state.COMP_TEMP_VALUE  ; 0          ; 0                    ; 0              ; 0                    ; 0            ; 0              ; 0                      ; 1                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
-; state.UPDATE_MIN_VALUE ; 0          ; 0                    ; 0              ; 0                    ; 0            ; 0              ; 1                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
-; state.UPDATE_J         ; 0          ; 0                    ; 0              ; 0                    ; 0            ; 1              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
-; state.WAIT_J           ; 0          ; 0                    ; 0              ; 0                    ; 1            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
-; state.WRITE_TEMP_MIN   ; 0          ; 0                    ; 0              ; 1                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
-; state.UPDATE_I         ; 0          ; 0                    ; 1              ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
-; state.WRITE_DATA_KEY   ; 0          ; 1                    ; 0              ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
-; state.DONE             ; 1          ; 0                    ; 0              ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
-+------------------------+------------+----------------------+----------------+----------------------+--------------+----------------+------------------------+-----------------------+----------------------+-----------------+---------------------+-----------------+---------------------+-------------+------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Selection_Sort|Control_unit:CONTROL_UNIT|state                                                                                                                                                                                                                                                                            ;
++------------------------+--------------+----------------+----------------------+------------------+----------------------+--------------+----------------+------------------------+-----------------------+----------------------+-----------------+---------------------+-----------------+---------------------+-------------+------------+
+; Name                   ; state.WAIT_I ; state.UPDATE_I ; state.WRITE_DATA_KEY ; state.WAIT_WRITE ; state.WRITE_TEMP_MIN ; state.WAIT_J ; state.UPDATE_J ; state.UPDATE_MIN_VALUE ; state.COMP_TEMP_VALUE ; state.READ_TEMP_DATA ; state.COMPARE_J ; state.READ_TEMP_MIN ; state.COMPARE_I ; state.READ_DATA_KEY ; state.START ; state.IDLE ;
++------------------------+--------------+----------------+----------------------+------------------+----------------------+--------------+----------------+------------------------+-----------------------+----------------------+-----------------+---------------------+-----------------+---------------------+-------------+------------+
+; state.IDLE             ; 0            ; 0              ; 0                    ; 0                ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 0          ;
+; state.START            ; 0            ; 0              ; 0                    ; 0                ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 1           ; 1          ;
+; state.READ_DATA_KEY    ; 0            ; 0              ; 0                    ; 0                ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 1                   ; 0           ; 1          ;
+; state.COMPARE_I        ; 0            ; 0              ; 0                    ; 0                ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 1               ; 0                   ; 0           ; 1          ;
+; state.READ_TEMP_MIN    ; 0            ; 0              ; 0                    ; 0                ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 1                   ; 0               ; 0                   ; 0           ; 1          ;
+; state.COMPARE_J        ; 0            ; 0              ; 0                    ; 0                ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 1               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
+; state.READ_TEMP_DATA   ; 0            ; 0              ; 0                    ; 0                ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 1                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
+; state.COMP_TEMP_VALUE  ; 0            ; 0              ; 0                    ; 0                ; 0                    ; 0            ; 0              ; 0                      ; 1                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
+; state.UPDATE_MIN_VALUE ; 0            ; 0              ; 0                    ; 0                ; 0                    ; 0            ; 0              ; 1                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
+; state.UPDATE_J         ; 0            ; 0              ; 0                    ; 0                ; 0                    ; 0            ; 1              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
+; state.WAIT_J           ; 0            ; 0              ; 0                    ; 0                ; 0                    ; 1            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
+; state.WRITE_TEMP_MIN   ; 0            ; 0              ; 0                    ; 0                ; 1                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
+; state.WAIT_WRITE       ; 0            ; 0              ; 0                    ; 1                ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
+; state.WRITE_DATA_KEY   ; 0            ; 0              ; 1                    ; 0                ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
+; state.UPDATE_I         ; 0            ; 1              ; 0                    ; 0                ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
+; state.WAIT_I           ; 1            ; 0              ; 0                    ; 0                ; 0                    ; 0            ; 0              ; 0                      ; 0                     ; 0                    ; 0               ; 0                   ; 0               ; 0                   ; 0           ; 1          ;
++------------------------+--------------+----------------+----------------------+------------------+----------------------+--------------+----------------+------------------------+-----------------------+----------------------+-----------------+---------------------+-----------------+---------------------+-------------+------------+
 
 
 +------------------------------------------------------------+
@@ -315,61 +333,36 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 149   ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 26    ;
-; Number of registers using Asynchronous Clear ; 124   ;
+; Total registers                              ; 105   ;
+; Number of registers using Synchronous Clear  ; 8     ;
+; Number of registers using Synchronous Load   ; 16    ;
+; Number of registers using Asynchronous Clear ; 105   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 89    ;
+; Number of registers using Clock Enable       ; 66    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Registers Added for RAM Pass-Through Logic                                                 ;
-+---------------------------------------------------+----------------------------------------+
-; Register Name                                     ; RAM Name                               ;
-+---------------------------------------------------+----------------------------------------+
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[0]  ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[1]  ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[2]  ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[3]  ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[4]  ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[5]  ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[6]  ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[7]  ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[8]  ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[9]  ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[10] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[11] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[12] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[13] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[14] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[15] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[16] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[17] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[18] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[19] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[20] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[21] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[22] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[23] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0_bypass[24] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ;
-+---------------------------------------------------+----------------------------------------+
++--------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                         ;
++--------------------------------------+----------------------------------------+------+
+; Register Name                        ; Megafunction                           ; Type ;
++--------------------------------------+----------------------------------------+------+
+; SinglePort_RAM:RAM_UNIT|o_data[0..7] ; SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0 ; RAM  ;
++--------------------------------------+----------------------------------------+------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Selection_Sort|SinglePort_RAM:RAM_UNIT|o_data[0]      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Selection_Sort|Data_path:DATA_PATH_UNIT|w_addr_ram[7] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Selection_Sort|Data_path:DATA_PATH_UNIT|Block_Addr:ADDR_RAM|RAM_addr:RAM_ADDR_UNIT|o_addr_ram[4] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------+
-; Source assignments for SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0|altsyncram_1jo1:auto_generated ;
+; Source assignments for SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0|altsyncram_j4q1:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                        ;
 +---------------------------------+--------------------+------+-------------------------------------------+
@@ -379,12 +372,13 @@ Encoding Type:  One-Hot
 
 +--------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Top-level Entity: |Selection_Sort ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; SIZE_ADDR      ; 8     ; Signed Integer                                        ;
-; SIZE_DATA      ; 8     ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
++----------------+----------------------------------------------+----------------+
+; Parameter Name ; Value                                        ; Type           ;
++----------------+----------------------------------------------+----------------+
+; SIZE_ADDR      ; 8                                            ; Signed Integer ;
+; PATH_RAM       ; ./../03_verif/Topmodule/tools/random_hex.txt ; String         ;
+; SIZE_DATA      ; 8                                            ; Signed Integer ;
++----------------+----------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -429,105 +423,156 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|RAM_addr:RAM_ADDR_UNIT ;
-+----------------+-------+---------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                ;
-+----------------+-------+---------------------------------------------------------------------+
-; SIZE_ADDR      ; 8     ; Signed Integer                                                      ;
-+----------------+-------+---------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Addr:ADDR_RAM ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; SIZE_ADDR      ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|RAM_read_data:RAM_READ_DATA_UNIT ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                          ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; SIZE_DATA      ; 8     ; Signed Integer                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Addr:ADDR_RAM|RAM_addr:RAM_ADDR_UNIT ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; SIZE_ADDR      ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|RAM_write_data:RAM_WRITE_DATA_UNIT ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                            ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; SIZE_DATA      ; 8     ; Signed Integer                                                                  ;
-+----------------+-------+---------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; SIZE_DATA      ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: SinglePort_RAM:RAM_UNIT ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; SIZE_ADDR      ; 8     ; Signed Integer                              ;
-; SIZE_DATA      ; 8     ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM|SS_detect_edge:DETECT_EDGE ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; POS_EDGE       ; 1     ; Signed Integer                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0 ;
-+------------------------------------+----------------------+----------------------------------------+
-; Parameter Name                     ; Value                ; Type                                   ;
-+------------------------------------+----------------------+----------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                             ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                           ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                           ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                         ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                ;
-; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                ;
-; WIDTH_A                            ; 8                    ; Untyped                                ;
-; WIDTHAD_A                          ; 8                    ; Untyped                                ;
-; NUMWORDS_A                         ; 256                  ; Untyped                                ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                ;
-; WIDTH_B                            ; 8                    ; Untyped                                ;
-; WIDTHAD_B                          ; 8                    ; Untyped                                ;
-; NUMWORDS_B                         ; 256                  ; Untyped                                ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                ;
-; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                ;
-; BYTE_SIZE                          ; 8                    ; Untyped                                ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped                                ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
-; INIT_FILE                          ; UNUSED               ; Untyped                                ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                ;
-; CBXI_PARAMETER                     ; altsyncram_1jo1      ; Untyped                                ;
-+------------------------------------+----------------------+----------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM|RAM_read_data:RAM_READ_DATAA ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; SIZE_DATA      ; 8     ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Write_data:WRITE_DATA ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; SIZE_DATA      ; 8     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Write_data:WRITE_DATA|SS_detect_edge:DETECT_EDGE ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; POS_EDGE       ; 1     ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Data_path:DATA_PATH_UNIT|Block_Write_data:WRITE_DATA|RAM_write_data:RAM_WRITE_DATA ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; SIZE_DATA      ; 8     ; Signed Integer                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SinglePort_RAM:RAM_UNIT           ;
++----------------+----------------------------------------------+----------------+
+; Parameter Name ; Value                                        ; Type           ;
++----------------+----------------------------------------------+----------------+
+; SIZE_ADDR      ; 8                                            ; Signed Integer ;
+; PATH_RAM       ; ./../03_verif/Topmodule/tools/random_hex.txt ; String         ;
+; SIZE_DATA      ; 8                                            ; Signed Integer ;
++----------------+----------------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0           ;
++------------------------------------+--------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                  ; Type           ;
++------------------------------------+--------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                      ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                     ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                    ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                     ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                    ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                      ; Untyped        ;
+; OPERATION_MODE                     ; DUAL_PORT                                              ; Untyped        ;
+; WIDTH_A                            ; 8                                                      ; Untyped        ;
+; WIDTHAD_A                          ; 8                                                      ; Untyped        ;
+; NUMWORDS_A                         ; 256                                                    ; Untyped        ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                           ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                   ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                   ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                   ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                   ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                   ; Untyped        ;
+; WIDTH_B                            ; 8                                                      ; Untyped        ;
+; WIDTHAD_B                          ; 8                                                      ; Untyped        ;
+; NUMWORDS_B                         ; 256                                                    ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                                 ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                 ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                 ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                                 ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                           ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                 ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                   ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                   ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                   ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                   ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                   ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                   ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                      ; Untyped        ;
+; WIDTH_BYTEENA_B                    ; 1                                                      ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                   ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                      ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                              ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                   ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                   ; Untyped        ;
+; INIT_FILE                          ; db/Selection_Sort.ram0_SinglePort_RAM_f7294dc8.hdl.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                 ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                      ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                                 ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                                 ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                                 ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                                 ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                        ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                        ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                  ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                  ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                      ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone V                                              ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_j4q1                                        ; Untyped        ;
++------------------------------------+--------------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -544,11 +589,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
 ;     -- WIDTH_B                            ; 8                                                 ;
 ;     -- NUMWORDS_B                         ; 256                                               ;
-;     -- ADDRESS_REG_B                      ; CLOCK0                                            ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                            ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                          ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                         ;
 +-------------------------------------------+---------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "Control_unit:CONTROL_UNIT"  ;
++-----------+--------+----------+------------------------+
+; Port      ; Type   ; Severity ; Details                ;
++-----------+--------+----------+------------------------+
+; o_start_j ; Output ; Info     ; Explicitly unconnected ;
++-----------+--------+----------+------------------------+
 
 
 +-----------------------------------------------------------------------------+
@@ -560,37 +614,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+--------------------------------------------------+
 
 
++-------------------------------------------------------+
+; Port Connectivity Checks: "Data_path:DATA_PATH_UNIT"  ;
++-----------+-------+----------+------------------------+
+; Port      ; Type  ; Severity ; Details                ;
++-----------+-------+----------+------------------------+
+; i_start_j ; Input ; Info     ; Explicitly unconnected ;
++-----------+-------+----------+------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 149                         ;
-;     CLR               ; 41                          ;
-;     CLR SLD           ; 2                           ;
-;     ENA               ; 8                           ;
-;     ENA CLR           ; 57                          ;
-;     ENA CLR SLD       ; 24                          ;
-;     plain             ; 17                          ;
-; arriav_lcell_comb     ; 89                          ;
+; arriav_ff             ; 105                         ;
+;     CLR               ; 39                          ;
+;     ENA CLR           ; 42                          ;
+;     ENA CLR SCLR      ; 8                           ;
+;     ENA CLR SLD       ; 16                          ;
+; arriav_lcell_comb     ; 76                          ;
 ;     arith             ; 16                          ;
 ;         1 data inputs ; 8                           ;
 ;         3 data inputs ; 8                           ;
-;     extend            ; 8                           ;
-;         7 data inputs ; 8                           ;
-;     normal            ; 65                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 17                          ;
-;         4 data inputs ; 7                           ;
-;         5 data inputs ; 21                          ;
-;         6 data inputs ; 7                           ;
+;     normal            ; 60                          ;
+;         2 data inputs ; 14                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 18                          ;
+;         5 data inputs ; 14                          ;
+;         6 data inputs ; 5                           ;
 ; boundary_port         ; 12                          ;
 ; stratixv_ram_block    ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.70                        ;
-; Average LUT depth     ; 1.58                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.36                        ;
 +-----------------------+-----------------------------+
 
 
@@ -609,7 +666,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Fri Dec 12 15:04:23 2025
+    Info: Processing started: Fri Dec 12 20:39:16 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Selection_Sort -c Selection_Sort
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -619,6 +676,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file /home/n
     Info (12023): Found entity 1: Update_J File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Update_J.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Update_I.sv
     Info (12023): Found entity 1: Update_I File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Update_I.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/SS_detect_edge.sv
+    Info (12023): Found entity 1: SS_detect_edge File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/SS_detect_edge.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/SinglePort_RAM.sv
     Info (12023): Found entity 1: SinglePort_RAM File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/SinglePort_RAM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Selection_Sort.sv
@@ -630,21 +689,32 @@ Info (12021): Found 1 design units, including 1 entities, in source file /home/n
 Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/RAM_addr.sv
     Info (12023): Found entity 1: RAM_addr File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/RAM_addr.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv
-    Info (12023): Found entity 1: Data_path File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 1
+    Info (12023): Found entity 1: Data_path File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 162
 Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Control_unit.sv
     Info (12023): Found entity 1: Control_unit File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Control_unit.sv Line: 1
-Warning (10222): Verilog HDL Parameter Declaration warning at SinglePort_RAM.sv(15): Parameter Declaration in module "SinglePort_RAM" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/SinglePort_RAM.sv Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Write_data.sv
+    Info (12023): Found entity 1: Block_Write_data File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Write_data.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Read_data.sv
+    Info (12023): Found entity 1: Block_Read_data File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Read_data.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Addr.sv
+    Info (12023): Found entity 1: Block_Addr File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Addr.sv Line: 1
 Info (12127): Elaborating entity "Selection_Sort" for the top level hierarchy
-Info (12128): Elaborating entity "Data_path" for hierarchy "Data_path:DATA_PATH_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Selection_Sort.sv Line: 60
-Info (12128): Elaborating entity "Update_I" for hierarchy "Data_path:DATA_PATH_UNIT|Update_I:UPDATE_I_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 62
-Info (12128): Elaborating entity "Update_J" for hierarchy "Data_path:DATA_PATH_UNIT|Update_J:UPDATE_J_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 83
-Info (12128): Elaborating entity "Update_MIN" for hierarchy "Data_path:DATA_PATH_UNIT|Update_MIN:UPDATE_MIN_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 95
-Info (12128): Elaborating entity "RAM_addr" for hierarchy "Data_path:DATA_PATH_UNIT|RAM_addr:RAM_ADDR_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 107
-Info (12128): Elaborating entity "RAM_read_data" for hierarchy "Data_path:DATA_PATH_UNIT|RAM_read_data:RAM_READ_DATA_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 118
-Info (12128): Elaborating entity "RAM_write_data" for hierarchy "Data_path:DATA_PATH_UNIT|RAM_write_data:RAM_WRITE_DATA_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 158
-Info (12128): Elaborating entity "Control_unit" for hierarchy "Control_unit:CONTROL_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Selection_Sort.sv Line: 79
-Info (12128): Elaborating entity "SinglePort_RAM" for hierarchy "SinglePort_RAM:RAM_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Selection_Sort.sv Line: 93
-Warning (276020): Inferred RAM node "SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Info (12128): Elaborating entity "Data_path" for hierarchy "Data_path:DATA_PATH_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Selection_Sort.sv Line: 61
+Info (12128): Elaborating entity "Update_I" for hierarchy "Data_path:DATA_PATH_UNIT|Update_I:UPDATE_I_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 224
+Info (12128): Elaborating entity "Update_J" for hierarchy "Data_path:DATA_PATH_UNIT|Update_J:UPDATE_J_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 245
+Info (12128): Elaborating entity "Update_MIN" for hierarchy "Data_path:DATA_PATH_UNIT|Update_MIN:UPDATE_MIN_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 257
+Info (12128): Elaborating entity "Block_Addr" for hierarchy "Data_path:DATA_PATH_UNIT|Block_Addr:ADDR_RAM" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 271
+Info (12128): Elaborating entity "RAM_addr" for hierarchy "Data_path:DATA_PATH_UNIT|Block_Addr:ADDR_RAM|RAM_addr:RAM_ADDR_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Addr.sv Line: 28
+Info (12128): Elaborating entity "Block_Read_data" for hierarchy "Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 285
+Info (12128): Elaborating entity "SS_detect_edge" for hierarchy "Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM|SS_detect_edge:DETECT_EDGE" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Read_data.sv Line: 35
+Info (12128): Elaborating entity "RAM_read_data" for hierarchy "Data_path:DATA_PATH_UNIT|Block_Read_data:READ_RAM|RAM_read_data:RAM_READ_DATAA" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Read_data.sv Line: 56
+Info (12128): Elaborating entity "Block_Write_data" for hierarchy "Data_path:DATA_PATH_UNIT|Block_Write_data:WRITE_DATA" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Data_path.sv Line: 298
+Info (12128): Elaborating entity "RAM_write_data" for hierarchy "Data_path:DATA_PATH_UNIT|Block_Write_data:WRITE_DATA|RAM_write_data:RAM_WRITE_DATA" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Block_Write_data.sv Line: 40
+Info (12128): Elaborating entity "Control_unit" for hierarchy "Control_unit:CONTROL_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Selection_Sort.sv Line: 81
+Info (10264): Verilog HDL Case Statement information at Control_unit.sv(291): all case item expressions in this case statement are onehot File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Control_unit.sv Line: 291
+Info (12128): Elaborating entity "SinglePort_RAM" for hierarchy "SinglePort_RAM:RAM_UNIT" File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/Selection_Sort.sv Line: 95
+Warning (10850): Verilog HDL warning at SinglePort_RAM.sv(18): number of words (16) in memory file does not match the number of elements in the address range [0:255] File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/02_rtl/SinglePort_RAM.sv Line: 18
+Warning (276027): Inferred dual-clock RAM node "SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "SinglePort_RAM:RAM_UNIT|mem_unit_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -658,10 +728,10 @@ Info (19000): Inferred 1 megafunctions from design logic
         Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
         Info (286033): Parameter ADDRESS_ACLR_B set to NONE
         Info (286033): Parameter OUTDATA_ACLR_B set to NONE
-        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+        Info (286033): Parameter INIT_FILE set to db/Selection_Sort.ram0_SinglePort_RAM_f7294dc8.hdl.mif
 Info (12130): Elaborated megafunction instantiation "SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0"
 Info (12133): Instantiated megafunction "SinglePort_RAM:RAM_UNIT|altsyncram:mem_unit_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -675,25 +745,25 @@ Info (12133): Instantiated megafunction "SinglePort_RAM:RAM_UNIT|altsyncram:mem_
     Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
     Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
     Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
-    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1jo1.tdf
-    Info (12023): Found entity 1: altsyncram_1jo1 File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/04_imple/SelectSort/db/altsyncram_1jo1.tdf Line: 28
+    Info (12134): Parameter "INIT_FILE" = "db/Selection_Sort.ram0_SinglePort_RAM_f7294dc8.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_j4q1.tdf
+    Info (12023): Found entity 1: altsyncram_j4q1 File: /home/noname/Documents/project_tiny/Chapter5/Quesion_3/04_imple/SelectSort/db/altsyncram_j4q1.tdf Line: 28
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 220 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 155 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 200 logic cells
+    Info (21061): Implemented 135 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 497 megabytes
-    Info: Processing ended: Fri Dec 12 15:04:35 2025
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 485 megabytes
+    Info: Processing ended: Fri Dec 12 20:39:22 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:14
 
 

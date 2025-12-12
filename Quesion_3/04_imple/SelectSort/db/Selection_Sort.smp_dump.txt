@@ -1,18 +1,19 @@
 
 State Machine - |Selection_Sort|Control_unit:CONTROL_UNIT|state
-Name state.DONE state.WRITE_DATA_KEY state.UPDATE_I state.WRITE_TEMP_MIN state.WAIT_J state.UPDATE_J state.UPDATE_MIN_VALUE state.COMP_TEMP_VALUE state.READ_TEMP_DATA state.COMPARE_J state.READ_TEMP_MIN state.COMPARE_I state.READ_DATA_KEY state.START state.IDLE 
-state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-state.START 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-state.READ_DATA_KEY 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-state.COMPARE_I 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-state.READ_TEMP_MIN 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-state.COMPARE_J 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-state.READ_TEMP_DATA 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-state.COMP_TEMP_VALUE 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-state.UPDATE_MIN_VALUE 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-state.UPDATE_J 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-state.WAIT_J 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-state.WRITE_TEMP_MIN 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-state.UPDATE_I 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-state.WRITE_DATA_KEY 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.DONE 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Name state.WAIT_I state.UPDATE_I state.WRITE_DATA_KEY state.WAIT_WRITE state.WRITE_TEMP_MIN state.WAIT_J state.UPDATE_J state.UPDATE_MIN_VALUE state.COMP_TEMP_VALUE state.READ_TEMP_DATA state.COMPARE_J state.READ_TEMP_MIN state.COMPARE_I state.READ_DATA_KEY state.START state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.READ_DATA_KEY 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.COMPARE_I 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.READ_TEMP_MIN 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.COMPARE_J 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.READ_TEMP_DATA 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.COMP_TEMP_VALUE 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.UPDATE_MIN_VALUE 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.UPDATE_J 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.WAIT_J 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.WRITE_TEMP_MIN 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.WAIT_WRITE 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.WRITE_DATA_KEY 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.UPDATE_I 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.WAIT_I 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

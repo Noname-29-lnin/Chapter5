@@ -12,7 +12,7 @@ module SinglePort_RAM #(
     output logic [SIZE_DATA-1:0]        o_data          
 );
 
-parameter DEPTH     = 2 ** SIZE_ADDR;   // 2^SIZE_ADDR
+localparam DEPTH     = 1 << SIZE_ADDR;   // 2^SIZE_ADDR
 logic [SIZE_DATA-1:0] mem_unit [0:DEPTH-1];
 initial begin
     $readmemh(PATH_RAM, mem_unit);
