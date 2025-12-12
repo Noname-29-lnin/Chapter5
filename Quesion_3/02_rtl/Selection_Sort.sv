@@ -12,7 +12,7 @@ module Selection_Sort #(
 
 logic w_rd_en;
 logic w_wr_en;
-logic [1:0] w_sel_add;
+logic [1:0] w_sel_addr;
 logic [1:0] w_sel_data_rd;
 logic       w_sel_data_wr;
 logic w_update_i;
@@ -22,8 +22,8 @@ logic w_update_min;
 logic w_comp_less;
 logic w_valid_wr;
 logic w_valid_rd;
-logic w_done_j;
-logic w_done;
+logic w_done_update_j;
+logic w_done_update_i;
 
 logic w_rd_en_ram;
 logic w_wr_en_ram;
@@ -40,7 +40,7 @@ Data_path #(
     .i_num_elems        (i_num_elems),
     .i_rd_en            (w_rd_en),
     .i_wr_en            (w_wr_en),
-    .i_sel_addr         (w_sel_add),
+    .i_sel_addr         (w_sel_addr),
     .i_sel_data_rd      (w_sel_data_rd),
     .i_sel_data_wr      (w_sel_data_wr),
     .i_start_i          (i_start), //i_state=>topmodule
@@ -56,8 +56,8 @@ Data_path #(
     .o_comp_less        (w_comp_less),
     .o_valid_wr         (w_valid_wr),
     .o_valid_rd         (w_valid_rd),
-    .o_done_j           (w_done_j),
-    .o_done_sort        (w_done) 
+    .o_done_j           (w_done_update_j),
+    .o_done_sort        (w_done_update_i) 
 );
 
 Control_unit CONTROL_UNIT (
@@ -67,11 +67,11 @@ Control_unit CONTROL_UNIT (
     .i_comp_less        (w_comp_less),
     .i_valid_wr         (w_valid_wr),
     .i_valid_rd         (w_valid_rd),
-    .i_done_j           (w_done_j),
-    .i_done_sort        (w_done),
+    .i_done_j           (w_done_update_j),
+    .i_done_sort        (w_done_update_i),
     .o_wr_en            (w_wr_en),
     .o_rd_en            (w_rd_en),
-    .o_sel_addr         (w_sel_add),
+    .o_sel_addr         (w_sel_addr),
     .o_sel_data_rd      (w_sel_data_rd),
     .o_sel_data_wr      (w_sel_data_wr),
     .o_update_i         (w_update_i),
@@ -98,7 +98,7 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin
     if(~i_rst_n)
         o_done  <= '0;
     else 
-        o_done  <= w_done;
+        o_done  <= w_done_update_i;
 end
 
 endmodule
