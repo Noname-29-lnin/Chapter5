@@ -1,5 +1,5 @@
 xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s001: Started on Dec 11, 2025 at 23:32:48 EST
+TOOL:	xrun(64)	20.09-s001: Started on Dec 12, 2025 at 05:59:47 EST
 xrun
 	+xm64bit
 	-sv
@@ -43,18 +43,18 @@ xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-
 	Generating native compiled code:
 		worklib.RAM_addr:sv <0x00a5ea1c>
 			streams:   3, words:   739
-		worklib.RAM_write_data:sv <0x1c0c99b4>
-			streams:   7, words:  1743
-		worklib.tb_RAM_write_data:sv <0x4e4d36ce>
-			streams:  16, words: 20911
-		worklib.SinglePort_RAM:sv <0x360f3191>
+		worklib.RAM_write_data:sv <0x4767f56c>
+			streams:   5, words:  1415
+		worklib.tb_RAM_write_data:sv <0x02f8235e>
+			streams:  16, words: 16264
+		worklib.SinglePort_RAM:sv <0x226310d9>
 			streams:   5, words:  1891
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
 		Modules:                 4       4
-		Registers:              18      18
+		Registers:              17      17
 		Scalar wires:           16       -
 		Vectored wires:          8       -
 		Always blocks:           6       6
@@ -76,15 +76,15 @@ xcelium> run
 [ADDR = 00000006] DATA = 00 
 [ADDR = 00000007] DATA = 00 
 [ADDR = 00000008] DATA = 00 
-[ADDR = 00000009] DATA = 02 
-[ADDR = 0000000a] DATA = 0f 
-[ADDR = 0000000b] DATA = ca 
-[ADDR = 0000000c] DATA = 72 
-[ADDR = 0000000d] DATA = b3 
-[ADDR = 0000000e] DATA = cb 
-[ADDR = 0000000f] DATA = 2c 
+[ADDR = 00000009] DATA = 09 
+[ADDR = 0000000a] DATA = 0a 
+[ADDR = 0000000b] DATA = 0b 
+[ADDR = 0000000c] DATA = 0c 
+[ADDR = 0000000d] DATA = 0d 
+[ADDR = 0000000e] DATA = 0e 
+[ADDR = 0000000f] DATA = 0f 
 Finish Testbench
-Simulation complete via $finish(1) at time 695 NS + 0
-../Submodule/RAM_write_data/tb_RAM_read_data.sv:125         $finish;
+Simulation complete via $finish(1) at time 395 NS + 0
+../Submodule/RAM_write_data/tb_RAM_read_data.sv:115         $finish;
 xcelium> exit
-TOOL:	xrun(64)	20.09-s001: Exiting on Dec 11, 2025 at 23:32:49 EST  (total: 00:00:01)
+TOOL:	xrun(64)	20.09-s001: Exiting on Dec 12, 2025 at 05:59:48 EST  (total: 00:00:01)

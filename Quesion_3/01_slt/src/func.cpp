@@ -51,6 +51,7 @@ void selection_sort_hardware(std::vector<int> &arr){
         goto B1; 
     B1:
         data_key    = arr[i];
+        std::cout << "Data_key = " << data_key << std::endl;
         if(i < n){ // Self-generated signal updates the min, data_key, j
             min         = i;
             j           = i + 1;
@@ -60,10 +61,12 @@ void selection_sort_hardware(std::vector<int> &arr){
         }
     B2:
         temp_min    = arr[min]; // similar temp_data
+        std::cout << "temp_min = " << temp_min << std::endl;
         goto B2_1;
     B2_1:
         if( j <= n){ // Self-generated signal updates the temp_data and temp_min value
             temp_data   = arr[j];   // Value at index j used for the j < n comparison
+            std::cout << "temp_data = " << temp_data << std::endl;
             goto B3;
         } else {
             goto B7;

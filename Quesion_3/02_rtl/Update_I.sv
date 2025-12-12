@@ -33,13 +33,14 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_output_value_i
 end
 
 assign w_pre_done       = (w_pre_value_i == (i_num_elems));
-always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_done
-    if(~i_rst_n) begin
-        o_done          <= '0;
-    end else begin 
-        o_done          <= w_pre_done;
-    end
-end
+// always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_done
+//     if(~i_rst_n) begin
+//         o_done          <= '0;
+//     end else begin 
+//         o_done          <= w_pre_done;
+//     end
+// end
+assign o_done          = w_pre_done;
 
 assign o_en = w_enable;
 

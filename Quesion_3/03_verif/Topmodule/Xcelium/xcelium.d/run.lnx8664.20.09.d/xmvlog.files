@@ -6,6 +6,7 @@
 /home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/Control_unit.sv
 /home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/Data_path.sv
 /home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/RAM_addr.sv
+/home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/SS_detect_edge.sv
 /home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/RAM_read_data.sv
 /home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/RAM_write_data.sv
 /home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/Selection_Sort.sv
@@ -13,3 +14,6 @@
 /home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/Update_I.sv
 /home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/Update_J.sv
 /home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/Update_MIN.sv
+/home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/Block_Read_data.sv
+/home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/Block_Write_data.sv
+/home/admin/shared/My_project/Chapter5/Quesion_3/02_rtl/Block_Addr.sv

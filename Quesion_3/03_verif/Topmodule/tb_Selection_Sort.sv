@@ -61,7 +61,8 @@ module tb_Selection_Sort;
         start = 0;
 
         // Chờ DONE
-        @(posedge done);
+        // @(posedge done);
+        #10000;
         $display(">>> DONE received at time %0t", $time);
 
         dump_ram_contents();

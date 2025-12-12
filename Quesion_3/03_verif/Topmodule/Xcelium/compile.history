@@ -1,1 +1,1 @@
-s1(12Dec2025:03:18:41):  xrun +xm64bit -sv -f ./../Topmodule/flist.f -top tb_Selection_Sort -access +rwc -clean -log ./../Topmodule/Xcelium/compile.log +nctimescale+1ns/1ps +ntb_random_seed=automatic -allowredefinition -v93 
+s1(12Dec2025:06:40:20):  xrun +xm64bit -sv -f ./../Topmodule/flist.f -top tb_Selection_Sort -access +rwc -clean -log ./../Topmodule/Xcelium/compile.log +nctimescale+1ns/1ps +ntb_random_seed=automatic -allowredefinition -v93 

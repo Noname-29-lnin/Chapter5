@@ -72,11 +72,11 @@ module tb_RAM_read_data;
             i_rd_en = 1;
             @(posedge i_clk);
             i_rd_en = 0;
-            @(negedge o_valid);
-                $display("[ADDR = %h] DATA = %h", o_ram_addr, o_data_rd);
-            @(posedge i_clk);
-            @(posedge i_clk);
+            // @(posedge i_clk);
             i_ram_addr = i_ram_addr + 1'b1;
+            @(posedge o_valid);
+                $display("[ADDR = %h] DATA = %h", o_ram_addr, o_data_rd);
+            // @(posedge i_clk);
         end
         $display("Finish Testbench");
         #100;

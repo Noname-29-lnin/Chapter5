@@ -73,8 +73,6 @@ module tb_RAM_write_data;
             i_ram_data_wr = 0;
             @(posedge i_clk);
             i_wr_en = 0;
-            @(negedge o_valid);
-            @(posedge i_clk);
             i_ram_addr = i_ram_addr + 1'b1;
         end
         repeat (2) begin
@@ -83,8 +81,6 @@ module tb_RAM_write_data;
             i_ram_data_wr = 10;
             @(posedge i_clk);
             i_wr_en = 0;
-            @(negedge o_valid);
-            @(posedge i_clk);
             i_ram_addr = i_ram_addr + 1'b1;
         end
         repeat (1) begin
@@ -93,8 +89,6 @@ module tb_RAM_write_data;
             i_ram_data_wr = 5;
             @(posedge i_clk);
             i_wr_en = 0;
-            @(negedge o_valid);
-            @(posedge i_clk);
             i_ram_addr = i_ram_addr + 1'b1;
         end
         repeat (3) begin
@@ -103,8 +97,6 @@ module tb_RAM_write_data;
             i_ram_data_wr = 0;
             @(posedge i_clk);
             i_wr_en = 0;
-            @(negedge o_valid);
-            @(posedge i_clk);
             i_ram_addr = i_ram_addr + 1'b1;
         end
         repeat (1) begin
@@ -113,8 +105,6 @@ module tb_RAM_write_data;
             i_ram_data_wr = 2;
             @(posedge i_clk);
             i_wr_en = 0;
-            @(negedge o_valid);
-            @(posedge i_clk);
             i_ram_addr = i_ram_addr + 1'b1;
         end
         for(int i = 0; i < 2**SIZE_ADDR; i++) begin

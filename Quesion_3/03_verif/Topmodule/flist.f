@@ -2,6 +2,7 @@
 ./../../02_rtl/Control_unit.sv
 ./../../02_rtl/Data_path.sv
 ./../../02_rtl/RAM_addr.sv
+./../../02_rtl/SS_detect_edge.sv
 ./../../02_rtl/RAM_read_data.sv
 ./../../02_rtl/RAM_write_data.sv
 ./../../02_rtl/Selection_Sort.sv
@@ -9,3 +10,6 @@
 ./../../02_rtl/Update_I.sv
 ./../../02_rtl/Update_J.sv
 ./../../02_rtl/Update_MIN.sv
+./../../02_rtl/Block_Read_data.sv
+./../../02_rtl/Block_Write_data.sv
+./../../02_rtl/Block_Addr.sv
