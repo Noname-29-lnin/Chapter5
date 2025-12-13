@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.10)  13 DEC 2025 20:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.10)  13 DEC 2025 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1580,7 +1580,7 @@ Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count413
-<./my-chapters/my-images/01_logobachkhoatoi.png, id=34, 471.9231pt x 478.9092pt
+<./my-chapters/my-images/01_logobachkhoatoi.png, id=38, 471.9231pt x 478.9092pt
 >
 File: ./my-chapters/my-images/01_logobachkhoatoi.png Graphic file (type png)
 <use ./my-chapters/my-images/01_logobachkhoatoi.png>
@@ -1605,7 +1605,7 @@ Overfull \hbox (2.19716pt too wide) in paragraph at lines 61--61
 
 
 
-<./my-chapters/my-images/bia.jpg, id=36, 301.125pt x 414.95026pt>
+<./my-chapters/my-images/bia.jpg, id=40, 301.125pt x 414.95026pt>
 File: ./my-chapters/my-images/bia.jpg Graphic file (type jpg)
 <use ./my-chapters/my-images/bia.jpg>
 Package pdftex.def Info: ./my-chapters/my-images/bia.jpg  used on input line 62
@@ -1619,24 +1619,24 @@ s/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>]
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- (main.lof)
-\tf@lof=\write7
-\openout7 = `main.lof'.
-
- (main.lot
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 2
-.
+ (main.lof
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 1
+2.
 
 (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ))
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+
+(main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
 
-(main.lol
 
-[2])
+[2] (main.lol)
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
@@ -1646,8 +1646,8 @@ File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 \openout2 = `./my-chapters/question2.aux'.
 
  (my-chapters/question2.tex
-<./my-chapters/my-images/Question2/algorithm.png, id=95, 374.90062pt x 640.6434
-3pt>
+<./my-chapters/my-images/Question2/algorithm.png, id=103, 374.90062pt x 640.643
+43pt>
 File: ./my-chapters/my-images/Question2/algorithm.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/algorithm.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question2/algorithm.png  used 
@@ -1655,7 +1655,7 @@ on input line 8.
 (pdftex.def)             Requested size: 290.22107pt x 495.96565pt.
 
 
-<./my-chapters/my-images/logo_DEE.png, id=96, 76.03406pt x 75.28125pt>
+<./my-chapters/my-images/logo_DEE.png, id=104, 76.03406pt x 75.28125pt>
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
@@ -1671,14 +1671,14 @@ l.16 H
 
  <./my-chapters/my-images/Question2/algorithm.png> <./my-chapters/my-images/log
 o_DEE.png>]
-<./my-chapters/my-images/Question2/top.png, id=104, 1049.42062pt x 563.10374pt>
+<./my-chapters/my-images/Question2/top.png, id=112, 1049.42062pt x 563.10374pt>
 
 File: ./my-chapters/my-images/Question2/top.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/top.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question2/top.png  used on inp
 ut line 45.
 (pdftex.def)             Requested size: 290.22107pt x 155.72612pt.
-<./my-chapters/my-images/Question2/hlfsm.png, id=105, 761.09344pt x 558.58687pt
+<./my-chapters/my-images/Question2/hlfsm.png, id=113, 761.09344pt x 558.58687pt
 >
 File: ./my-chapters/my-images/Question2/hlfsm.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/hlfsm.png>
@@ -1713,14 +1713,14 @@ been already used, duplicate ignored
 l.66 	\item C
              LEAR: trạng thái này đóng vai trò đặt lại giá tr�...
 [3 <./my-chapters/my-images/Question2/hlfsm.png>]
-<./my-chapters/my-images/Question2/compare_lt.png, id=120, 496.85625pt x 216.81
+<./my-chapters/my-images/Question2/compare_lt.png, id=128, 496.85625pt x 216.81
 pt>
 File: ./my-chapters/my-images/Question2/compare_lt.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/compare_lt.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question2/compare_lt.png  used
  on input line 76.
 (pdftex.def)             Requested size: 386.95897pt x 168.85637pt.
-<./my-chapters/my-images/Question2/datapath.png, id=121, 567.62062pt x 818.3071
+<./my-chapters/my-images/Question2/datapath.png, id=129, 567.62062pt x 818.3071
 9pt>
 File: ./my-chapters/my-images/Question2/datapath.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/datapath.png>
@@ -1742,7 +1742,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 95.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [5 <./my-chapters/my-images/Question2/datapath.png>]
-<./my-chapters/my-images/Question2/fsm.png, id=135, 684.30656pt x 354.57469pt>
+<./my-chapters/my-images/Question2/fsm.png, id=143, 684.30656pt x 354.57469pt>
 File: ./my-chapters/my-images/Question2/fsm.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/fsm.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question2/fsm.png  used on inp
@@ -1781,14 +1781,14 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 133.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [8]
-<./my-chapters/my-images/Question2/sim_fsm.png, id=290, 1468.73718pt x 134.7534
+<./my-chapters/my-images/Question2/sim_fsm.png, id=298, 1468.73718pt x 134.7534
 3pt>
 File: ./my-chapters/my-images/Question2/sim_fsm.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/sim_fsm.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question2/sim_fsm.png  used on
  input line 162.
 (pdftex.def)             Requested size: 483.69687pt x 44.3783pt.
-<./my-chapters/my-images/Question2/sim_fsm_2.png, id=291, 1559.07469pt x 139.27
+<./my-chapters/my-images/Question2/sim_fsm_2.png, id=299, 1559.07469pt x 139.27
 031pt>
 File: ./my-chapters/my-images/Question2/sim_fsm_2.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/sim_fsm_2.png>
@@ -1813,7 +1813,7 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 )
-<my-chapters/my-images/Question3/req_ram.png, id=320, 358.33875pt x 314.67563pt
+<my-chapters/my-images/Question3/req_ram.png, id=328, 358.33875pt x 314.67563pt
 >
 File: my-chapters/my-images/Question3/req_ram.png Graphic file (type png)
 <use my-chapters/my-images/Question3/req_ram.png>
@@ -1825,7 +1825,7 @@ Overfull \hbox (31.06323pt too wide) in paragraph at lines 5--28
 []$[]$ $[]$ 
  []
 
-<./my-chapters/my-diagrams/quesion3/Flowchart.png, id=324, 724.7075pt x 1326.95
+<./my-chapters/my-diagrams/quesion3/Flowchart.png, id=332, 724.7075pt x 1326.95
 75pt>
 File: ./my-chapters/my-diagrams/quesion3/Flowchart.png Graphic file (type png)
 <use ./my-chapters/my-diagrams/quesion3/Flowchart.png>
@@ -1858,7 +1858,7 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 129.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 [12]
-<./my-chapters/my-diagrams/quesion3/Design_Overview.png, id=412, 681.54625pt x 
+<./my-chapters/my-diagrams/quesion3/Design_Overview.png, id=420, 681.54625pt x 
 604.2575pt>
 File: ./my-chapters/my-diagrams/quesion3/Design_Overview.png Graphic file (type
  png)
@@ -1866,17 +1866,42 @@ File: ./my-chapters/my-diagrams/quesion3/Design_Overview.png Graphic file (type
 Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/Design_Overview.png
   used on input line 134.
 (pdftex.def)             Requested size: 386.95897pt x 343.07498pt.
+<./my-chapters/my-diagrams/quesion3/fsm.png, id=421, 1341.01pt x 1165.35374pt>
+File: ./my-chapters/my-diagrams/quesion3/fsm.png Graphic file (type png)
+<use ./my-chapters/my-diagrams/quesion3/fsm.png>
+Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/fsm.png  used on in
+put line 142.
+(pdftex.def)             Requested size: 435.32422pt x 378.29094pt.
+
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 145.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[13 <./my-chapters/my-diagrams/quesion3/Design_Overview.png>]
+LaTeX Font Info:    Trying to load font information for T5+cmss on input line 1
+49.
+
+(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmss.fd
+File: t5cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 154.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[14 <./my-chapters/my-diagrams/quesion3/fsm.png>])
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 79.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[13 <./my-chapters/my-diagrams/quesion3/Design_Overview.png>]
-
+[15] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20251213200043 FAD58DE7366495DB465
+runsystem(latexminted cleantemp  --timestamp 20251213205446 FAD58DE7366495DB465
 0CFEFAC2FCD61)...disabled (restricted).
 
 (main.aux (my-chapters/question2.aux) (my-chapters/question3.aux))
@@ -1884,15 +1909,22 @@ runsystem(latexminted cleantemp  --timestamp 20251213200043 FAD58DE7366495DB465
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 594AE7A63417B04C70D35051975BE1B8;516.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: B8A3850CCE8D09EF18A95F308A85F265;595
+(rerunfilecheck)             After:  BDD4B669D0D0C5A8905336644D3CCECF;674.
  ) 
 Here is how much of TeX's memory you used:
- 33398 strings out of 468134
- 648939 string characters out of 5430740
- 1978121 words of memory out of 5000000
- 61169 multiletter control sequences out of 15000+600000
- 655617 words of font info for 99 fonts, out of 8000000 for 9000
+ 33438 strings out of 468134
+ 649985 string characters out of 5430740
+ 1978123 words of memory out of 5000000
+ 61201 multiletter control sequences out of 15000+600000
+ 656564 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,101p,1065b,2262s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\nguye\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt
@@ -1908,14 +1940,15 @@ cal/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbxti10.pfb><C:/Users/nguye/AppData/
 Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/nguye/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr17.pfb><C:/Users/nguye/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr6.pfb><C:/Users/nguye/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/vntex/vnr/vnss12.pfb><C:/Users/nguye/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb><C:/Users/nguye/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt10.pfb><C:/Users/nguye/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt12.pfb><C:/Users/nguye/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt8.pfb><C:/Users/nguye/AppData/Local
 /Programs/MiKTeX/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on main.pdf (16 pages, 734642 bytes).
+Output written on main.pdf (18 pages, 826060 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 253 named destinations out of 1000 (max. 500000)
- 139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 571 PDF objects out of 1000 (max. 8388607)
+ 257 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

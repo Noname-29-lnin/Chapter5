@@ -134,3 +134,38 @@ Từ đó, ta có thiết kế tổng quan của module \texttt{Selection\_Sort}
 	\includegraphics[width=.8\linewidth]{./my-chapters/my-diagrams/quesion3/Design_Overview.png}
 	\caption{Thiết kế tổng quan của module \texttt{Selection\_Sort}.}
 \end{figure}
+
+\answer{b}{Thiết kế máy trạng thái bậc cao của thiết kế.}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.9\linewidth]{./my-chapters/my-diagrams/quesion3/fsm.png}
+	\caption{Lưu đồ trạng thái của module \texttt{Selection\_Sort}.}
+\end{figure}
+
+FSM gồm có 16 trạng thái như sau:
+
+\begin{itemize}[label=-]
+	\item \textsf{IDLE:} là trạng thái khởi tạo của module sau khi có reset, và chờ có tín hiệu \texttt{i\_start} để module bắt đầu hoạt động.
+	\item \textsf{START:} là trạng thái khởi tạo giá trị khởi tạo cho \texttt{value\_i}.
+	\item \textsf{READ\_DATA\_KEY:} là đợi đọc dữ liệu tại vị trí đang xét (theo giá trị \texttt{value\_i}).
+	\item \textsf{COMPARE\_I:} là trạng thái kiểm tra vòng lặp (for) cho biến \texttt{value\_i} xem đã kết thúc quá trình sắp xếp dữ liệu trong mảng.
+	\item \textsf{READ\_TEMP\_MIN:} là trạng thái đọc dữ liệu \texttt{temp\_min} có mục đích để kiểm tra ra giá trị nhỏ nhất từ vị trí \texttt{value\_i} đến cuối mảng.
+	\item \textsf{COMPARE\_J:} là trạng thái kiểm tra vòng lặp (for) cho biến \texttt{value\_j} xem đã kết thúc quá trình dò giá trị trong mảng.
+	\item \textsf{READ\_TEMP\_DATA:} là trạng thái đọc dữ liệu theo giá trị của \texttt{value\_j}.
+	\item \textsf{COMPARE\_TEMP\_VALUE:} là kiểm tra thử xem có giá trị nào nhỏ hơn tại vị trí tại giá trị nhỏ nhất hiện tại.
+	\item \textsf{UPDATE\_MIN\_VALUE:} là việc cập nhật vị trí cho vị trí min của dữ liệu.
+	\item \textsf{UPDATE\_J:} là trạng thái thực hiện việc tăng giá trị của \texttt{value\_j}.
+	\item \textsf{WAIT\_UPDATE\_J:} là trạng thái chờ giá trị \texttt{value\_j} cập nhật.
+	\item \textsf{WRITE\_TEMP\_MIN:} thực hiện ghi lại dữ liệu nhỏ nhất lại vị trí đang xét tại \texttt{value\_i}.
+	\item \textsf{WRITE\_WAIT:} là trạng thái chờ dữ liệu ghi.
+	\item \textsf{WRITE\_DATA\_KEY:} thực hiện ghi lại giá trị ở tại \texttt{value\_i} vào thế chỗ của \texttt{value\_min}.
+	\item \textsf{UPDATE\_I:} là trạng thái thực hiện việc tăng giá trị của \texttt{value\_i}.
+	\item \textsf{WAIT\_UPDATE\_I:} là trạng thái chờ cập nhật cho giá trị \texttt{value\_i}.
+\end{itemize}
+
+\answer{c}{Thiết kế Datapath và Control Unit của thiết kế.}
+
+\begin{enumerate}[label=\arabic*.]
+	\item Thiết kế DataPath:
+\end{enumerate}

@@ -6,3 +6,5 @@
 \contentsline {subsection}{d)}{6}{figure.caption.7}%
 \contentsline {section}{Câu 3}{10}{figure.caption.9}%
 \contentsline {subsection}{a)}{10}{figure.caption.10}%
+\contentsline {subsection}{b)}{14}{figure.caption.13}%
+\contentsline {subsection}{c)}{15}{figure.caption.14}%
