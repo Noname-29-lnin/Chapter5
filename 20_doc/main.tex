@@ -1,0 +1,84 @@
+\documentclass{my-article}
+\usepackage{my-coverpage}
+\usepackage{my-codespace}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+
+\usepackage{textcomp}
+% =========================
+% Cover page information
+% =========================
+
+%\selectlanguage{vietnamese}
+\NameUpperUniname{Vietnam National University Ho Chi Minh City}
+\NameUniname{Ho Chi Minh City University of Technology}
+\NameDeptname{Faculty of Electrical and Electronics Engineering}
+\NamePathlogo{./my-chapters/my-images/01_logobachkhoatoi.png}
+\NameClass{Digital design and verification}
+\NameGroup{08}
+\NameLesson[\Large]{BÀI TẬP CHƯƠNG 5}
+\NameTitle[\Huge]{Thiết Kế Hệ Tuần Tự}
+\NameAdvisor{Nguyễn Trung Hiếu}
+\NamePlace{Ho Chi Minh City}
+\NameTime{01/11/2025}
+\NamePathBackground[width=\paperwidth,height=\paperheight]{./my-chapters/my-images/bia.jpg} 
+\MemberTableData{
+1 & 2213874 & Nguyễn Thanh Tùng & L01 \\ \hline
+2 & 2210780 & Nguyễn Đại Đồng   & L01 \\ \hline
+3 & 2213496 & Nguyễn Quốc Tín   & L01 \\ \hline
+}
+
+% =========================
+% Configuration
+% =========================
+%--- Header and footer
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+% =========================
+% Document
+% =========================
+
+\newcommand{\question}[1]{%
+	\section*{#1}%
+	\addcontentsline{toc}{section}{#1}%
+}
+\newcommand{\answer}[2]{%
+	\subsection*{\textbf{#1}\kern0.2em)~#2}%
+	\addcontentsline{toc}{subsection}{#1)}%
+}
+
+\newcommand{\finalresult}[1]{%
+	\begin{tikzpicture}[baseline=(content.base)]
+		\node[draw=red, thick, rounded corners=3pt, inner sep=6pt] (content)
+		{\ensuremath{#1}};
+	\end{tikzpicture}%
+}
+
+\begin{document}
+\pagestyle{empty}
+\MycoverFinalProject % Cover page
+\newpage
+%\selectlanguage{english}
+\renewcommand{\arraystretch}{1.5} % tăng khoảng cách dòng (row height)
+\setlength{\parindent}{1cm}
+\onehalfspacing
+\setlength{\parskip}{6pt} 
+\tableofcontents
+\listoffigures
+\listoftables
+\listoflistings
+\newpage
+\pagestyle{fancy}
+\MycountPages{number}
+\fancyfoot[L]{\includegraphics[width=.02\linewidth]{./my-chapters/my-images/logo_DEE.png}\text{ Department of Electronics}}
+
+
+\include{./my-chapters/question2.tex}
+\include{./my-chapters/question3.tex}
+%\include{./my-chapters/question4.tex}
+
+
+\end{document}
+

@@ -1,0 +1,241 @@
+\question{Câu 4}
+
+Thiết kế phần cứng dùng xóa đi các phần tử có giá trị chẵn trong một mảng dữ liệu (mô tả ở ví dụ).  Giả sử mảng được lưu trong bộ nhớ Single Port và quá trình đọc/ghi diễn ra đồng bộ theo Clk và hoàn thành trong 1 Clk.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\linewidth]{./my-chapters/my-images/Question4/ex.png}
+	\caption{Ví dụ.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.33\linewidth]{./my-chapters/my-images/Question4/algorithm.png}
+	\caption{Giải thuật sử dụng.}
+\end{figure}  
+
+\answer{a}{Định nghĩa ngõ vào và ra của thiết kế, vẽ kết nối của thiết kế với bộ nhớ (Yêu cầu phải có chân start và reset).}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|p{6.5cm}|}
+		\hline
+		\textbf{Tên tín hiệu} & \textbf{IO} & \textbf{Độ rộng} & \textbf{Mô tả} \\ \hline
+		
+		clk      & Input  & logic & 1 & Tín hiệu clock \\ \hline
+		rst\_n   & Input  & logic & 1 & Reset tích cực mức thấp  \\ \hline
+		start    & Input  & logic & 1 & Tín hiệu bắt đầu hoạt động \\ \hline
+		
+		rden     & Output & logic & 1 & Tín hiệu cho phép đọc dữ liệu từ bộ nhớ \\ \hline
+		wren     & Output & logic & 1 & Tín hiệu cho phép ghi dữ liệu từ bộ nhớ \\ \hline
+		
+		addr     & Output & logic & $\lceil \log_2(\text{DEPTH}) \rceil$ & Địa chỉ đọc/ghi dữ liệu \\ \hline
+		
+		i\_data     & Input  & logic signed & WIDTH & Dữ liệu đầu vào từ bộ nhớ \\ \hline
+		
+		done     & Output & logic & 1 & Tín hiệu kết thúc quá trình \\ \hline
+		
+		o\_data     & Output & logic signed & WIDTH & Dữ liệu đầu ra, ghi lại số lẻ vào bộ nhớ  \\ \hline
+		
+		odd\_ptr & Output & logic & $\lceil \log_2(\text{DEPTH}) \rceil$ & Khoảng dữ liệu hợp lệ trong bộ nhớ \\ \hline
+		
+	\end{tabular}
+	\caption{I/O table for module \texttt{clear\_even}}
+\end{table}
+
+Khi lọc dữ liệu chẵn ra khỏi bộ nhớ, đồng thời dồn các giá trị lẻ về các địa chỉ thấp, điều này khiến một khoảng dữ liệu phía trên sẽ không còn hợp lệ sau khi thực hiện xong, tín hiệu odd\_ptr đóng vai trò giói hạn khoảng dữ liệu hợp lệ trong bộ nhớ (từ địa chỉ 0 đến odd\_ptr là các giá trị lẻ hợp lệ sau khi xóa các giá trị chẵn ra khỏi bộ nhớ).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.55\linewidth]{./my-chapters/my-images/Question4/top.png}
+	\caption{Tổng quan kết nối của thiết kế.}
+\end{figure}
+
+\answer{b}{Thiết kế máy trạng thái bậc cao của thiết kế.}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.7\linewidth]{./my-chapters/my-images/Question4/hlfsm.png}
+	\caption{Máy trạng thái bậc cao.}
+\end{figure}
+
+\begin{itemize}
+	\item IDLE: là trạng thái ban đầu, khi reset sẽ luôn trở về trạng thái này, giá trị các thanh ghi mặc định là 0, đây là trạng thái chờ ban đầu của hệ thống, khi có tín hiệu start sẽ chuyển sang trạng thái UPDATE.
+	\item UPDATE: ở trạng thái này sẽ cập nhật các giá trị hai thanh ghi con trỏ đọc/ghi mới được tín toán từ trạng thái CHECK, đồng thời đưa ngõ ra rden lên mức cao để chuẩn bị nhận dữ liệu ngõ vào mới từ bộ nhớ, địa chỉ đọc chứa trong thanh ghi rd\_ptr.
+	\item READ: đây là trạng thái chờ đọc vì ở đây bộ nhớ đọc đồng bộ, do đó cần phải đợi một chu kì để nhận dữ liệu đầu vào.
+	\item CHECK: ở trạng thái này, sẽ lấy LSB của tín hiệu đầu vào để xác định chẵn/lẻ. Khi là số lẻ sẽ tiến hành đưa ngõ ra wren lên mức cao để ghi vào bộ nhớ với địa chỉ chứa trong thanh ghi wr\_ptr đồng thời sẽ tăng giá trị wr\_ptr lên 1 ở trạng thái kế. Khi là số chẵn thì sẽ không ghi, không cập nhật giá trị thanh ghi ở chu kì kế. Thanh ghi rd\_ptr sẽ tăng thêm 1 ở trạng thái kế. Nếu đã xét hết dữ liệu trong bộ nhớ sẽ chuyển sang trạng thái DONE, ngược lại sẽ sang trạng thái UPDATE để chuẩn bị nhận dữ liệu mới từ bộ nhớ.
+	\item DONE: là trạng thái thông báo việc hoàn tất, lúc này tín hiệu done sẽ tích cực mức cao (done chỉ mức cao ở trạng thái này). Nếu nhận được tín hiệu start mức cao sẽ chuyển sang trạng thái CLEAR, ngược lại sẽ giữ trạng thái hiện tại.
+	\item CLEAR: trạng thái này đóng vai trò đặt lại giá trị các thanh ghi con trỏ là 0, chuẩn bị cho lần hoạt động kế tiếp. 
+\end{itemize}
+
+\answer{c}{Thiết kế Datapath và Control Unit của thiết kế.}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.7\linewidth]{./my-chapters/my-images/Question4/datapath.png}
+	\caption{Datapath.}
+\end{figure}
+
+Datapath của thiết kế gồm 2 khối MUX 4-1 và 2 khối MUX 2-1 để xác định giá trị cập nhật cho 2 thanh ghi dựa vào trạng thái hiện tại và lựa chọn địa chỉ truy cập bộ nhớ.
+
+Hai thanh ghi gồm:
+
+\begin{itemize}
+	\item Thanh ghi địa chỉ con trỏ đọc rd\_ptr, đóng vai trò trỏ vào bộ nhớ, kết hợp với tín hiệu rden để lấy dữ liệu đầu vào.
+	\item Thanh ghi địa chỉ con trỏ ghi wr\_ptr, đóng vai trò trỏ vào bộ nhớ, kết hợp với tín hiệu wren để lưu lại các phần tử lẻ.
+\end{itemize}
+
+Hai bộ cộng để cập nhật địa chỉ con trỏ đọc/ghi.
+
+Một bộ AND Reduction để xác định địa chỉ đạt đến giá trị cuối của bộ nhớ, là điều kiện để chuyển từ trạng thái CHECK sang trạng thái DONE.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\linewidth]{./my-chapters/my-images/Question4/fsm.png}
+	\caption{Control Unit FSM.}
+\end{figure}
+
+\answer{d}{Viết chương trình mô phỏng hoạt động của thiết kế.}
+
+\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={HDL mô tả thiết kế xóa các phần tử có giá trị chẵn trong một mảng dữ liệu.}]{./my-chapters/design_verify/Question4/clear_even.sv}
+
+Để tạo giá trị ngẫu nhiên trong bộ nhớ để mô phỏng, nhóm chọn sử dụng $\$unrandom\_range( , )$; mà System Verilog cung cấp.
+
+\begin{lstlisting}[style=StyleCode, language=SystemVerilog, caption={Chương trình tạo giá trị ngẫu nhiên ban đầu cho bộ nhớ.}]
+	localparam WIDTH_S = DW - 1;
+	logic signed [WIDTH-1:0] buffer [DEPTH-1:0];
+	
+	for (int i = 0; i < DEPTH; i++) begin
+		ram.mem[i] = $urandom_range(-2**(WIDTH_S), 2**(WIDTH_S) - 1);
+		buffer[i] = '0;
+		if(ram.mem[i][0] == 0) $display("RAM[%5d] DATA_EVEN = %5d", i, ram.mem[i]);
+	end
+	
+	$display("\n");
+	
+	for (int i = 0; i < DEPTH; i++) begin
+		if(ram.mem[i][0]) begin
+			$display("RAM[%5d] DATA_ODD = %5d", i, ram.mem[i]);
+			buffer[odd] = ram.mem[i];
+			odd++;
+		end
+	end
+	
+	$display("Odd number of numbers:  %5d", odd);
+\end{lstlisting}
+
+\begin{lstlisting}[style=StyleCode, language=SystemVerilog, caption={Chương trình kiểm định thiết kế.}]
+	for(int i = 0; i < DEPTH; i++) begin
+		$display("RAM[%5d] = %5d", i, ram.mem[i]);
+		if(i >= odd_ptr) $display("[%4s] expect = %5d", (ram.mem[i] == buffer[i]) ? "TRUE" : "FAIL", buffer[i]);
+	end
+	
+	$display("Odd address use: %5d", odd_ptr);
+\end{lstlisting}
+
+\begin{lstlisting}[style=StyleResult, language=Result, caption={Kết quả kiểm định cho thiết kế xóa các phần tử có giá trị chẵn trong một mảng dữ liệu.}]
+	xcelium> run
+	RAM[    4] DATA_EVEN =    90
+	RAM[    5] DATA_EVEN =   -30
+	RAM[    8] DATA_EVEN =    96
+	RAM[   10] DATA_EVEN =    50
+	RAM[   11] DATA_EVEN =    58
+	RAM[   12] DATA_EVEN =   -60
+	RAM[   13] DATA_EVEN =   -20
+	RAM[   16] DATA_EVEN =   -66
+	RAM[   18] DATA_EVEN =   -88
+	RAM[   19] DATA_EVEN =    76
+	RAM[   20] DATA_EVEN =   -80
+	RAM[   24] DATA_EVEN =    54
+	RAM[   26] DATA_EVEN =   -76
+	RAM[   28] DATA_EVEN =    46
+	RAM[   29] DATA_EVEN =    74
+	
+	
+	RAM[    0] DATA_ODD =  -109
+	RAM[    1] DATA_ODD =   -57
+	RAM[    2] DATA_ODD =    25
+	RAM[    3] DATA_ODD =   -73
+	RAM[    6] DATA_ODD =     3
+	RAM[    7] DATA_ODD =   -45
+	RAM[    9] DATA_ODD =   -63
+	RAM[   14] DATA_ODD =   -47
+	RAM[   15] DATA_ODD =   115
+	RAM[   17] DATA_ODD =    49
+	RAM[   21] DATA_ODD =   -91
+	RAM[   22] DATA_ODD =    53
+	RAM[   23] DATA_ODD =   -23
+	RAM[   25] DATA_ODD =   -71
+	RAM[   27] DATA_ODD =   -49
+	RAM[   30] DATA_ODD =    45
+	RAM[   31] DATA_ODD =    -9
+	Odd number of numbers:   17
+	
+	RAM[    0] =  -109
+	[TRUE] expect =  -109
+	RAM[    1] =   -57
+	[TRUE] expect =   -57
+	RAM[    2] =    25
+	[TRUE] expect =    25
+	RAM[    3] =   -73
+	[TRUE] expect =   -73
+	RAM[    4] =     3
+	[TRUE] expect =     3
+	RAM[    5] =   -45
+	[TRUE] expect =   -45
+	RAM[    6] =   -63
+	[TRUE] expect =   -63
+	RAM[    7] =   -47
+	[TRUE] expect =   -47
+	RAM[    8] =   115
+	[TRUE] expect =   115
+	RAM[    9] =    49
+	[TRUE] expect =    49
+	RAM[   10] =   -91
+	[TRUE] expect =   -91
+	RAM[   11] =    53
+	[TRUE] expect =    53
+	RAM[   12] =   -23
+	[TRUE] expect =   -23
+	RAM[   13] =   -71
+	[TRUE] expect =   -71
+	RAM[   14] =   -49
+	[TRUE] expect =   -49
+	RAM[   15] =    45
+	[TRUE] expect =    45
+	RAM[   16] =    -9
+	[TRUE] expect =    -9
+	RAM[   17] =    49
+	RAM[   18] =   -88
+	RAM[   19] =    76
+	RAM[   20] =   -80
+	RAM[   21] =   -91
+	RAM[   22] =    53
+	RAM[   23] =   -23
+	RAM[   24] =    54
+	RAM[   25] =   -71
+	RAM[   26] =   -76
+	RAM[   27] =   -49
+	RAM[   28] =    46
+	RAM[   29] =    74
+	RAM[   30] =    45
+	RAM[   31] =    -9
+	Odd address use:16
+	Simulation complete via $finish(1) at time 20040 NS + 0
+	../01_tb/clear_even_tb.sv:103         $finish;
+	
+\end{lstlisting}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{./my-chapters/my-images/Question4/sim_1.png}
+	\caption{Dạng sóng lúc bắt đầu.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{./my-chapters/my-images/Question4/sim_2.png}
+	\caption{Dạng sóng lúc hoàn thành.}
+\end{figure}
+
+Kết luận: Máy trạng thái chuyển đúng so với dự tính, các giá trị chẵn đã được lọc chính xác.

@@ -1,0 +1,176 @@
+\question{Câu 2}
+
+
+Thiết kế phần cứng dùng để tìm giá trị lớn nhất và nhỏ nhất trong một mảng dữ liệu. Giả sử mảng được lưu trong bộ nhớ Single Port và quá trình đọc/ghi diễn ra đồng bộ theo Clk và hoàn thành trong 1 Clk.  
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\linewidth]{./my-chapters/my-images/Question2/algorithm.png}
+	\caption{Giải thuật sử dụng.}
+\end{figure}
+
+\answer{a}{Định nghĩa ngõ vào và ra của thiết kế, vẽ kết nối của thiết kế với bộ nhớ (Yêu cầu phải có chân start và reset).}
+
+Đề bài không đề cập đến xử lí cho dạng dữ liệu có dấu hoặc không dấu nên nhóm chọn xử lí ở dạng có dấu bù 2.
+
+Hệ thống được thiết kế cần có các tín hiệu:
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|l|}
+		\hline
+		\textbf{Tên tín hiệu} & \textbf{IO} & \textbf{Độ rộng} & \textbf{Mô tả} \\ \hline
+		
+		clk  & Input  & 1 & Tín hiệu clock \\ \hline
+		rst\_n & Input & 1 & Reset tích cực mức thấp \\ \hline
+		start & Input & 1  & Tín hiệu bắt đầu hoạt động \\ \hline
+		
+		rden & Output & 1  & Tín hiệu cho phép đọc dữ liệu từ bộ nhớ \\ \hline
+		addr & Output & $\lceil \log_2(\text{DEPTH}) \rceil$  & Địa chỉ đọc dữ liệu \\ \hline
+		
+		data\_in & Input & signed [WIDTH-1:0] & Dữ liệu đầu vào từ bộ nhớ \\ \hline
+		
+		done & Output & 1  & Tín hiệu kết thúc quá trình tìm max/min \\ \hline
+		max  & Output & signed [WIDTH-1:0] & Giá trị lớn nhất tìm được \\ \hline
+		min  & Output & signed [WIDTH-1:0] & Giá trị nhỏ nhất tìm được \\ \hline
+		
+	\end{tabular}
+	\caption{Bảng tín hiệu I/O của module \texttt{max\_min}}
+\end{table}
+
+Các tín hiệu ngõ ra từ khối Find max min được kết nối như hình với các ngõ vào của khối bộ nhớ, riêng ngõ vào wren luôn để mức thấp vì không cập nhật dữ liệu mới vào bộ nhớ.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\linewidth]{./my-chapters/my-images/Question2/top.png}
+	\caption{Tổng quan kết nối thiết kế.}
+\end{figure}
+
+
+\answer{b}{Thiết kế máy trạng thái bậc cao của thiết kế.}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.7\linewidth]{./my-chapters/my-images/Question2/hlfsm.png}
+	\caption{Máy trạng thái bậc cao.}
+\end{figure}
+
+Thiết kế gồm 6 trạng thái chính:
+
+\begin{itemize}
+	\item IDLE: là trạng thái ban đầu, khi reset sẽ luôn trở về trạng thái này, giá trị thanh ghi max sẽ được đặt là cực tiểu và thanh ghi min sẽ được đặt là cực đại, đây là trạng thái chờ ban đầu của hệ thống, khi có tín hiệu start sẽ chuyển sang trạng thái UPDATE.
+	\item UPDATE: ở trạng thái này sẽ cập nhật các giá trị max, min và địa chỉ truy cập bộ nhớ mới được tín toán từ trạng thái COMPARE, đồng thời đưa ngõ ra rden lên mức cao để chuẩn bị nhận dữ liệu ngõ vào mới từ bộ nhớ.
+	\item READ: đây là trạng thái chờ đọc vì ở đây bộ nhớ đọc đồng bộ, do đó cần phải đợi một chu kì để nhận dữ liệu đầu vào.
+	\item COMPARE: ở trạng thái này, sẽ lấy tín hiệu đầu vào đem so sánh với các dữ liệu trong thanh ghi max và min, nếu dữ liệu thỏa sẽ được cập nhật ở trạng thái kế tiếp, đồng thời cũng cập nhật địa chỉ mới (addr + 1). Nếu đã so sánh hết dữ liệu trong bộ nhớ sẽ chuyển sang trạng thái DONE, ngược lại sẽ sang trạng thái UPDATE để chuẩn bị nhận dữ liệu mới từ bộ nhớ.
+	\item DONE: là trạng thái thông báo việc tìm giá trị lớn nhất, nhỏ nhất hoàn tất, lúc này tín hiệu done sẽ tích cực mức cao (done chỉ mức cao ở trạng thái này). Nếu nhận được tín hiệu start mức cao sẽ chuyển sang trạng thái CLEAR, ngược lại sẽ giữ trạng thái hiện tại.
+	\item CLEAR: trạng thái này đóng vai trò đặt lại giá trị thanh ghi max là cực tiểu và thanh ghi min là cực đại để chuẩn bị cho lần tìm giá trị lớn nhất, nhỏ nhất kế tiếp. 
+	
+\end{itemize}
+
+\answer{c}{Thiết kế Datapath và Control Unit của thiết kế.}
+
+Đầu tiên, cần phải thiết kế khối so sánh với ngõ ra nhỏ hơn tích cực cao để so sánh các giá trị của ngõ vào so với giá trị trong 2 thanh ghi max, min. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\linewidth]{./my-chapters/my-images/Question2/compare_lt.png}
+	\caption{Bộ so sánh nhỏ hơn.}
+\end{figure}
+
+Bộ so sánh gồm 1 bộ CLA để làm phép trừ tính toán giá trị chênh lệch giữa hai giá trị đầu vào a và b. Một cổng logic XOR 2 ngõ vào (là bit MSB của hai ngõ vào a, b) để xác định a, b có cùng dấu không. Tín hiệu ngõ ra cổng XOR sẽ được nối với tín hiệu lựa chọn của một bộ MUX 2 sang 1 để lựa chọn nếu a, b cùng dấu $\rightarrow$ sử dụng bit MSB của ngõ ra CLA, nếu a, b khác dấu thì sử dụng bit MSB của a làm cờ so sánh a < b.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.7\linewidth]{./my-chapters/my-images/Question2/datapath.png}
+	\caption{Datapath.}
+\end{figure}
+
+Datapath của thiết kế gồm 3 khối MUX 4-1 để xác định giá trị cập nhật cho 3 thanh ghi dựa vào trạng thái hiện tại.
+
+Ba thanh ghi gồm:
+
+\begin{itemize}
+	\item Thanh ghi địa chỉ, đóng vai trò trỏ vào bộ nhớ, kết hợp với tín hiệu rden để lấy dữ liệu đầu vào.
+	\item Thanh ghi max, lưu giá trị tối đa.
+	\item Thanh ghi min, lưu giá trị cực tiểu.
+\end{itemize}
+
+Một bộ cộng để tăng địa chỉ truy cập bộ nhớ.
+
+Hai bộ so sánh nhỏ hơn để đưa ra tín hiệu lựa chọn giữ giá trị thanh ghi max, min hoặc thay thế bằng giá trị đầu vào data\_in.
+
+Một bộ AND Reduction để xác định địa chỉ đạt đến giá trị cuối của bộ nhớ, là điều kiện để chuyển từ trạng thái COMPARE sang trạng thái DONE.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.7\linewidth]{./my-chapters/my-images/Question2/fsm.png}
+	\caption{Control Unit FSM.}
+\end{figure}
+
+\answer{d}{Viết chương trình mô phỏng hoạt động của thiết kế.}
+
+\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={HDL mô tả bộ so sánh bé hơn có dấu.}]{./my-chapters/design_verify/Question2/lt_compare_sign.sv}
+
+\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={HDL mô tả thiết kế tìm số lớn nhất và nhỏ nhất.}]{./my-chapters/design_verify/Question2/max_min.sv}
+
+Để tạo giá trị ngẫu nhiên trong bộ nhớ để mô phỏng, nhóm chọn sử dụng $\$unrandom\_range( , )$; mà System Verilog cung cấp.
+
+\begin{lstlisting}[style=StyleCode, language=SystemVerilog, caption={Chương trình tạo giá trị ngẫu nhiên ban đầu cho bộ nhớ.}]
+	localparam WIDTH_S = DW - 1;
+	
+	golden_min = {1'b0, {WIDTH_S{1'b1}}};   // max  2^(n-1)
+	golden_max = {1'b1, {WIDTH_S{1'b0}}};   // min -2^(m-1)
+	
+	for (i = 0; i < DEPTH; i++) begin
+		ram.mem[i] = $urandom_range(-2**(WIDTH_S), 2**(WIDTH_S) - 1);
+	
+		if (ram.mem[i] < golden_min) golden_min = ram.mem[i];
+	
+		if (ram.mem[i] > golden_max) golden_max = ram.mem[i];
+	end
+	
+	$display("Golden Min = %0d, Golden Max = %0d",
+	golden_min, golden_max);
+\end{lstlisting}
+
+\begin{lstlisting}[style=StyleCode, language=SystemVerilog, caption={Chương trình kiểm định thiết kế.}]
+	always @(posedge clk) begin
+		if (done) begin
+			$display("DUT Min = %0d, DUT Max = %0d", dut_min, dut_max);
+	
+			if (dut_min === golden_min && dut_max === golden_max)
+			$display(">>> TEST PASS <<<");
+			else begin
+				$display(">>> TEST FAIL <<<");
+				$display("Expected Min=%0d Max=%0d", golden_min, golden_max);
+			end  
+		end
+	end
+\end{lstlisting}
+
+\begin{lstlisting}[style=StyleResult, language=Result, caption={Kết quả kiểm định cho thiết kế bộ tìm số lớn nhất và nhỏ nhất.}]
+	xcelium> run
+	Golden Min = -125, Golden Max = 120
+	DUT Min = -125, DUT Max = 120
+	>>> TEST PASS <<<
+	Simulation complete via $finish(1) at time 995 NS + 0
+	../01_tb/max_min_tb.sv:106             $finish; 
+\end{lstlisting}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{./my-chapters/my-images/Question2/sim_fsm.png}
+	\caption{Dạng sóng lúc bắt đầu.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{./my-chapters/my-images/Question2/sim_fsm_2.png}
+	\caption{Dạng sóng lúc hoàn thành.}
+\end{figure}
+
+Kết luận: Máy trạng thái chuyển đúng so với dự tính, giá trị kết quá so sánh chính xác.
+
+
+
+

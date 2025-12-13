@@ -1,0 +1,136 @@
+\question{Câu 3}
+
+Cho đoạn code C sau dùng để sắp xếp một mảng n phần tử theo thứ tự tăng dần sử dụng giải thuật \textbf{\textit{Selection Sort}}:
+
+\begin{minipage}{.5\linewidth}
+	\begin{lstlisting}[style=StyleCode, language=C, caption={Đoạn chương trình C của giải thuật Selection Sort.}, label=lis: selectionsort_debai, basicstyle=\fontsize{9}{10}\selectfont\ttfamily]
+		int n = arr.size() - 1;
+		for(int i = 0; i < n; i++) {
+			min = i;
+			for(int j = i+1; j <= n; j++){
+				if(arr[j] < arr[min]){
+					min = j;
+				}
+			}
+			swap(arr[i], arr[min]);
+		}
+	\end{lstlisting}
+\end{minipage}
+%\hspace{0.1cm}
+\begin{minipage}{.5\linewidth}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=.7\linewidth]{my-chapters/my-images/Question3/req_ram.png}
+		\caption{Yêu cầu của bộ nhớ.}
+		\label{fig:reqram}
+	\end{figure}
+\end{minipage}
+
+Người ta muốn chuyển đổi giải thuật ở đoạn code \ref{lis: selectionsort_debai} trên sang phần cứng để thực thi. Giả sử mảng được lưu trong bộ nhớ \textit{Single Port} ở hình \ref{fig:reqram} và quá trình đọc/ghi diễn ra đồng bộ theo Clock và hoàn thành trong 1 Clock.
+
+\answer{a}{Định nghĩa ngõ vào ra của thiết kế, vẽ kết nối của thiết kế của bộ nhớ (Yêu cầu phải có chân Start và Reset).}
+
+Ta tiến hành biểu diễn đoạn code \ref{lis: selectionsort_debai} trên dưới dạng flowchart như sau:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.7\linewidth]{./my-chapters/my-diagrams/quesion3/Flowchart.png}
+	\caption{Flowchart của thuật toán Selection Sort.}
+	\label{fig: flowchart_selectionSort}
+\end{figure}
+
+Từ hình \ref{fig: flowchart_selectionSort}, cho ta thấy được các dữ liệu được đọc trước và các dữ liệu có sẵn để có thể dễ dàng trong việc chuyển đổi từ giải thuật phần mềm qua phần cứng. Thực hiện kiểm chứng cách hoạt động của giải thuật theo flowchart và giải thuật góc ở chương trình \ref{lis: selectionsort_debai}.
+
+\begin{minipage}{.4\linewidth}
+	\begin{lstlisting}[style=StyleCode, language=Cpp, caption={Đoạn code nguyên mẫu của giải thuật Selection Sort.}]
+		void selection_sort_standard(std::vector<int> &arr){
+			int n = arr.size() - 1;
+			for(int i = 0; i < n; i++){
+				int min = i;
+				for(int j = i+1; j <= n; j++){
+					if(arr[j] < arr[min]){
+						min = j;
+					}
+				}
+				std::swap(arr[i], arr[min]);
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	\end{lstlisting}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{.4\linewidth}
+	\begin{lstlisting}[style=StyleCode, language=Cpp, caption={Đoạn code chỉnh sửa của giải thuật Selection Sort.}]
+		void selection_sort_cus(std::vector<int> &arr){
+			int n = arr.size() - 1;
+			int min         = 0;
+			int temp_data   = 0;
+			int temp_min    = 0;
+			int data_key    = 0;
+			int data_min    = 0;
+			for(int i = 0; i < n; i++){
+				data_key = arr[i];
+				min = i;
+				for(int j = i + 1; j <= n; j++){
+					temp_data = arr[j];
+					temp_min  = arr[min];
+					if(temp_data < temp_min){
+						min = j;
+					}
+					data_min = arr[min];
+				}
+				arr[i] = data_min;
+				arr[min] = data_key;
+			}
+		}
+	\end{lstlisting}
+\end{minipage}
+
+Kết quả cho ra là:
+
+\begin{lstlisting}[style=StyleResult, language=Result, caption={Kết quả so sánh 2 cách viết của Selection Sort.}]
+	Finished reading file: ./tools/unsorted.txt
+	Check Selection_Sort Standard: PASS
+	Finish write file './Reports/COMPILE_REPORT/sorted_standard.txt'.
+	Check Selection_Sort Cus: PASS
+	Finish write file './Reports/COMPILE_REPORT/sorted_cus.txt'.
+\end{lstlisting}
+
+Sau khi đã viết lại đoạn code cho dễ nhìn, tiếp đến sẽ định nghĩa lại ngõ vào vầ ra của module top chính ra \texttt{Selection\_Sort} như sau:
+
+ \begin{table}[H]
+	 \centering
+	 \begin{tabular}{|>{\centering\arraybackslash}m{3cm}
+			       	 |>{\centering\arraybackslash}m{2cm}
+			         |>{\raggedright\arraybackslash}m{8cm}|}
+		     \hline
+		     Signal & Size & Functional \\
+		     \hline
+		     i\_clk & 1 & Clock của toàn hệ thống. \\
+		     \hline
+		     i\_rst\_t & 1 & Tín hiệu reset của hệ thống với tích cực thấp. \\
+		     \hline
+		     i\_start & 1 & Tín hiệu bắt đầu hoạt động của bộ. \\
+		     \hline 
+		     o\_done & 1 & Tín hiệu cho biết được đã sắp xếp xong mảng.\\
+		     \hline
+	\end{tabular}
+\end{table}
+
+Từ đó, ta có thiết kế tổng quan của module \texttt{Selection\_Sort}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\linewidth]{./my-chapters/my-diagrams/quesion3/Design_Overview.png}
+	\caption{Thiết kế tổng quan của module \texttt{Selection\_Sort}.}
+\end{figure}
