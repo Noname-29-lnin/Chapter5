@@ -8,3 +8,10 @@
 \contentsline {subsection}{a)}{10}{figure.caption.10}%
 \contentsline {subsection}{b)}{14}{figure.caption.13}%
 \contentsline {subsection}{c)}{15}{figure.caption.14}%
+\contentsline {subsection}{d)}{18}{figure.caption.19}%
+\contentsline {subsection}{e)}{35}{figure.caption.20}%
+\contentsline {section}{Câu 4}{36}{figure.caption.22}%
+\contentsline {subsection}{a)}{37}{figure.caption.24}%
+\contentsline {subsection}{b)}{38}{figure.caption.26}%
+\contentsline {subsection}{c)}{39}{figure.caption.27}%
+\contentsline {subsection}{d)}{40}{figure.caption.29}%

@@ -1,0 +1,147 @@
+
+#
+# Preferences
+#
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set cursorctl-dont-show-sync-warning 1
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+
+#
+# Databases
+#
+database require tb_Selection_Sort -search {
+	../Topmodule/Xcelium/tb_Selection_Sort.shm/tb_Selection_Sort.trn
+	/home/admin/shared/project_tiny/BigProject/Chapter5/Quesion_3/03_verif/Topmodule/Xcelium/tb_Selection_Sort.shm/tb_Selection_Sort.trn
+}
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1918x811+0+31}] != ""} {
+    window geometry "Waveform 1" 1918x811+0+31
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar visibility partial
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ns \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -label Selection_sort -comment {}]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.i_clk
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.i_rst_n
+	} ]
+set id [waveform add -signals  {
+	{tb_Selection_Sort::tb_Selection_Sort.DUT.i_num_elems[3:0]}
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.i_start
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.o_done
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.i_clk
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.i_start
+	} ]
+set id [waveform add -label Control_Unit -comment {}]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.i_comp_less
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.i_valid_rd
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.i_valid_wr
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.i_done_j
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.i_done_sort
+	} ]
+set id [waveform add -signals  {
+	{tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.state[3:0]}
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.o_rd_en
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.o_wr_en
+	} ]
+set id [waveform add -signals  {
+	{tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.o_sel_addr[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.o_sel_data_rd[1:0]}
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.o_sel_data_wr
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.o_start_j
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.o_update_i
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.o_update_j
+	} ]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.CONTROL_UNIT.o_update_min
+	} ]
+set id [waveform add -label DataPaht_unit -comment {}]
+set id [waveform add -signals  {
+	tb_Selection_Sort::tb_Selection_Sort.DUT.DATA_PATH_UNIT.i_clk
+	} ]
+set id [waveform add -signals  {
+	{tb_Selection_Sort::tb_Selection_Sort.DUT.DATA_PATH_UNIT.value_i[3:0]}
+	} ]
+set id [waveform add -signals  {
+	{tb_Selection_Sort::tb_Selection_Sort.DUT.DATA_PATH_UNIT.value_j[3:0]}
+	} ]
+set id [waveform add -signals  {
+	{tb_Selection_Sort::tb_Selection_Sort.DUT.DATA_PATH_UNIT.value_min[3:0]}
+	} ]
+set id [waveform add -signals  {
+	{tb_Selection_Sort::tb_Selection_Sort.DUT.DATA_PATH_UNIT.w_data_key[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{tb_Selection_Sort::tb_Selection_Sort.DUT.DATA_PATH_UNIT.w_temp_data[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{tb_Selection_Sort::tb_Selection_Sort.DUT.DATA_PATH_UNIT.w_temp_min[7:0]}
+	} ]
+
+waveform xview limits 0 23325ns
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 600x250+0+0

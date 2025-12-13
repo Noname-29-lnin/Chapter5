@@ -2,13 +2,11 @@ module Control_unit (
     input logic                     i_clk       ,
     input logic                     i_rst_n     ,
     input logic                     i_start     ,
-
     input logic                     i_comp_less ,
     input logic                     i_valid_wr  ,
     input logic                     i_valid_rd  ,
     input logic                     i_done_j    ,
     input logic                     i_done_sort ,
-
     output logic                    o_wr_en     ,
     output logic                    o_rd_en     ,
     output logic [1:0]              o_sel_addr  ,

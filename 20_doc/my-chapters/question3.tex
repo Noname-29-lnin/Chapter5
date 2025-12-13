@@ -168,4 +168,126 @@ FSM gồm có 16 trạng thái như sau:
 
 \begin{enumerate}[label=\arabic*.]
 	\item Thiết kế DataPath:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=.9\linewidth]{./my-chapters/my-diagrams/quesion3/DataPath.png}
+		\caption{Thiết kế tổng quan của module \texttt{DataPath\_Unit}.}
+	\end{figure}
+	
+	\begin{itemize}[label=-]
+		\item \textsf{RAM\_Addr:}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=.5\linewidth]{./my-chapters/my-diagrams/quesion3/Block_Addr.png}
+			\end{figure}
+		\item \textsf{RAM\_Read\_data:}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=.5\linewidth]{./my-chapters/my-diagrams/quesion3/Block_Read.png}
+			\end{figure}
+		\item \textsf{RAM\_Write\_data:}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=.5\linewidth]{./my-chapters/my-diagrams/quesion3/Block_Write.png}
+			\end{figure}
+	\end{itemize}
+	
+	\item Thiết kế của Control\_Unit:
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=.7\linewidth]{./my-chapters/my-diagrams/quesion3/Control_Unit.png}
+		\end{figure}
+\end{enumerate}
+
+\answer{d}{Viết chương trình mô phỏng hoạt động của thiết kế.}
+
+\begin{enumerate}[label=\arabic*.]
+	\item Thiết kế tổng quan:
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{Selection\_Sort}}.]{./../Quesion_3/02_rtl/Selection_Sort.sv}
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{SinglePort\_RAM}}.]{./../Quesion_3/02_rtl/SinglePort_RAM.sv}
+		
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{Control\_unit}}.]{./../Quesion_3/02_rtl/Control_unit.sv}
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{Data\_path}}.]{./../Quesion_3/02_rtl/Data_path.sv}
+		
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{Block\_Addr}}.]{./../Quesion_3/02_rtl/Block_Addr.sv}
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{Block\_Read\_data}}.]{./../Quesion_3/02_rtl/Block_Read_data.sv}
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{Block\_Write\_data}}.]{./../Quesion_3/02_rtl/Block_Write_data.sv}
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{RAM\_addr}}.]{./../Quesion_3/02_rtl/RAM_addr.sv}
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{RAM\_read\_data}}.]{./../Quesion_3/02_rtl/RAM_read_data.sv}
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{RAM\_write\_data}}.]{./../Quesion_3/02_rtl/RAM_write_data.sv}
+		
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{SS\_detect\_edge}}.]{./../Quesion_3/02_rtl/SS_detect_edge.sv}
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{Update\_I}}.]{./../Quesion_3/02_rtl/Update_I.sv}
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{Update\_J}}.]{./../Quesion_3/02_rtl/Update_J.sv}
+		\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{Update\_MIN}}.]{./../Quesion_3/02_rtl/Update_MIN.sv}		
+	\item Kiểm định lại hoạt động của module:
+	
+	\begin{lstlisting}[style=StyleResult, language=Result, caption={Kết quả sau khi kiểm định lại chức năng của module.}]
+			Building instance specific data structures.
+		Loading native compiled code:     .................... Done
+		Design hierarchy summary:
+		Instances  Unique
+		Modules:                16      15
+		Registers:             116     113
+		Scalar wires:           92       -
+		Vectored wires:         55       -
+		Always blocks:          29      27
+		Initial blocks:          3       3
+		Cont. assignments:      24      24
+		Pseudo assignments:     75      75
+		Simulation timescale:  1ps
+		Writing initial simulation snapshot: worklib.tb_Selection_Sort:sv
+		Loading snapshot worklib.tb_Selection_Sort:sv .................... Done
+		xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+		xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+		xcelium> run
+		>>> Sending START...
+		>>> DONE received at time 23305000
+		
+		===== RAM AFTER SORT =====
+		RAM[0] = 0b
+		RAM[1] = 14
+		RAM[2] = 28
+		RAM[3] = 3d
+		RAM[4] = 65
+		RAM[5] = 6e
+		RAM[6] = 80
+		RAM[7] = 90
+		RAM[8] = 95
+		RAM[9] = 98
+		RAM[10] = bd
+		RAM[11] = bf
+		RAM[12] = c4
+		RAM[13] = c5
+		RAM[14] = e2
+		RAM[15] = f2
+		>>> Saved sorted RAM to sorted_output.txt
+		Simulation complete via $finish(1) at time 23325 NS + 0
+		../Topmodule/tb_Selection_Sort.sv:71         $finish;
+		xcelium> exit
+		TOOL:	xrun(64)	20.09-s001: Exiting on Dec 12, 2025 at 08:31:02 EST  (total: 00:00:01)
+	\end{lstlisting}
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\linewidth]{./my-chapters/my-diagrams/quesion3/waveform_test.png}
+	\caption{Sóng ngõ ra tổng quan của module test.}
+\end{figure}
+
+\answer{e}{Giả sử vòng lặp $i = 0$, không có swap (hoán đổi) và vòng lặp $i = 1$, có swap. Vẽ dạng sóng từ 
+	lúc $start = 1$ đển lúc hoàn thành vòng lặp $i = 1$ của thiết kế.}
+
+\begin{enumerate}[label=\arabic*.]
+	\item Vòng lặp $i = 0$ với không có swap:
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\linewidth]{./my-chapters/my-diagrams/quesion3/noswap.png}
+		\end{figure}
+	\item Vòng lặp $i = 0$ với có swap:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{./my-chapters/my-diagrams/quesion3/swap.png}
+	\end{figure}
 \end{enumerate}

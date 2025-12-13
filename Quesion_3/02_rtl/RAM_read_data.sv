@@ -10,24 +10,11 @@ module RAM_read_data #(
     output logic                    o_valid      
 );
 
-// logic w_i_rd_en;
-// SS_detect_edge #(
-//     .POS_EDGE   (1)   // 1: posedge, 0: negedge
-// ) DETECT_EDGE (
-//     .i_clk      (i_clk),
-//     .i_rst_n    (i_rst_n),
-//     .i_signal   (i_rd_en),
-//     .o_signal   (w_i_rd_en)
-// );
-
-// logic w_o_rd_en;
 logic w_valid;
 always_ff @( posedge i_clk or negedge i_rst_n ) begin
     if(~i_rst_n) begin
-        // w_o_rd_en   <= '0;
         o_rd_en     <= '0;
     end else begin
-        // w_o_rd_en   <= i_rd_en;
         o_rd_en     <= i_rd_en;
     end
 end
