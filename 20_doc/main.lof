@@ -1,23 +1,30 @@
 \babel@toc {vietnamese}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Giải thuật sử dụng.}}{1}{figure.caption.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Tổng quan kết nối thiết kế.}}{2}{figure.caption.3}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Máy trạng thái bậc cao.}}{3}{figure.caption.4}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Bộ so sánh nhỏ hơn.}}{4}{figure.caption.5}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Datapath.}}{5}{figure.caption.6}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Control Unit FSM.}}{6}{figure.caption.7}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Dạng sóng lúc bắt đầu.}}{9}{figure.caption.8}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Dạng sóng lúc hoàn thành.}}{9}{figure.caption.9}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Yêu cầu của bộ nhớ.}}{10}{figure.caption.10}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Flowchart của thuật toán Selection Sort.}}{11}{figure.caption.11}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Thiết kế tổng quan của module \texttt {Selection\_Sort}.}}{13}{figure.caption.13}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Lưu đồ trạng thái của module \texttt {Selection\_Sort}.}}{14}{figure.caption.14}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Thiết kế tổng quan của module \texttt {DataPath\_Unit}.}}{16}{figure.caption.15}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Sóng ngõ ra tổng quan của module test.}}{35}{figure.caption.20}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Ví dụ.}}{36}{figure.caption.23}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Giải thuật sử dụng.}}{36}{figure.caption.24}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Tổng quan kết nối của thiết kế.}}{37}{figure.caption.26}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Máy trạng thái bậc cao.}}{38}{figure.caption.27}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Datapath.}}{39}{figure.caption.28}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Control Unit FSM.}}{40}{figure.caption.29}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Dạng sóng lúc bắt đầu.}}{44}{figure.caption.30}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Dạng sóng lúc hoàn thành.}}{45}{figure.caption.31}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Lưu đồ giải thuật của thuật toán $ A/B $.}}{1}{figure.caption.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Sơ đồ khối tổng quát của module thực hiện thuật toán $ A/B $.}}{1}{figure.caption.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Thiết kế HighLevel FSM.}}{4}{figure.caption.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces DataPath của bộ chia.}}{5}{figure.caption.6}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Ripple Carry Add/Sub 16 bit.}}{6}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Control\_Unit của bộ chia.}}{6}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Dạng sóng của testbench mô phỏng khối thực hiện phép chia.}}{14}{figure.caption.10}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Giải thuật sử dụng.}}{15}{figure.caption.11}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Tổng quan kết nối thiết kế.}}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Máy trạng thái bậc cao.}}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Bộ so sánh nhỏ hơn.}}{18}{figure.caption.15}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Datapath.}}{19}{figure.caption.16}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Control Unit FSM.}}{20}{figure.caption.17}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Dạng sóng lúc bắt đầu.}}{23}{figure.caption.18}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Dạng sóng lúc hoàn thành.}}{23}{figure.caption.19}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Yêu cầu của bộ nhớ.}}{24}{figure.caption.20}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Flowchart của thuật toán Selection Sort.}}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Thiết kế tổng quan của module \texttt {Selection\_Sort}.}}{27}{figure.caption.23}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Lưu đồ trạng thái của module \texttt {Selection\_Sort}.}}{28}{figure.caption.24}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Thiết kế tổng quan của module \texttt {DataPath\_Unit}.}}{30}{figure.caption.25}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Sóng ngõ ra tổng quan của module test.}}{49}{figure.caption.30}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Ví dụ.}}{50}{figure.caption.33}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Giải thuật sử dụng.}}{50}{figure.caption.34}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Tổng quan kết nối của thiết kế.}}{51}{figure.caption.36}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Máy trạng thái bậc cao.}}{52}{figure.caption.37}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Datapath.}}{53}{figure.caption.38}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Control Unit FSM.}}{54}{figure.caption.39}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Dạng sóng lúc bắt đầu.}}{58}{figure.caption.40}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Dạng sóng lúc hoàn thành.}}{59}{figure.caption.41}%

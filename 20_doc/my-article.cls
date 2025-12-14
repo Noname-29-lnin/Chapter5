@@ -168,6 +168,18 @@
 %     \hline
 % \end{tabular}
 % \end{table}
+% \begin{table}[H]
+% \centering
+% \begin{tabular}{|>{\centering\arraybackslash}m{1cm}
+%                 |>{\centering\arraybackslash}m{2.5cm}
+%                 |>{\centering\arraybackslash}m{4cm}
+%                 |>{\raggedright\arraybackslash}m{6cm}
+%                 |>{\centering\arraybackslash}m{2cm}|}
+%     \hline
+% \end{tabular}
+% \caption{Caption}
+% \label{tab: }
+% \end{table}
 % ===================== Long table example =====================
 % \begin{longtable}{|c|c|c|}
 % \caption{Example of a long table} \label{tab:long} \\  % caption ở đây, khác với table

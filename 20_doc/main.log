@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.10)  14 DEC 2025 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.11)  14 DEC 2025 13:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,9 +8,9 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
 (my-article.cls
 Document Class: my-article 2025/08/11 HCMUT Report Class - Layout Only
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+(/home/noname/.miktex/texmfs/install/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+(/home/noname/.miktex/texmfs/install/tex/latex/base/size12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -25,28 +25,27 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/anyfontsize\anyfontsize
-.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/anyfontsize/anyfontsize.sty
 Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen149
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen150
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count283
@@ -97,28 +96,28 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2949.
 LaTeX Info: Redefining \] on input line 2950.
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.st
-y
+))
+(/home/noname/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count295
@@ -134,76 +133,72 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layoutvoffset=\dimen165
 \Gm@dimlist=\toks23
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/noname/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
-ty
+) (/home/noname/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
+(/home/noname/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
-lestring.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.
+sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+ (/home/noname/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count298
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count299
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
-ty
+(/home/noname/.miktex/texmfs/install/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen166
 \Hy@linkcounter=\count300
 \Hy@pagecounter=\count301
- (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+
+(/home/noname/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+)
+(/home/noname/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count302
- (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+
+(/home/noname/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -217,18 +212,17 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count303
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen167
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
-.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -248,31 +242,30 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(/home/noname/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count308
 \c@bookmark@seq@number=\count309
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
-echeck.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.st
+y
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
-ounter.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.st
+y
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
 \Hy@SectionHShift=\skip54
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+) (/home/noname/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box55
 \beforetitleunit=\skip55
@@ -284,27 +277,27 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthlast=\dimen173
 \titlewidthfirst=\dimen174
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen175
 \Gin@req@width=\dimen176
-) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+)
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/array.sty
 Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen177
 \ar@mcellbox=\box56
@@ -314,7 +307,7 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \backup@length=\skip58
 \ar@cellbox=\box57
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen179
 \lightrulewidth=\dimen180
@@ -334,7 +327,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count313
 \@thisrulewidth=\dimen191
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@col@width=\dimen192
 \TX@old@table=\dimen193
@@ -344,7 +337,7 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@cols=\count314
 \TX@ftn=\toks26
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tabulary\tabulary.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/tabulary/tabulary.sty
 Package: tabulary 2024/06/04 v0.11 tabulary package (DPC)
 \TY@count=\count315
 \TY@linewidth=\dimen197
@@ -352,7 +345,7 @@ Package: tabulary 2024/06/04 v0.11 tabulary package (DPC)
 \tymax=\dimen199
 \TY@tablewidth=\dimen256
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/longtable.sty
 Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \LTleft=\skip59
 \LTright=\skip60
@@ -371,14 +364,14 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \c@LT@chunks=\count320
 \LT@p@ftn=\toks27
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip63
 \multirow@cntb=\count321
 \multirow@dima=\skip64
 \bigstrutjot=\dimen258
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/multicol.sty
 Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 \c@tracingmulticols=\count322
 \mult@box=\box63
@@ -449,10 +442,10 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 \mc@col@check@num=\count331
 \g__mc_curr_col_int=\count332
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen268
 \captionmargin=\dimen269
@@ -469,10 +462,10 @@ Package caption Info: Standard document class detected.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-)) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.st
-y
+))
+(/home/noname/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
 \f@nch@headwidth=\skip67
@@ -490,33 +483,33 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip79
 \f@nch@widthR=\skip80
 \@temptokenb=\toks28
-) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+)
+(/home/noname/.miktex/texmfs/install/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip81
 \bibsep=\skip82
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count335
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2025/06/06 v2.1g lastpage: 2.09 or 2e? (HMM)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage2e.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/lastpage/lastpage2e.sty
 Package: lastpage2e 2025/06/06 v2.1g Decide which 2e lastpage version to use (H
 MM)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpagemodern
-.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/lastpage/lastpagemodern.sty
 Package: lastpagemodern 2025-06-06 v2.1g Refers to last page's name (HMM; JPG)
 \c@lastpagecount=\count336
 ) 
-)) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+)) (/home/noname/.miktex/texmfs/install/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/enumerate.sty
 Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
 \@enLab=\toks29
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip83
 \enit@outerparindent=\dimen276
@@ -538,19 +531,20 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 107.
 ) (my-coverpage.sty
 Package: my-coverpage 2025/08/11 HCMUT Report Cover Page
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen277
 \ESO@tempdimb=\dimen278
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -560,7 +554,8 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-)) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+))
+(/home/noname/.miktex/texmfs/install/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count339
 \float@exts=\toks31
@@ -571,43 +566,37 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (my-codespace.sty
 Package: my-codespace 2025/08/11 v0.0 My Codespace Package
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
-sty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
-y
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--common.tex
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.t
+ex
 \pgfutil@everybye=\toks33
 \pgfutil@tempdima=\dimen279
 \pgfutil@tempdimb=\dimen280
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--latex.def
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.de
+f
 \pgfutil@abb=\box112
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
-code.tex
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
-sty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
-sty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s.code.tex
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.te
+x
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks34
 \pgfkeys@temptoks=\toks35
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-libraryfiltered.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeyslibraryfi
+ltered.code.tex
 \pgfkeys@tmptoks=\toks36
 ))
 \pgf@x=\dimen281
@@ -631,40 +620,37 @@ libraryfiltered.code.tex
 \t@pgf@tokc=\toks39
 \pgf@sys@id@count=\count344
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
-fg
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-pdftex.def
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex.
+def
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-common-pdf.def
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-
+pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-ssoftpath.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath
+.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@smallbuffer@items=\count345
 \pgfsyssoftpath@bigbuffer@items=\count346
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-sprotocol.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol
+.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-e.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.te
+x
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
-code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
-r.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.te
+x
 \pgfmath@dimen=\dimen291
 \pgfmath@count=\count347
 \pgfmath@box=\box113
@@ -672,34 +658,31 @@ r.code.tex
 \pgfmath@stack@operand=\toks41
 \pgfmath@stack@operation=\toks42
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.basic.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.trigonometric.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.random.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.comparison.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.base.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.round.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.misc.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.integerarithmetics.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
-code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
-.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code
+.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basi
+c.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trig
+onometric.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.rand
+om.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.comp
+arison.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base
+.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.roun
+d.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc
+.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.inte
+gerarithmetics.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex)
+
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count348
-))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
-tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epoints.code.tex
+)) (/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.c
+ode.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen292
 \pgf@picmaxx=\dimen293
@@ -716,129 +699,124 @@ File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@zx=\dimen304
 \pgf@zy=\dimen305
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathconstruct.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathcons
+truct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@path@lastx=\dimen306
 \pgf@path@lasty=\dimen307
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathusage.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusag
+e.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@shorten@end@additional=\dimen308
 \pgf@shorten@start@additional=\dimen309
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-escopes.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.c
+ode.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box114
 \pgf@hbox=\box115
 \pgf@layerbox@main=\box116
 \pgf@picture@serial@count=\count349
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-egraphicstate.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphics
+tate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen310
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransformations.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransfor
+mations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@pt@x=\dimen311
 \pgf@pt@y=\dimen312
 \pgf@pt@temp=\dimen313
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-equick.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.co
+de.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eobjects.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.
+code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathprocessing.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathproc
+essing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-earrows.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.c
+ode.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowsep=\dimen314
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eshade.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.co
+de.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen315
 \pgf@sys@shading@range@num=\count350
 \pgf@shadingcount=\count351
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eimage.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.co
+de.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eexternal.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal
+.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box117
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-elayers.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.c
+ode.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransparency.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretranspar
+ency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epatterns.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepatterns
+.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-erdf.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorerdf.code
+.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-shapes.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.co
+de.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box118
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-plot.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code
+.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-0-65.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-versio
+n-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
 \pgf@nodesepstart=\dimen316
 \pgf@nodesepend=\dimen317
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-1-18.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-versio
+n-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
-y
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
-ty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
-code.tex
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+)) (/home/noname/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex))
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen318
 \pgffor@skip=\dimen319
 \pgffor@stack=\toks43
 \pgffor@toks=\toks44
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z\tikz.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.co
+de.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
-aryplothandlers.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotha
+ndlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count352
 \pgfplotmarksize=\dimen320
@@ -860,8 +838,8 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikznumberofcurrentchild=\count355
 \tikz@fig@count=\count356
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-matrix.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.co
+de.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfmatrixcurrentrow=\count357
 \pgfmatrixcurrentcolumn=\count358
@@ -869,34 +847,32 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 \tikz@expandcount=\count360
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries\tikzlibrarytopaths.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
-e.sty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
 Package: expl3 2025-07-20 L3 programming layer (loader) 
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
+(/home/noname/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count361
 ))
 Package: xparse 2024-08-16 L3 Experimental document command parser
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.sty
+) (/home/noname/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty
 Package: zref-abspage 2025-06-08 v2.36 Module abspage for zref (HO)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/zref/zref-base.sty
 Package: zref-base 2025-06-08 v2.36 Module base for zref (HO)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+)
+(/home/noname/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 Package zref Info: New property list: main on input line 767.
@@ -906,7 +882,7 @@ Package zref Info: New property: page on input line 769.
 \c@abspage=\count362
 Package zref Info: New property: abspage on input line 67.
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/needspace/needspace.sty
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
 \mdf@templength=\skip84
@@ -951,7 +927,7 @@ Package: needspace 2025/03/13 v1.3e reserve vertical space
 \mdf@subsubtitleinneraboveskip@length=\skip122
 \mdf@subsubtitleinnerbelowskip@length=\skip123
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-frame-1.mdf
+(/home/noname/.miktex/texmfs/install/tex/latex/mdframed/md-frame-1.mdf
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 )
 \mdf@frametitlebox=\box123
@@ -998,7 +974,7 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \c@mdf@zref@counter=\count368
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/listings/listings.sty
 \lst@mode=\count369
 \lst@gtempboxa=\box128
 \lst@token=\toks45
@@ -1012,35 +988,36 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 \lst@lineno=\count374
 \lst@maxwidth=\dimen332
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 \c@lstnumber=\count375
 \lst@skipnumbers=\count376
 \lst@framebox=\box129
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+(/home/noname/.miktex/texmfs/install/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/lstaddons\lstautogobble
-.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/lstaddons/lstautogobble.sty
 Package: lstautogobble 2012/05/03 v0.1 Implements 'autogobble' option for 'list
 ings'
 \lstag@spacecount=\count377
-) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/minted\minted.sty
+)
+(/home/noname/.miktex/texmfs/install/tex/latex/minted/minted.sty
 Package: minted 2025/05/14 v3.7.0 Yet another Pygments shim for LaTeX
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.s
-ty
+(/home/noname/.miktex/texmfs/install/tex/generic/catchfile/catchfile.sty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
-) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvextra.sty
+)
+(/home/noname/.miktex/texmfs/install/tex/latex/fvextra/fvextra.sty
 Package: fvextra 2025/05/29 v1.13.2 fvextra - extensions and patches for fancyv
 rb
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+
+(/home/noname/.miktex/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
 \FV@CodeLineNo=\count378
 \FV@InFile=\read3
@@ -1049,11 +1026,11 @@ Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
 \FV@StepNumber=\count380
 \FV@OutFile=\write4
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/lineno/lineno.sty
 Package: lineno 2025/05/13 line numbers on paragraphs v5.5
 \linenopenalty=\count381
 \output=\toks46
@@ -1098,17 +1075,16 @@ Package: lineno 2025/05/13 line numbers on paragraphs v5.5
 \c@FV@BreakBufferDepth=\count402
 \FV@LineWidth=\dimen343
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/latex2pydata\latex2pyda
-ta.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/latex2pydata/latex2pydata.sty
 Package: latex2pydata 2025/03/26 v0.6.0 latex2pydata - write data to file in Py
 thon literal format
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgfopts\pgfopts.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 \pgfopts@list@add@a@toks=\toks47
 \pgfopts@list@add@b@toks=\toks48
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
@@ -1116,26 +1092,26 @@ Package shellesc Info: Restricted shell escape enabled on input line 77.
 \@float@every@listing=\toks49
 \c@listing=\count404
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks50
 \verbatim@line=\toks51
 \verbatim@in@stream=\read4
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks52
 \inpenc@posthook=\toks53
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/base/fontenc.sty
 Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5enc.def
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5enc.def
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 Now handling font encoding T5 ...
 ... processing UTF-8 mapping file for font encoding T5
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5enc.dfu
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5enc.dfu
 File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -1292,10 +1268,10 @@ File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
 LaTeX Font Info:    Trying to load font information for T5+cmr on input line 11
 6.
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmr.fd
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/babel/babel.sty
 Package: babel 2025/08/03 v25.12 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count405
@@ -1314,25 +1290,24 @@ on input line 2053.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
 on input line 2078.
 \U@D=\dimen344
-\l@unhyphenated=\language79
+\l@unhyphenated=\language2
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(/home/noname/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read5
 \bbl@dirlevel=\count406
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(/home/noname/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/babel-vietnamese\vietna
-mese.ldf
+(/home/noname/.miktex/texmfs/install/tex/latex/babel-vietnamese/vietnamese.ldf
 Language: vietnamese 
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/vi\babel
--vietnamese.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/babel/locale/vi/babel-vietname
+se.tex
 Package babel Info: Importing font and identification data for vietnamese
 (babel)             from babel-vi.ini. Reported on input line 12.
 )
@@ -1348,7 +1323,7 @@ Package babel Info: Hyphen rules for 'vietnamese' set to \l@english
 Package babel Info: Hyphen rules for 'vietnam' set to \l@english
 (babel)             (\language0). Reported on input line 38.
 Loading definitions for the Vietnamese font encoding
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5enc.def
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5enc.def
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 LaTeX Font Info:    Redeclaring font encoding T5 on input line 75.
 LaTeX Encoding Info:    Redeclaring text command \` (encoding T5) on input line
@@ -1480,14 +1455,14 @@ ine 432.
 )
 Package babel Info: Making " an active character on input line 147.
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/base/textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-)
-(main.aux
+) (main.aux
 Package babel Info: 'vietnamese' activates 'vietnamese' shorthands.
 (babel)             Reported on input line 9.
- (my-chapters/question2.aux) (my-chapters/question3.aux)
-(my-chapters/question4.aux))
+
+(my-chapters/question1.aux) (my-chapters/question2.aux)
+(my-chapters/question3.aux) (my-chapters/question4.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
@@ -1551,8 +1526,7 @@ Package hyperref Info: Link coloring ON on input line 59.
 \openout5 = `main.out'.
 
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+(/home/noname/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count407
 \scratchdimen=\dimen345
@@ -1565,15 +1539,11 @@ ii
 \MPnumerator=\count411
 \makeMPintoPDFobject=\count412
 \everyMPtoPDFconversion=\toks55
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+) (/home/noname/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
+(/home/noname/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
@@ -1581,7 +1551,7 @@ Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count413
-<./my-chapters/my-images/01_logobachkhoatoi.png, id=70, 471.9231pt x 478.9092pt
+<./my-chapters/my-images/01_logobachkhoatoi.png, id=94, 471.9231pt x 478.9092pt
 >
 File: ./my-chapters/my-images/01_logobachkhoatoi.png Graphic file (type png)
 <use ./my-chapters/my-images/01_logobachkhoatoi.png>
@@ -1591,13 +1561,14 @@ n input line 61.
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 61.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
 
- (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+
+(/home/noname/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
 
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(/home/noname/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Overfull \hbox (2.19716pt too wide) in paragraph at lines 61--61
@@ -1606,7 +1577,7 @@ Overfull \hbox (2.19716pt too wide) in paragraph at lines 61--61
 
 
 
-<./my-chapters/my-images/bia.jpg, id=72, 301.125pt x 414.95026pt>
+<./my-chapters/my-images/bia.jpg, id=96, 301.125pt x 414.95026pt>
 File: ./my-chapters/my-images/bia.jpg Graphic file (type jpg)
 <use ./my-chapters/my-images/bia.jpg>
 Package pdftex.def Info: ./my-chapters/my-images/bia.jpg  used on input line 62
@@ -1614,9 +1585,8 @@ Package pdftex.def Info: ./my-chapters/my-images/bia.jpg  used on input line 62
 (pdftex.def)             Requested size: 597.62614pt x 845.06903pt.
 [1
 
-{C:/Users/nguye/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./my-chapter
-s/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>]
-(main.toc)
+{/home/noname/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map} <./my-chapters/m
+y-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>] (main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1624,31 +1594,254 @@ s/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>]
 
 [2]
 LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 1
-2.
- (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
+9.
+ (/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-))
+)
+
+[3])
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
-
-(main.lot)
+ (main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
  (main.lol
 
-[3])
+[4])
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
 
 
-[4]
+[5]
+\openout2 = `./my-chapters/question1.aux'.
+
+ (my-chapters/question1.tex
+<my-chapters/my-images/Question1/debai.png, id=265, 251.13824pt x 420.3705pt>
+File: my-chapters/my-images/Question1/debai.png Graphic file (type png)
+<use my-chapters/my-images/Question1/debai.png>
+Package pdftex.def Info: my-chapters/my-images/Question1/debai.png  used on inp
+ut line 8.
+(pdftex.def)             Requested size: 169.29315pt x 283.38506pt.
+<my-chapters/my-images/Question1/debai1.png, id=266, 489.32813pt x 234.8775pt>
+File: my-chapters/my-images/Question1/debai1.png Graphic file (type png)
+<use my-chapters/my-images/Question1/debai1.png>
+Package pdftex.def Info: my-chapters/my-images/Question1/debai1.png  used on in
+put line 16.
+(pdftex.def)             Requested size: 241.84843pt x 116.08731pt.
+
+Overfull \hbox (31.06323pt too wide) in paragraph at lines 5--21
+[]$[]$ $[]$ 
+ []
+
+
+Overfull \hbox (2.24165pt too wide) in paragraph at lines 42--42
+ []|\T5/cmr/bx/n/7 Borrow_flag| 
+ []
+
+
+Overfull \hbox (23.58484pt too wide) in paragraph at lines 35--66
+ [][] 
+ []
+
+
+
+<./my-chapters/my-images/logo_DEE.png, id=267, 76.03406pt x 75.28125pt>
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 69.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.69 	
+       [1
+
+ <./my-chapters/my-images/Question1/debai.png> <./my-chapters/my-images/Questio
+n1/debai1.png> <./my-chapters/my-images/logo_DEE.png>]
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 105.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105 
+       [2]
+<./my-chapters/my-diagrams/question1/HLFSM.png, id=292, 583.17876pt x 325.215pt
+>
+File: ./my-chapters/my-diagrams/question1/HLFSM.png Graphic file (type png)
+<use ./my-chapters/my-diagrams/question1/HLFSM.png>
+Package pdftex.def Info: ./my-chapters/my-diagrams/question1/HLFSM.png  used on
+ input line 110.
+(pdftex.def)             Requested size: 483.69687pt x 269.74477pt.
+
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 113.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.113 
+       [3]
+LaTeX Font Info:    Trying to load font information for T5+cmss on input line 1
+16.
+ (/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5cmss.fd
+File: t5cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+</home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagrams/qu
+estion1/Datapath.png, id=297, 1234.6125pt x 1003.75pt>
+File: /home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagra
+ms/question1/Datapath.png Graphic file (type png)
+<use /home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagram
+s/question1/Datapath.png>
+Package pdftex.def Info: /home/noname/Documents/project_tiny/Chapter5/20_doc/my
+-chapters/my-diagrams/question1/Datapath.png  used on input line 127.
+(pdftex.def)             Requested size: 435.32422pt x 353.92148pt.
+
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 130.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.130 
+       [4 <./my-chapters/my-diagrams/question1/HLFSM.png>]
+</home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagrams/qu
+estion1/alu_16_bit.png, id=304, 1051.93pt x 403.5075pt>
+File: /home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagra
+ms/question1/alu_16_bit.png Graphic file (type png)
+<use /home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagram
+s/question1/alu_16_bit.png>
+Package pdftex.def Info: /home/noname/Documents/project_tiny/Chapter5/20_doc/my
+-chapters/my-diagrams/question1/alu_16_bit.png  used on input line 135.
+(pdftex.def)             Requested size: 435.32422pt x 166.98456pt.
+
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 138.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 
+       [5 </home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-d
+iagrams/question1/Datapath.png>]
+</home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagrams/qu
+estion1/Control_Unit.png, id=310, 885.3075pt x 536.0025pt>
+File: /home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagra
+ms/question1/Control_Unit.png Graphic file (type png)
+<use /home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagram
+s/question1/Control_Unit.png>
+Package pdftex.def Info: /home/noname/Documents/project_tiny/Chapter5/20_doc/my
+-chapters/my-diagrams/question1/Control_Unit.png  used on input line 143.
+(pdftex.def)             Requested size: 435.32422pt x 263.56772pt.
+
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 170.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[6 </home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagrams
+/question1/alu_16_bit.png> </home/noname/Documents/project_tiny/Chapter5/20_doc
+/my-chapters/my-diagrams/question1/Control_Unit.png>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 174.
+
+(/home/noname/Documents/project_tiny/Chapter5/Question1/code/divider8_top.sv
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 49.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[7]) (/home/noname/Documents/project_tiny/Chapter5/Question1/code/div_ctrl.sv
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 57.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[8]) (/home/noname/Documents/project_tiny/Chapter5/Question1/code/alu16.sv)
+(/home/noname/Documents/project_tiny/Chapter5/Question1/code/div_dp.sv
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 15.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[9]
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 81.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[10]) (/home/noname/Documents/project_tiny/Chapter5/Question1/code/eq8.sv)
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 188.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[11]
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 235.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[12]
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 282.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[13]
+<./../Question1/testbench&result/waveform.png, id=733, 1103.92426pt x 167.4255p
+t>
+File: ./../Question1/testbench&result/waveform.png Graphic file (type png)
+<use ./../Question1/testbench&result/waveform.png>
+Package pdftex.def Info: ./../Question1/testbench&result/waveform.png  used on 
+input line 311.
+(pdftex.def)             Requested size: 483.69687pt x 73.35832pt.
+)
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 77.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[14 <./../Question1/testbench&result/waveform.png>]
 \openout2 = `./my-chapters/question2.aux'.
 
  (my-chapters/question2.tex
-<./my-chapters/my-images/Question2/algorithm.png, id=202, 374.90062pt x 640.643
+<./my-chapters/my-images/Question2/algorithm.png, id=767, 374.90062pt x 640.643
 43pt>
 File: ./my-chapters/my-images/Question2/algorithm.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/algorithm.png>
@@ -1657,30 +1850,24 @@ on input line 8.
 (pdftex.def)             Requested size: 290.22107pt x 495.96565pt.
 
 
-<./my-chapters/my-images/logo_DEE.png, id=203, 76.03406pt x 75.28125pt>
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 16.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[15
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.16 H
-      á»‡ thá»‘ng Ä‘Æ°á»£c thiáº¿t káº¿ cáº§n cÃ³ cÃ¡c tÃ­n hiá»‡u: [1
 
- <./my-chapters/my-images/Question2/algorithm.png> <./my-chapters/my-images/log
-o_DEE.png>]
-<./my-chapters/my-images/Question2/top.png, id=211, 1049.42062pt x 563.10374pt>
+
+ <./my-chapters/my-images/Question2/algorithm.png>]
+<./my-chapters/my-images/Question2/top.png, id=774, 1049.42062pt x 563.10374pt>
 
 File: ./my-chapters/my-images/Question2/top.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/top.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question2/top.png  used on inp
 ut line 45.
 (pdftex.def)             Requested size: 290.22107pt x 155.72612pt.
-<./my-chapters/my-images/Question2/hlfsm.png, id=212, 761.09344pt x 558.58687pt
+<./my-chapters/my-images/Question2/hlfsm.png, id=775, 761.09344pt x 558.58687pt
 >
 File: ./my-chapters/my-images/Question2/hlfsm.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/hlfsm.png>
@@ -1694,35 +1881,22 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 57.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.57 
-      [2 <./my-chapters/my-images/Question2/top.png>]
+[16 <./my-chapters/my-images/Question2/top.png>]
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 66.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.66 	\item C
-             LEAR: tráº¡ng thÃ¡i nÃ y Ä‘Ã³ng vai trÃ² Ä‘áº·t láº¡i giÃ¡ trá»...
-[3 <./my-chapters/my-images/Question2/hlfsm.png>]
-<./my-chapters/my-images/Question2/compare_lt.png, id=228, 496.85625pt x 216.81
+[17 <./my-chapters/my-images/Question2/hlfsm.png>]
+<./my-chapters/my-images/Question2/compare_lt.png, id=790, 496.85625pt x 216.81
 pt>
 File: ./my-chapters/my-images/Question2/compare_lt.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/compare_lt.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question2/compare_lt.png  used
  on input line 76.
 (pdftex.def)             Requested size: 386.95897pt x 168.85637pt.
-<./my-chapters/my-images/Question2/datapath.png, id=229, 567.62062pt x 818.3071
+<./my-chapters/my-images/Question2/datapath.png, id=791, 567.62062pt x 818.3071
 9pt>
 File: ./my-chapters/my-images/Question2/datapath.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/datapath.png>
@@ -1736,28 +1910,20 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 87.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.87 
-      [4 <./my-chapters/my-images/Question2/compare_lt.png>]
+[18 <./my-chapters/my-images/Question2/compare_lt.png>]
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 95.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[5 <./my-chapters/my-images/Question2/datapath.png>]
-<./my-chapters/my-images/Question2/fsm.png, id=241, 684.30656pt x 354.57469pt>
+[19 <./my-chapters/my-images/Question2/datapath.png>]
+<./my-chapters/my-images/Question2/fsm.png, id=804, 684.30656pt x 354.57469pt>
 File: ./my-chapters/my-images/Question2/fsm.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/fsm.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question2/fsm.png  used on inp
 ut line 106.
 (pdftex.def)             Requested size: 338.58632pt x 175.44197pt.
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 112.
 
 (my-chapters/design_verify/Question2/lt_compare_sign.sv)
 
@@ -1766,7 +1932,7 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 112.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[6 <./my-chapters/my-images/Question2/fsm.png>]
+[20 <./my-chapters/my-images/Question2/fsm.png>]
 (my-chapters/design_verify/Question2/max_min.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
@@ -1774,7 +1940,7 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 60.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[7])
+[21])
 Overfull \hbox (25.03264pt too wide) in paragraph at lines 116--117
 []\T5/cmr/m/n/12 ^^^º t¤o gi¡ trà ng¨u nhi¶n trong bë nhî ^^_º mæ phäng, nhâm c
 hån sû döng $\OT1/cmr/m/n/12 $\OML/cmm/m/it/12 unrandom[]range\OT1/cmr/m/n/12 (
@@ -1788,15 +1954,15 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 133.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[8]
-<./my-chapters/my-images/Question2/sim_fsm.png, id=396, 1468.73718pt x 134.7534
+[22]
+<./my-chapters/my-images/Question2/sim_fsm.png, id=956, 1468.73718pt x 134.7534
 3pt>
 File: ./my-chapters/my-images/Question2/sim_fsm.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/sim_fsm.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question2/sim_fsm.png  used on
  input line 162.
 (pdftex.def)             Requested size: 483.69687pt x 44.3783pt.
-<./my-chapters/my-images/Question2/sim_fsm_2.png, id=397, 1559.07469pt x 139.27
+<./my-chapters/my-images/Question2/sim_fsm_2.png, id=957, 1559.07469pt x 139.27
 031pt>
 File: ./my-chapters/my-images/Question2/sim_fsm_2.png Graphic file (type png)
 <use ./my-chapters/my-images/Question2/sim_fsm_2.png>
@@ -1810,18 +1976,18 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 78.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[9 <./my-chapters/my-images/Question2/sim_fsm.png> <./my-chapters/my-images/Que
-stion2/sim_fsm_2.png>]
+[23 <./my-chapters/my-images/Question2/sim_fsm.png> <./my-chapters/my-images/Qu
+estion2/sim_fsm_2.png>]
 \openout2 = `./my-chapters/question3.aux'.
 
  (my-chapters/question3.tex
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 )
-<my-chapters/my-images/Question3/req_ram.png, id=427, 358.33875pt x 314.67563pt
+<my-chapters/my-images/Question3/req_ram.png, id=985, 358.33875pt x 314.67563pt
 >
 File: my-chapters/my-images/Question3/req_ram.png Graphic file (type png)
 <use my-chapters/my-images/Question3/req_ram.png>
@@ -1833,7 +1999,7 @@ Overfull \hbox (31.06323pt too wide) in paragraph at lines 5--28
 []$[]$ $[]$ 
  []
 
-<./my-chapters/my-diagrams/quesion3/Flowchart.png, id=431, 724.7075pt x 1326.95
+<./my-chapters/my-diagrams/quesion3/Flowchart.png, id=989, 724.7075pt x 1326.95
 75pt>
 File: ./my-chapters/my-diagrams/quesion3/Flowchart.png Graphic file (type png)
 <use ./my-chapters/my-diagrams/quesion3/Flowchart.png>
@@ -1847,7 +2013,7 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 41.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[10
+[24
 
 
 
@@ -1858,112 +2024,107 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 43.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[11 <./my-chapters/my-diagrams/quesion3/Flowchart.png>]
+[25 <./my-chapters/my-diagrams/quesion3/Flowchart.png>]
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 129.
+ne 131.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[12]
-<./my-chapters/my-diagrams/quesion3/Design_Overview.png, id=518, 681.54625pt x 
-604.2575pt>
+[26]
+<./my-chapters/my-diagrams/quesion3/Design_Overview.png, id=1077, 681.54625pt x
+ 604.2575pt>
 File: ./my-chapters/my-diagrams/quesion3/Design_Overview.png Graphic file (type
  png)
 <use ./my-chapters/my-diagrams/quesion3/Design_Overview.png>
 Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/Design_Overview.png
-  used on input line 134.
+  used on input line 136.
 (pdftex.def)             Requested size: 386.95897pt x 343.07498pt.
-<./my-chapters/my-diagrams/quesion3/fsm.png, id=519, 1341.01pt x 1165.35374pt>
+<./my-chapters/my-diagrams/quesion3/fsm.png, id=1078, 1341.01pt x 1165.35374pt>
+
 File: ./my-chapters/my-diagrams/quesion3/fsm.png Graphic file (type png)
 <use ./my-chapters/my-diagrams/quesion3/fsm.png>
 Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/fsm.png  used on in
-put line 142.
+put line 144.
 (pdftex.def)             Requested size: 435.32422pt x 378.29094pt.
 
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 145.
+ne 147.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[13 <./my-chapters/my-diagrams/quesion3/Design_Overview.png>]
-LaTeX Font Info:    Trying to load font information for T5+cmss on input line 1
-49.
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmss.fd
-File: t5cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
+[27 <./my-chapters/my-diagrams/quesion3/Design_Overview.png>]
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 154.
+ne 156.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[14 <./my-chapters/my-diagrams/quesion3/fsm.png>]
-<./my-chapters/my-diagrams/quesion3/DataPath.png, id=534, 2692.0575pt x 1526.70
-375pt>
+[28 <./my-chapters/my-diagrams/quesion3/fsm.png>]
+<./my-chapters/my-diagrams/quesion3/DataPath.png, id=1091, 2692.0575pt x 1526.7
+0375pt>
 File: ./my-chapters/my-diagrams/quesion3/DataPath.png Graphic file (type png)
 <use ./my-chapters/my-diagrams/quesion3/DataPath.png>
 Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/DataPath.png  used 
-on input line 174.
+on input line 176.
 (pdftex.def)             Requested size: 435.32422pt x 246.8634pt.
 
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 177.
+ne 179.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[15]
-<./my-chapters/my-diagrams/quesion3/Block_Addr.png, id=542, 788.9475pt x 815.04
-5pt>
+[29]
+<./my-chapters/my-diagrams/quesion3/Block_Addr.png, id=1098, 788.9475pt x 815.0
+45pt>
 File: ./my-chapters/my-diagrams/quesion3/Block_Addr.png Graphic file (type png)
 
 <use ./my-chapters/my-diagrams/quesion3/Block_Addr.png>
 Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/Block_Addr.png  use
-d on input line 182.
+d on input line 184.
 (pdftex.def)             Requested size: 241.84843pt x 249.85066pt.
-<./my-chapters/my-diagrams/quesion3/Block_Read.png, id=543, 909.3975pt x 1115.1
-6624pt>
+<./my-chapters/my-diagrams/quesion3/Block_Read.png, id=1099, 909.3975pt x 1115.
+16624pt>
 File: ./my-chapters/my-diagrams/quesion3/Block_Read.png Graphic file (type png)
 
 <use ./my-chapters/my-diagrams/quesion3/Block_Read.png>
 Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/Block_Read.png  use
-d on input line 187.
+d on input line 189.
 (pdftex.def)             Requested size: 241.84843pt x 296.57265pt.
 
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 189.
+ne 191.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[16 <./my-chapters/my-diagrams/quesion3/DataPath.png> <./my-chapters/my-diagram
+[30 <./my-chapters/my-diagrams/quesion3/DataPath.png> <./my-chapters/my-diagram
 s/quesion3/Block_Addr.png>]
-<./my-chapters/my-diagrams/quesion3/Block_Write.png, id=552, 668.4975pt x 885.3
-075pt>
+<./my-chapters/my-diagrams/quesion3/Block_Write.png, id=1108, 668.4975pt x 885.
+3075pt>
 File: ./my-chapters/my-diagrams/quesion3/Block_Write.png Graphic file (type png
 )
 <use ./my-chapters/my-diagrams/quesion3/Block_Write.png>
 Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/Block_Write.png  us
-ed on input line 192.
+ed on input line 194.
 (pdftex.def)             Requested size: 241.84843pt x 320.29097pt.
 
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 194.
+ne 196.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[17 <./my-chapters/my-diagrams/quesion3/Block_Read.png>]
-<./my-chapters/my-diagrams/quesion3/Control_Unit.png, id=560, 803.0pt x 440.646
-26pt>
+[31 <./my-chapters/my-diagrams/quesion3/Block_Read.png>]
+<./my-chapters/my-diagrams/quesion3/Control_Unit.png, id=1116, 803.0pt x 440.64
+626pt>
 File: ./my-chapters/my-diagrams/quesion3/Control_Unit.png Graphic file (type pn
 g)
 <use ./my-chapters/my-diagrams/quesion3/Control_Unit.png>
 Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/Control_Unit.png  u
-sed on input line 199.
+sed on input line 201.
 (pdftex.def)             Requested size: 338.58632pt x 185.80304pt.
 
 (../Quesion_3/02_rtl/Selection_Sort.sv
@@ -1973,7 +2134,7 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 3.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[18 <./my-chapters/my-diagrams/quesion3/Block_Write.png> <./my-chapters/my-diag
+[32 <./my-chapters/my-diagrams/quesion3/Block_Write.png> <./my-chapters/my-diag
 rams/quesion3/Control_Unit.png>]
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
@@ -1981,133 +2142,133 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 65.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[19]) (../Quesion_3/02_rtl/SinglePort_RAM.sv
+[33]) (../Quesion_3/02_rtl/SinglePort_RAM.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 21.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[20]) (../Quesion_3/02_rtl/Control_unit.sv
+[34]) (../Quesion_3/02_rtl/Control_unit.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 47.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[21]
+[35]
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 111.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[22]
+[36]
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 175.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[23]) (../Quesion_3/02_rtl/Data_path.sv
+[37]) (../Quesion_3/02_rtl/Data_path.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 33.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[24]
+[38]
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 96.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[25]) (../Quesion_3/02_rtl/Block_Addr.sv
+[39]) (../Quesion_3/02_rtl/Block_Addr.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 18.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[26]) (../Quesion_3/02_rtl/Block_Read_data.sv
+[40]) (../Quesion_3/02_rtl/Block_Read_data.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 46.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[27]) (../Quesion_3/02_rtl/Block_Write_data.sv
+[41]) (../Quesion_3/02_rtl/Block_Write_data.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 15.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[28]) (../Quesion_3/02_rtl/RAM_addr.sv) (../Quesion_3/02_rtl/RAM_read_data.sv
+[42]) (../Quesion_3/02_rtl/RAM_addr.sv) (../Quesion_3/02_rtl/RAM_read_data.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 8.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[29]) (../Quesion_3/02_rtl/RAM_write_data.sv
+[43]) (../Quesion_3/02_rtl/RAM_write_data.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 29.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[30]) (../Quesion_3/02_rtl/SS_detect_edge.sv) (../Quesion_3/02_rtl/Update_I.sv
+[44]) (../Quesion_3/02_rtl/SS_detect_edge.sv) (../Quesion_3/02_rtl/Update_I.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 16.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[31]) (../Quesion_3/02_rtl/Update_J.sv
+[45]) (../Quesion_3/02_rtl/Update_J.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 27.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[32]) (../Quesion_3/02_rtl/Update_MIN.sv)
+[46]) (../Quesion_3/02_rtl/Update_MIN.sv)
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 232.
+ne 234.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[33]
-<./my-chapters/my-diagrams/quesion3/waveform_test.png, id=1548, 1415.2875pt x 4
+[47]
+<./my-chapters/my-diagrams/quesion3/waveform_test.png, id=2104, 1415.2875pt x 4
 59.21562pt>
 File: ./my-chapters/my-diagrams/quesion3/waveform_test.png Graphic file (type p
 ng)
 <use ./my-chapters/my-diagrams/quesion3/waveform_test.png>
 Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/waveform_test.png  
-used on input line 275.
+used on input line 277.
 (pdftex.def)             Requested size: 386.95897pt x 125.55244pt.
 
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
-ne 278.
+ne 280.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[34]
-<./my-chapters/my-diagrams/quesion3/noswap.png, id=1594, 5781.6pt x 880.79062pt
+[48]
+<./my-chapters/my-diagrams/quesion3/noswap.png, id=2150, 5781.6pt x 880.79062pt
 >
 File: ./my-chapters/my-diagrams/quesion3/noswap.png Graphic file (type png)
 <use ./my-chapters/my-diagrams/quesion3/noswap.png>
 Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/noswap.png  used on
- input line 286.
+ input line 288.
 (pdftex.def)             Requested size: 483.69687pt x 73.67679pt.
-<./my-chapters/my-diagrams/quesion3/swap.png, id=1595, 5781.6pt x 813.0375pt>
+<./my-chapters/my-diagrams/quesion3/swap.png, id=2151, 5781.6pt x 813.0375pt>
 File: ./my-chapters/my-diagrams/quesion3/swap.png Graphic file (type png)
 <use ./my-chapters/my-diagrams/quesion3/swap.png>
 Package pdftex.def Info: ./my-chapters/my-diagrams/quesion3/swap.png  used on i
-nput line 291.
+nput line 293.
 (pdftex.def)             Requested size: 483.69687pt x 68.00934pt.
 )
 
@@ -2116,19 +2277,19 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 79.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[35 <./my-chapters/my-diagrams/quesion3/waveform_test.png> <./my-chapters/my-di
+[49 <./my-chapters/my-diagrams/quesion3/waveform_test.png> <./my-chapters/my-di
 agrams/quesion3/noswap.png> <./my-chapters/my-diagrams/quesion3/swap.png>]
 \openout2 = `./my-chapters/question4.aux'.
 
 
 (my-chapters/question4.tex
-<./my-chapters/my-images/Question4/ex.png, id=1607, 654.19406pt x 187.45032pt>
+<./my-chapters/my-images/Question4/ex.png, id=2163, 654.19406pt x 187.45032pt>
 File: ./my-chapters/my-images/Question4/ex.png Graphic file (type png)
 <use ./my-chapters/my-images/Question4/ex.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question4/ex.png  used on inpu
 t line 7.
 (pdftex.def)             Requested size: 290.22107pt x 83.15912pt.
-<./my-chapters/my-images/Question4/algorithm.png, id=1608, 351.56343pt x 803.25
+<./my-chapters/my-images/Question4/algorithm.png, id=2164, 351.56343pt x 803.25
 093pt>
 File: ./my-chapters/my-images/Question4/algorithm.png Graphic file (type png)
 <use ./my-chapters/my-images/Question4/algorithm.png>
@@ -2147,20 +2308,20 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 44.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[36
+[50
 
 
 
  <./my-chapters/my-images/Question4/ex.png> <./my-chapters/my-images/Question4/
 algorithm.png>]
-<./my-chapters/my-images/Question4/top.png, id=1616, 435.87843pt x 237.13594pt>
+<./my-chapters/my-images/Question4/top.png, id=2173, 435.87843pt x 237.13594pt>
 
 File: ./my-chapters/my-images/Question4/top.png Graphic file (type png)
 <use ./my-chapters/my-images/Question4/top.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question4/top.png  used on inp
 ut line 50.
 (pdftex.def)             Requested size: 266.03474pt x 144.7323pt.
-<./my-chapters/my-images/Question4/hlfsm.png, id=1617, 563.10374pt x 370.38374p
+<./my-chapters/my-images/Question4/hlfsm.png, id=2174, 563.10374pt x 370.38374p
 t>
 File: ./my-chapters/my-images/Question4/hlfsm.png Graphic file (type png)
 <use ./my-chapters/my-images/Question4/hlfsm.png>
@@ -2174,22 +2335,22 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 61.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[37 <./my-chapters/my-images/Question4/top.png>]
+[51 <./my-chapters/my-images/Question4/top.png>]
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 69.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[38 <./my-chapters/my-images/Question4/hlfsm.png>]
-<./my-chapters/my-images/Question4/datapath.png, id=1630, 593.96906pt x 515.676
+[52 <./my-chapters/my-images/Question4/hlfsm.png>]
+<./my-chapters/my-images/Question4/datapath.png, id=2187, 593.96906pt x 515.676
 56pt>
 File: ./my-chapters/my-images/Question4/datapath.png Graphic file (type png)
 <use ./my-chapters/my-images/Question4/datapath.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question4/datapath.png  used o
 n input line 75.
 (pdftex.def)             Requested size: 338.58632pt x 293.97015pt.
-<./my-chapters/my-images/Question4/fsm.png, id=1631, 497.60907pt x 261.97874pt>
+<./my-chapters/my-images/Question4/fsm.png, id=2188, 497.60907pt x 261.97874pt>
 
 File: ./my-chapters/my-images/Question4/fsm.png Graphic file (type png)
 <use ./my-chapters/my-images/Question4/fsm.png>
@@ -2203,7 +2364,7 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 96.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[39 <./my-chapters/my-images/Question4/datapath.png>]
+[53 <./my-chapters/my-images/Question4/datapath.png>]
 (my-chapters/design_verify/Question4/clear_even.sv
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
@@ -2211,14 +2372,14 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 33.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[40 <./my-chapters/my-images/Question4/fsm.png>])
+[54 <./my-chapters/my-images/Question4/fsm.png>])
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 100.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[41]
+[55]
 Overfull \hbox (25.03264pt too wide) in paragraph at lines 102--103
 []\T5/cmr/m/n/12 ^^^º t¤o gi¡ trà ng¨u nhi¶n trong bë nhî ^^_º mæ phäng, nhâm c
 hån sû döng $\OT1/cmr/m/n/12 $\OML/cmm/m/it/12 unrandom[]range\OT1/cmr/m/n/12 (
@@ -2232,22 +2393,22 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 153.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[42]
+[56]
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 199.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[43]
-<./my-chapters/my-images/Question4/sim_1.png, id=1842, 1543.26563pt x 229.60782
+[57]
+<./my-chapters/my-images/Question4/sim_1.png, id=2399, 1543.26563pt x 229.60782
 pt>
 File: ./my-chapters/my-images/Question4/sim_1.png Graphic file (type png)
 <use ./my-chapters/my-images/Question4/sim_1.png>
 Package pdftex.def Info: ./my-chapters/my-images/Question4/sim_1.png  used on i
 nput line 231.
 (pdftex.def)             Requested size: 483.69687pt x 71.96246pt.
-<./my-chapters/my-images/Question4/sim_2.png, id=1843, 1458.19781pt x 232.61906
+<./my-chapters/my-images/Question4/sim_2.png, id=2400, 1458.19781pt x 232.61906
 pt>
 File: ./my-chapters/my-images/Question4/sim_2.png Graphic file (type png)
 <use ./my-chapters/my-images/Question4/sim_2.png>
@@ -2261,58 +2422,62 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 240.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[44 <./my-chapters/my-images/Question4/sim_1.png>])
+[58 <./my-chapters/my-images/Question4/sim_1.png>])
 
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 80.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-[45 <./my-chapters/my-images/Question4/sim_2.png>]
+[59 <./my-chapters/my-images/Question4/sim_2.png>]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20251214002445 FAD58DE7366495DB465
+runsystem(latexminted cleantemp  --timestamp 20251214130835 FAD58DE7366495DB465
 0CFEFAC2FCD61)...disabled (restricted).
 
-(main.aux (my-chapters/question2.aux) (my-chapters/question3.aux)
-(my-chapters/question4.aux))
+(main.aux (my-chapters/question1.aux) (my-chapters/question2.aux)
+(my-chapters/question3.aux) (my-chapters/question4.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6697B4EA19F55AF79F3C275C23F7A134;1240.
+(rerunfilecheck)             Checksum: E8EDFD878130A94906F8DCCF2721DF8F;1722.
  ) 
 Here is how much of TeX's memory you used:
- 35563 strings out of 468134
- 688023 string characters out of 5430740
- 2125090 words of memory out of 5000000
- 62050 multiletter control sequences out of 15000+600000
- 657604 words of font info for 105 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 99i,15n,101p,1065b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\nguye\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt
-1000.pk> <C:\Users\nguye\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi52
-5\tctt0800.pk> <C:\Users\nguye\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\tcrm1200.pk><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nguye/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nguye/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nguye/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/nguye/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbxti10.pfb><C:/Users/nguye/AppData/
-Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/nguye/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr17.pfb><C:/Users/nguye/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr6.pfb><C:/Users/nguye/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/vntex/vnr/vnss12.pfb><C:/Users/nguye/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb><C:/Users/nguye/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt10.pfb><C:/Users/nguye/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt12.pfb><C:/Users/nguye/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt8.pfb><C:/Users/nguye/AppData/Local
-/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on main.pdf (49 pages, 2352586 bytes).
+ 36260 strings out of 470046
+ 698523 string characters out of 5482220
+ 2122374 words of memory out of 5000000
+ 62047 multiletter control sequences out of 15000+600000
+ 662061 words of font info for 116 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 99i,15n,101p,1065b,2477s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/noname/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tctt100
+0.pk> </home/noname/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm
+1200.pk> </home/noname/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi525/t
+ctt0800.pk></home/noname/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb></home/noname/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></home/noname/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></home/noname/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></home/noname/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+r7.pfb></home/noname/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></home/noname/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></home/noname/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></home/noname/.miktex/texmfs/install/fonts/type1/vntex/vnr/vnbx12.pfb></hom
+e/noname/.miktex/texmfs/install/fonts/type1/vntex/vnr/vnbx7.pfb></home/noname/.
+miktex/texmfs/install/fonts/type1/vntex/vnr/vnbxti10.pfb></home/noname/.miktex/
+texmfs/install/fonts/type1/vntex/vnr/vnr12.pfb></home/noname/.miktex/texmfs/ins
+tall/fonts/type1/vntex/vnr/vnr17.pfb></home/noname/.miktex/texmfs/install/fonts
+/type1/vntex/vnr/vnr6.pfb></home/noname/.miktex/texmfs/install/fonts/type1/vnte
+x/vnr/vnr7.pfb></home/noname/.miktex/texmfs/install/fonts/type1/vntex/vnr/vnss1
+2.pfb></home/noname/.miktex/texmfs/install/fonts/type1/vntex/vnr/vnti12.pfb></h
+ome/noname/.miktex/texmfs/install/fonts/type1/vntex/vnr/vntt10.pfb></home/nonam
+e/.miktex/texmfs/install/fonts/type1/vntex/vnr/vntt12.pfb></home/noname/.miktex
+/texmfs/install/fonts/type1/vntex/vnr/vntt8.pfb></home/noname/.miktex/texmfs/in
+stall/fonts/type1/vntex/vnr/vntt9.pfb>
+Output written on main.pdf (64 pages, 2941450 bytes).
 PDF statistics:
- 2262 PDF objects out of 2487 (max. 8388607)
- 1477 named destinations out of 1728 (max. 500000)
- 296 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2928 PDF objects out of 2984 (max. 8388607)
+ 1911 named destinations out of 2073 (max. 500000)
+ 379 words of extra memory for PDF output out of 10000 (max. 10000000)
 

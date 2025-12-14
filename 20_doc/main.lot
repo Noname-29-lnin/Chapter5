@@ -1,3 +1,7 @@
 \babel@toc {vietnamese}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Bảng tín hiệu I/O của module \texttt {max\_min}}}{2}{table.caption.2}%
-\contentsline {table}{\numberline {2}{\ignorespaces I/O table for module \texttt {clear\_even}}}{37}{table.caption.25}%
+\contentsline {table}{\numberline {1}{\ignorespaces Kết quả chạy giải thuật.}}{2}{table.caption.3}%
+\contentsline {table}{\numberline {2}{\ignorespaces Bảng mô tả các tín hiệu.}}{3}{table.caption.4}%
+\contentsline {table}{\numberline {3}{\ignorespaces Bảng các trường hợp đặc biệt (Special Cases).}}{7}{table.caption.9}%
+\contentsline {table}{\numberline {4}{\ignorespaces Bảng tín hiệu I/O của module \texttt {max\_min}}}{16}{table.caption.12}%
+\contentsline {table}{\numberline {5}{\ignorespaces Bảng I/O của module \texttt {Selection\_Sort}.}}{27}{table.caption.22}%
+\contentsline {table}{\numberline {6}{\ignorespaces I/O table for module \texttt {clear\_even}}}{51}{table.caption.35}%

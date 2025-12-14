@@ -1,0 +1,172 @@
+# Reading C:/questasim64_10.7c/tcl/vsim/pref.tcl
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project testbench
+# Compile of top.sv was successful.
+# Compile of testbench.sv was successful.
+# Compile of alu16.sv was successful.
+# Compile of div_ctrl.sv was successful.
+# Compile of div_dp.sv was successful.
+# Compile of divider8_top.sv was successful.
+# Compile of eq8.sv was successful.
+# 7 compiles, 5 failed with no errors.
+vsim -gui work.tb_divider -voptargs=+acc
+# vsim -gui work.tb_divider -voptargs="+acc" 
+# Start time: 10:57:25 on Dec 14,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.tb_divider(fast)
+# Loading work.divider8_top(fast)
+# Loading work.div_ctrl(fast)
+# Loading work.div_dp(fast)
+# Loading work.eq8(fast)
+# Loading work.alu16(fast)
+add wave -position insertpoint  \
+sim:/tb_divider/clk \
+sim:/tb_divider/rst \
+sim:/tb_divider/start \
+sim:/tb_divider/A \
+sim:/tb_divider/B \
+sim:/tb_divider/done \
+sim:/tb_divider/err \
+sim:/tb_divider/Q \
+sim:/tb_divider/R \
+sim:/tb_divider/total_tests \
+sim:/tb_divider/passed_tests \
+sim:/tb_divider/global_fail
+run
+# 
+# ========================================
+#    STARTING ADVANCED DIVIDER TESTBENCH
+# ========================================
+# 
+# [PASS] A=174 B=25 | Q=6 R=24
+# [PASS] A=0 B=25 | Q=0 R=0
+# [PASS][DIV0] A=37 B=0 detected
+# [PASS][DIV0] A=0 B=0 detected
+# [PASS] A=10 B=25 | Q=0 R=10
+# [PASS] A=50 B=50 | Q=1 R=0
+# [PASS] A=231 B=124 | Q=1 R=107
+# [PASS] A=156 B=28 | Q=5 R=16
+# [PASS] A=232 B=167 | Q=1 R=65
+# [PASS] A=22 B=196 | Q=0 R=22
+# [PASS] A=0 B=89 | Q=0 R=0
+# [PASS] A=248 B=251 | Q=0 R=248
+# [PASS] A=17 B=162 | Q=0 R=17
+# [PASS] A=252 B=165 | Q=1 R=87
+# [PASS] A=222 B=150 | Q=1 R=72
+# [PASS] A=144 B=23 | Q=6 R=6
+# [PASS] A=222 B=131 | Q=1 R=91
+# [PASS] A=134 B=20 | Q=6 R=14
+# [PASS] A=205 B=92 | Q=2 R=21
+# [PASS] A=79 B=178 | Q=0 R=79
+# [PASS] A=151 B=255 | Q=0 R=151
+# [PASS] A=30 B=172 | Q=0 R=30
+# [PASS] A=44 B=228 | Q=0 R=44
+# [PASS] A=158 B=133 | Q=1 R=25
+# [PASS] A=178 B=155 | Q=1 R=23
+# [PASS] A=82 B=173 | Q=0 R=82
+# [PASS] A=49 B=24 | Q=2 R=1
+# [PASS] A=153 B=192 | Q=0 R=153
+# [PASS] A=2 B=140 | Q=0 R=2
+# [PASS] A=225 B=136 | Q=1 R=89
+# [PASS] A=47 B=53 | Q=0 R=47
+# [PASS] A=20 B=15 | Q=1 R=5
+# [PASS] A=17 B=45 | Q=0 R=17
+# [PASS] A=72 B=215 | Q=0 R=72
+# [PASS] A=29 B=193 | Q=0 R=29
+# [PASS] A=245 B=152 | Q=1 R=93
+# [PASS] A=130 B=130 | Q=1 R=0
+# [PASS] A=113 B=193 | Q=0 R=113
+# [PASS] A=21 B=83 | Q=0 R=21
+# [PASS] A=126 B=143 | Q=0 R=126
+# [PASS] A=57 B=94 | Q=0 R=57
+# [PASS] A=56 B=171 | Q=0 R=56
+# [PASS] A=161 B=122 | Q=1 R=39
+# [PASS] A=24 B=129 | Q=0 R=24
+# [PASS] A=184 B=129 | Q=1 R=55
+# [PASS] A=225 B=248 | Q=0 R=225
+# [PASS] A=162 B=47 | Q=3 R=21
+# [PASS] A=13 B=151 | Q=0 R=13
+# [PASS] A=56 B=67 | Q=0 R=56
+# [PASS] A=193 B=77 | Q=2 R=39
+# [PASS] A=26 B=117 | Q=0 R=26
+# [PASS] A=201 B=214 | Q=0 R=201
+# [PASS] A=211 B=1 | Q=211 R=0
+# [PASS] A=214 B=137 | Q=1 R=77
+# [PASS] A=42 B=191 | Q=0 R=42
+# [PASS] A=224 B=15 | Q=14 R=14
+# [PASS] A=165 B=212 | Q=0 R=165
+# [PASS] A=63 B=163 | Q=0 R=63
+# [PASS] A=126 B=89 | Q=1 R=37
+# [PASS] A=125 B=78 | Q=1 R=47
+# [PASS] A=24 B=186 | Q=0 R=24
+# [PASS] A=226 B=219 | Q=1 R=7
+# [PASS] A=51 B=19 | Q=2 R=13
+# [PASS] A=252 B=113 | Q=2 R=26
+# [PASS] A=189 B=130 | Q=1 R=59
+# [PASS] A=137 B=41 | Q=3 R=14
+# [PASS] A=129 B=94 | Q=1 R=35
+# [PASS] A=173 B=87 | Q=1 R=86
+# [PASS] A=148 B=168 | Q=0 R=148
+# [PASS] A=125 B=116 | Q=1 R=9
+# [PASS] A=168 B=74 | Q=2 R=20
+# [PASS] A=175 B=89 | Q=1 R=86
+# [PASS] A=77 B=161 | Q=0 R=77
+# [PASS] A=30 B=28 | Q=1 R=2
+# [PASS] A=254 B=72 | Q=3 R=38
+# [PASS] A=37 B=106 | Q=0 R=37
+# [PASS] A=73 B=206 | Q=0 R=73
+# [PASS] A=0 B=51 | Q=0 R=0
+# [PASS] A=195 B=254 | Q=0 R=195
+# [PASS] A=94 B=187 | Q=0 R=94
+# [PASS] A=27 B=138 | Q=0 R=27
+# [PASS] A=65 B=59 | Q=1 R=6
+# [PASS] A=237 B=8 | Q=29 R=5
+# [PASS] A=121 B=33 | Q=3 R=22
+# [PASS] A=196 B=126 | Q=1 R=70
+# [PASS] A=172 B=147 | Q=1 R=25
+# [PASS] A=178 B=136 | Q=1 R=42
+# [PASS] A=143 B=6 | Q=23 R=5
+# [PASS] A=3 B=214 | Q=0 R=3
+# [PASS] A=181 B=69 | Q=2 R=43
+# [PASS] A=252 B=233 | Q=1 R=19
+# [PASS] A=176 B=255 | Q=0 R=176
+# [PASS] A=1 B=189 | Q=0 R=1
+# [PASS] A=170 B=32 | Q=5 R=10
+# [PASS] A=11 B=217 | Q=0 R=11
+# [PASS] A=210 B=45 | Q=4 R=30
+# [PASS] A=133 B=79 | Q=1 R=54
+# [PASS] A=248 B=172 | Q=1 R=76
+# [PASS][DIV0] A=196 B=0 detected
+# [PASS] A=120 B=116 | Q=1 R=4
+# [PASS] A=61 B=56 | Q=1 R=5
+# [PASS] A=89 B=128 | Q=0 R=89
+# [PASS] A=203 B=5 | Q=40 R=3
+# [PASS] A=85 B=224 | Q=0 R=85
+# [PASS] A=53 B=253 | Q=0 R=53
+# [PASS] A=175 B=44 | Q=3 R=43
+# 
+# ========================================
+# SUMMARY
+# Total  : 106
+# Passed : 106
+# Failed : 0
+# ========================================
+# ✅ ALL TESTS PASSED
+# ** Note: $finish    : D:/Div/top/testbench.sv(134)
+#    Time: 23935 ns  Iteration: 1  Instance: /tb_divider
+# 1
+# Break in Module tb_divider at D:/Div/top/testbench.sv line 134

@@ -111,20 +111,22 @@ Sau khi đã viết lại đoạn code cho dễ nhìn, tiếp đến sẽ địn
  \begin{table}[H]
 	 \centering
 	 \begin{tabular}{|>{\centering\arraybackslash}m{3cm}
+	 				 |>{\centering\arraybackslash}m{2cm}
 			       	 |>{\centering\arraybackslash}m{2cm}
 			         |>{\raggedright\arraybackslash}m{8cm}|}
 		     \hline
-		     Signal & Size & Functional \\
+		     Signal & I/O & Size & Functional \\
 		     \hline
-		     i\_clk & 1 & Clock của toàn hệ thống. \\
+		     i\_clk & Input &1 & Clock của toàn hệ thống. \\
 		     \hline
-		     i\_rst\_t & 1 & Tín hiệu reset của hệ thống với tích cực thấp. \\
+		     i\_rst\_t & Input & 1 & Tín hiệu reset của hệ thống với tích cực thấp. \\
 		     \hline
-		     i\_start & 1 & Tín hiệu bắt đầu hoạt động của bộ. \\
+		     i\_start & Input & 1 & Tín hiệu bắt đầu hoạt động của bộ. \\
 		     \hline 
-		     o\_done & 1 & Tín hiệu cho biết được đã sắp xếp xong mảng.\\
+		     o\_done & Output & 1 & Tín hiệu cho biết được đã sắp xếp xong mảng.\\
 		     \hline
 	\end{tabular}
+	\caption{Bảng I/O của module \texttt{Selection\_Sort}.}
 \end{table}
 
 Từ đó, ta có thiết kế tổng quan của module \texttt{Selection\_Sort}:

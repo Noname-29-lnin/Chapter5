@@ -1,0 +1,314 @@
+\question{Câu 1}
+
+Để thực hiện chia hai số $ A $ cho $ B $, ta có lưu đồ giải thuật sau:
+
+\begin{minipage}{.5\linewidth}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{my-chapters/my-images/Question1/debai}
+		\caption{Lưu đồ giải thuật của thuật toán $ A/B $.}
+		\label{fig:q1_debai}
+	\end{figure}
+\end{minipage}
+\begin{minipage}{.5\linewidth}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{my-chapters/my-images/Question1/debai1}
+		\caption{Sơ đồ khối tổng quát của module thực hiện thuật toán $ A/B $.}
+		\label{fig:q1_debai1}
+	\end{figure}
+\end{minipage}
+
+\answer{a}{Mô tả các bước chạy của giải thuật với ngõ vào $ A = 174 $ và $ B = 25 $.}
+
+\begin{enumerate}[label=Bước \arabic*:, leftmargin=2cm]
+	\item Khởi tạo và load số A (Dividend\_16 bits) và B (Divisor\_16 bits) vào thanh ghi. Thực hiện căn chỉnh cho MSB\_B nằm cùng MSB\_A. Đồng thời, bắt đầu với thanh ghi Q (8 bit) = 0 và khởi tạo số vòng lặp bằng số bit Q + 1 (9 vòng).
+	\item Thực hiện $A-B$ nếu $bit\_borrow = 0$ và cập nhật $A \leftarrow A - B$. Hoặc thực hiện $A + B$ nếu $bit\_borrow = 1$ để restore A . Với Q (8\_bits) sẽ được cập nhật bằng cách shift left như sau: $Q = \{regQ[6:0], \sim bit\_borrow\}$;
+	\item Shift right B và lặp lại quá trình $A-B$ đến khi đủ số vòng lặp thì đó là kết quả cuối cùng.
+\end{enumerate}
+	
+	Theo đề, với $A = 174$ ($1010\_1110$) và $B = 25$ ($11001$). Ta xác định được:
+	
+	\begin{table}[H]
+		\centering
+		{ \fontsize{7}{8}\selectfont
+			\begin{tabular}{|>{\centering\arraybackslash}m{1cm}|
+					>{\centering\arraybackslash}m{2cm}|
+					>{\centering\arraybackslash}m{3.5cm}|
+					>{\raggedright\arraybackslash}m{3.5cm}|
+					>{\centering\arraybackslash}m{1.7cm}|
+					>{\centering\arraybackslash}m{3.5cm}|}
+				\hline
+				\textbf{Vòng lặp} & \textbf{Reg\_A} & \textbf{Reg\_B} & \textbf{A – B} & \textbf{Borrow\_flag} & \textbf{Q = \{reg\_Q[6:0], $\sim$borrow\_flag\}} \\
+				\hline
+				(Init) & Load A = 174 & Load B = $25 \ll 256 = 6400$ & Chưa thực hiện & & $0000\_0000$ \\
+				\hline
+				9 & 174 & 6400 & $A - B < 0 \implies A = 174$ & 1 & $0000\_0000$ \\
+				\hline
+				8 & 174 & $B \gg 1 = 3200$ & $A - B < 0 \implies A = 174$ & 1 & $0000\_0000$ \\
+				\hline
+				7 & 174 & $B \gg 1 = 1600$ & $A - B < 0 \implies A = 174$ & 1 & $0000\_0000$ \\
+				\hline
+				6 & 174 & $B \gg 1 = 800$ & $A - B < 0 \implies A = 174$ & 1 & $0000\_0000$ \\
+				\hline
+				5 & 174 & $B \gg 1 = 400$ & $A - B < 0 \implies A = 174$ & 1 & $0000\_0000$ \\
+				\hline
+				4 & 174 & $B \gg 1 = 200$ & $A - B < 0 \implies A = 174$ & 1 & $0000\_0000$ \\
+				\hline
+				3 & 174 & $B \gg 1 = 100$ & $A - B > 0 \implies A = 74$ & 0 & $0000\_0001$ \\
+				\hline
+				2 & 74 & $B \gg 1 = 50$ & $A - B > 0 \implies A = 24$ & 0 & $0000\_0011$ \\
+				\hline
+				1 & 24 & $B \gg 1 = 25$ & $A - B < 0 \implies A = 24$ & 1 & $0000\_0110$ \\
+				\hline
+			\end{tabular}
+		}
+		\caption{Kết quả chạy giải thuật.}
+		\label{tab:ket_qua_chia}
+	\end{table}
+	
+	Vậy sau 9 vòng lặp kết quả của $A : B$ ($174 : 25$) là $\mathbf{Q = 0000\_0110 = 6}$ và dư $\mathbf{R = 24}$.
+
+\answer{b}{Định nghĩa ngõ vào và ngõ ra của thiết kế, giả sử A và B là 2 số 8 bit (Yêu cầu phải có chân start và reset).}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|>{\centering\arraybackslash}m{2.5cm}|
+			>{\centering\arraybackslash}m{1.5cm}|
+			>{\centering\arraybackslash}m{2cm}|
+			>{\raggedright\arraybackslash}m{7cm}|}
+		\hline
+		\textbf{Tên tín hiệu} & \textbf{I/O} & \textbf{Độ rộng bit} & \textbf{Mô tả tín hiệu} \\
+		\hline
+		clk & Input & 1 & Tín hiệu clock. \\
+		\hline
+		rst & Input & 1 & Reset tích cực cao. \\
+		\hline
+		start & Input & 1 & Tín hiệu bắt đầu. \\
+		\hline
+		A & Input & 8 & Dividend (Số bị chia). \\
+		\hline
+		B & Input & 8 & Divisor (Số chia). \\
+		\hline
+		Q & Output & 8 & Quotient (Thương). \\
+		\hline
+		R & Output & 8 & Remainder (Dư). \\
+		\hline
+		done & Output & 1 & Tín hiệu báo phép chia hoàn tất. \\
+		\hline
+		err & Output & 1 & Tín hiệu lỗi khi Divisor = 0. \\
+		\hline
+	\end{tabular}
+	\caption{Bảng mô tả các tín hiệu.}
+	\label{tab:signal_description}
+\end{table}
+
+\answer{c}{Thiết kế máy trạng thái bậc cao (High level FSM) của thiết kế.}
+
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=\linewidth]{./my-chapters/my-diagrams/question1/HLFSM.png}
+    \caption{Thiết kế HighLevel FSM.}
+\end{figure}
+
+Trong đó: 
+\begin{itemize}[label=-]
+    \item \textsf{S\_IDLE}: Là trạng thái chờ khi reset, khi có tín hiệu start thì module sẽ hoạt động.
+    \item \textsf{S\_INIT}: Trạng thái khởi tạo. Dùng để nạp dữ liệu ban đầu trước khi thực hiện tính toán và kiểm tra xem có error không.
+    \item \textsf{S\_COMPARE}: Trạng thái thực hiện so sánh giá trị A và B. Từ đó, quyết định \texttt{borrow\_flag} để thực hiện ghi kết quả mới vào A và Q.
+    \item \textsf{S\_SHIFT}: Trạng thái này để Shift right B ($B \gg 1$), đồng thời giảm counter được khởi tạo ở \textsf{S\_INIT} để chuẩn bị cho vòng lặp sau. Ngoài ra, kiểm tra xem đã thực hiện đủ vòng lặp hay chưa để quyết định chuyển đến \textsf{S\_COMPARE} hay \textsf{S\_DONE}.
+    \item \textsf{S\_DONE}: Trạng thái đã hoàn thành phép chia.
+\end{itemize}
+
+\answer{d}{Thiết kế Datapath và Control Unit.}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.9\linewidth]{/home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagrams/question1/Datapath.png}
+	\caption{DataPath của bộ chia.}
+\end{figure}
+
+Trong đó, bộ \texttt{alu\_16} bit được thiết kế theo kiểu Ripple Carry Add/Sub 16 bit:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.9\linewidth]{/home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagrams/question1/alu_16_bit.png}
+	\caption{Ripple Carry Add/Sub 16 bit.}
+\end{figure}
+
+Dựa vào đó, thiết kế Control Unit điều khiển Datapath như sau:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.9\linewidth]{/home/noname/Documents/project_tiny/Chapter5/20_doc/my-chapters/my-diagrams/question1/Control_Unit.png}
+	\caption{Control\_Unit của bộ chia.}
+\end{figure}
+
+\answer{e}{Viết chương trình mô phỏng hoạt động của thiết kế.}
+
+Ngoài những trường hợp thực hiện phép chia bình thường, ta cần kiểm tra một vài đặc biệt để kiểm tra xem có đúng với thiết kế hay chưa.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|>{\centering\arraybackslash}m{3cm}|
+			>{\centering\arraybackslash}m{2cm}|
+			>{\centering\arraybackslash}m{2cm}|
+			>{\centering\arraybackslash}m{2cm}|}
+		\hline
+		\textbf{Special cases} & \textbf{Q} & \textbf{R} & \textbf{error} \\
+		\hline
+		$B = 0$ & Don’t care & Don’t care & 1 \\
+		\hline
+		$A = 0$ \& $B \neq 0$ & 0 & 0 & 0 \\
+		\hline
+		$A < B$ & 0 & A & 0 \\
+		\hline
+	\end{tabular}
+	\caption{Bảng các trường hợp đặc biệt (Special Cases).}
+	\label{tab:special_cases}
+\end{table}
+
+\begin{enumerate}[label=\arabic*.]
+	\item Code thực hiện chương trình.
+	
+	\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{divider8\_top}}.]{/home/noname/Documents/project\_tiny/Chapter5/Question1/code/divider8_top.sv}
+	\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{div\_ctrl}}.]{/home/noname/Documents/project_tiny/Chapter5/Question1/code/div_ctrl.sv}
+	\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{alu16}}.]{/home/noname/Documents/project_tiny/Chapter5/Question1/code/alu16.sv}
+	\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{div\_dp}}.]{/home/noname/Documents/project\_tiny/Chapter5/Question1/code/div_dp.sv}
+	\lstinputlisting[style=StyleCode, language=SystemVerilog, caption={Module \texttt{eq8}}.]{/home/noname/Documents/project\_tiny/Chapter5/Question1/code/eq8.sv}
+	
+	\item Để tạo giá trị ngẫu nhiên ($ \$unrandom\_range(0,255) $) trong bộ nhớ để mô phỏng.
+	
+	\begin{lstlisting}[style=StyleResult, language=Result, caption={Kết quả test của module thực hiện phép chia.}]
+		# ========================================
+		#    STARTING ADVANCED DIVIDER TESTBENCH
+		# ========================================
+		# 
+		# [PASS] A=174 B=25 | Q=6 R=24
+		# [PASS] A=0 B=25 | Q=0 R=0
+		# [PASS][DIV0] A=37 B=0 detected
+		# [PASS][DIV0] A=0 B=0 detected
+		# [PASS] A=10 B=25 | Q=0 R=10
+		# [PASS] A=50 B=50 | Q=1 R=0
+		# [PASS] A=231 B=124 | Q=1 R=107
+		# [PASS] A=156 B=28 | Q=5 R=16
+		# [PASS] A=232 B=167 | Q=1 R=65
+		# [PASS] A=22 B=196 | Q=0 R=22
+		# [PASS] A=0 B=89 | Q=0 R=0
+		# [PASS] A=248 B=251 | Q=0 R=248
+		# [PASS] A=17 B=162 | Q=0 R=17
+		# [PASS] A=252 B=165 | Q=1 R=87
+		# [PASS] A=222 B=150 | Q=1 R=72
+		# [PASS] A=144 B=23 | Q=6 R=6
+		# [PASS] A=222 B=131 | Q=1 R=91
+		# [PASS] A=134 B=20 | Q=6 R=14
+		# [PASS] A=205 B=92 | Q=2 R=21
+		# [PASS] A=79 B=178 | Q=0 R=79
+		# [PASS] A=151 B=255 | Q=0 R=151
+		# [PASS] A=30 B=172 | Q=0 R=30
+		# [PASS] A=44 B=228 | Q=0 R=44
+		# [PASS] A=158 B=133 | Q=1 R=25
+		# [PASS] A=178 B=155 | Q=1 R=23
+		# [PASS] A=82 B=173 | Q=0 R=82
+		# [PASS] A=49 B=24 | Q=2 R=1
+		# [PASS] A=153 B=192 | Q=0 R=153
+		# [PASS] A=2 B=140 | Q=0 R=2
+		# [PASS] A=225 B=136 | Q=1 R=89
+		# [PASS] A=47 B=53 | Q=0 R=47
+		# [PASS] A=20 B=15 | Q=1 R=5
+		# [PASS] A=17 B=45 | Q=0 R=17
+		# [PASS] A=72 B=215 | Q=0 R=72
+		# [PASS] A=29 B=193 | Q=0 R=29
+		# [PASS] A=245 B=152 | Q=1 R=93
+		# [PASS] A=130 B=130 | Q=1 R=0
+		# [PASS] A=113 B=193 | Q=0 R=113
+		# [PASS] A=21 B=83 | Q=0 R=21
+		# [PASS] A=126 B=143 | Q=0 R=126
+		# [PASS] A=57 B=94 | Q=0 R=57
+		# [PASS] A=56 B=171 | Q=0 R=56
+		# [PASS] A=161 B=122 | Q=1 R=39
+		# [PASS] A=24 B=129 | Q=0 R=24
+		# [PASS] A=184 B=129 | Q=1 R=55
+		# [PASS] A=225 B=248 | Q=0 R=225
+		# [PASS] A=162 B=47 | Q=3 R=21
+		# [PASS] A=13 B=151 | Q=0 R=13
+		# [PASS] A=56 B=67 | Q=0 R=56
+		# [PASS] A=193 B=77 | Q=2 R=39
+		# [PASS] A=26 B=117 | Q=0 R=26
+		# [PASS] A=201 B=214 | Q=0 R=201
+		# [PASS] A=211 B=1 | Q=211 R=0
+		# [PASS] A=214 B=137 | Q=1 R=77
+		# [PASS] A=42 B=191 | Q=0 R=42
+		# [PASS] A=224 B=15 | Q=14 R=14
+		# [PASS] A=165 B=212 | Q=0 R=165
+		# [PASS] A=63 B=163 | Q=0 R=63
+		# [PASS] A=126 B=89 | Q=1 R=37
+		# [PASS] A=125 B=78 | Q=1 R=47
+		# [PASS] A=24 B=186 | Q=0 R=24
+		# [PASS] A=226 B=219 | Q=1 R=7
+		# [PASS] A=51 B=19 | Q=2 R=13
+		# [PASS] A=252 B=113 | Q=2 R=26
+		# [PASS] A=189 B=130 | Q=1 R=59
+		# [PASS] A=137 B=41 | Q=3 R=14
+		# [PASS] A=129 B=94 | Q=1 R=35
+		# [PASS] A=173 B=87 | Q=1 R=86
+		# [PASS] A=148 B=168 | Q=0 R=148
+		# [PASS] A=125 B=116 | Q=1 R=9
+		# [PASS] A=168 B=74 | Q=2 R=20
+		# [PASS] A=175 B=89 | Q=1 R=86
+		# [PASS] A=77 B=161 | Q=0 R=77
+		# [PASS] A=30 B=28 | Q=1 R=2
+		# [PASS] A=254 B=72 | Q=3 R=38
+		# [PASS] A=37 B=106 | Q=0 R=37
+		# [PASS] A=73 B=206 | Q=0 R=73
+		# [PASS] A=0 B=51 | Q=0 R=0
+		# [PASS] A=195 B=254 | Q=0 R=195
+		# [PASS] A=94 B=187 | Q=0 R=94
+		# [PASS] A=27 B=138 | Q=0 R=27
+		# [PASS] A=65 B=59 | Q=1 R=6
+		# [PASS] A=237 B=8 | Q=29 R=5
+		# [PASS] A=121 B=33 | Q=3 R=22
+		# [PASS] A=196 B=126 | Q=1 R=70
+		# [PASS] A=172 B=147 | Q=1 R=25
+		# [PASS] A=178 B=136 | Q=1 R=42
+		# [PASS] A=143 B=6 | Q=23 R=5
+		# [PASS] A=3 B=214 | Q=0 R=3
+		# [PASS] A=181 B=69 | Q=2 R=43
+		# [PASS] A=252 B=233 | Q=1 R=19
+		# [PASS] A=176 B=255 | Q=0 R=176
+		# [PASS] A=1 B=189 | Q=0 R=1
+		# [PASS] A=170 B=32 | Q=5 R=10
+		# [PASS] A=11 B=217 | Q=0 R=11
+		# [PASS] A=210 B=45 | Q=4 R=30
+		# [PASS] A=133 B=79 | Q=1 R=54
+		# [PASS] A=248 B=172 | Q=1 R=76
+		# [PASS][DIV0] A=196 B=0 detected
+		# [PASS] A=120 B=116 | Q=1 R=4
+		# [PASS] A=61 B=56 | Q=1 R=5
+		# [PASS] A=89 B=128 | Q=0 R=89
+		# [PASS] A=203 B=5 | Q=40 R=3
+		# [PASS] A=85 B=224 | Q=0 R=85
+		# [PASS] A=53 B=253 | Q=0 R=53
+		# [PASS] A=175 B=44 | Q=3 R=43
+		# 
+		# ========================================
+		# SUMMARY
+		# Total  : 106
+		# Passed : 106
+		# Failed : 0
+		# ========================================
+		# ALL TESTS PASSED
+		# ** Note: $finish    : D:/Div/top/testbench.sv(134)
+		#    Time: 23935 ns  Iteration: 1  Instance: /tb_divider
+		# 1
+		# Break in Module tb_divider at D:/Div/top/testbench.sv line 134
+	\end{lstlisting}
+	
+	\item Waveform và kết quả chạy testbench.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{./../Question1/testbench&result/waveform.png}
+		\caption{Dạng sóng của testbench mô phỏng khối thực hiện phép chia.}
+	\end{figure}
+\end{enumerate}
