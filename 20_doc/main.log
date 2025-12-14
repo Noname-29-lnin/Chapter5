@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.11)  14 DEC 2025 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.11)  14 DEC 2025 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2432,7 +2432,7 @@ ne 80.
 [59 <./my-chapters/my-images/Question4/sim_2.png>]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-runsystem(latexminted cleantemp  --timestamp 20251214130835 FAD58DE7366495DB465
+runsystem(latexminted cleantemp  --timestamp 20251214132432 FAD58DE7366495DB465
 0CFEFAC2FCD61)...disabled (restricted).
 
 (main.aux (my-chapters/question1.aux) (my-chapters/question2.aux)
@@ -2475,7 +2475,7 @@ ome/noname/.miktex/texmfs/install/fonts/type1/vntex/vnr/vntt10.pfb></home/nonam
 e/.miktex/texmfs/install/fonts/type1/vntex/vnr/vntt12.pfb></home/noname/.miktex
 /texmfs/install/fonts/type1/vntex/vnr/vntt8.pfb></home/noname/.miktex/texmfs/in
 stall/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on main.pdf (64 pages, 2941450 bytes).
+Output written on main.pdf (64 pages, 2941446 bytes).
 PDF statistics:
  2928 PDF objects out of 2984 (max. 8388607)
  1911 named destinations out of 2073 (max. 500000)
